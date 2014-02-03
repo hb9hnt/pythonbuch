@@ -36,7 +36,7 @@ Aufträge
    lösen:
 
    * http://www.spoj.com/problems/FCTRL2/
-   * http://www.spoj.com/problems/SAMER08F/
+   * http://www.spoj.com/problems/ADDREV/
    * http://www.spoj.com/problems/FCTRL/
 
    Benutze diese Aufgaben, um herauszufinden, wie `SPOJ`_ deine Lösung
