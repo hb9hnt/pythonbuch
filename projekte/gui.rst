@@ -1,45 +1,42 @@
-**************************
-Vektorgeometrie mit Python
-**************************
+*****************************
+Grafische Benutzeroberflächen
+*****************************
 :Python: |*| |*| |*| |*| |o|
 :Informatik: |*| |*| |o| |o| |o|
 :Mathematik: |*| |o| |o| |o| |o| 
 
-:Python-Module: :py:mod:`numpy`, :py:mod:`scipy`, :py:mod:`Matplotlib`
+:Python-Module: :py:mod:`tkinter`
 
-Im folgenden Projekt ist das Ziel, möglichst viele Funktionen des im Unterricht
-benutzten grossen Taschenrechners durch Python zu ersetzen. Dabei wirst du dich
-hauptsächlich aber nicht ausschliesslich mit Vektorgeometrie beschäftigen. Ziel
-ist es, die folgenden Fragen ausgiebig zu untersuchen:
+Dieses Projekt hat zum Ziel, ein Programm mit einer einfachen graphischen
+Benutzeroberfläche zu erstellen. Dazu wirst du die Bibliothek :py:mod:`tkinter`
+verwenden, welche standartmässig bei Python installiert ist.
 
-* Wie können Vektorrechnungen mit Python durchgeführt werden?
-
-* Wie kann das Vektor- und das Skalarprodukt mit Python berechnet werden?
-
-* Wie können mit Python Funktionsgraphen und Graphiken für die Vektorgeometrie
-  dargestellt werden?
+Sie bietet Funktionen zum Fenster, Schaltflächen und Eingabeelemente zu
+erstellen. Das Ziel des Projekts ist es, das Notenberechnungsprogramm aus der
+Einführung mit einer graphischen Benutzeroberfläche zu versehen. Weiter wirst du
+auch das Canvas-Element aus :py:mod:`tkinter` benutzen, um Zeichnungen und
+Grafiken zu erstellen.
 
 		
 Aufträge
 ========
 
-1. Erstelle eine kurze Auflistung, welche erklärt, wie man mit Python die
-   Funktionen eines einfachen Taschenrechners benutzen kann. Halte dich dabei an
-   die von dir oft benutzen Funktionen des TI-30.
+1. Suche im Internet ein Tutorial zu tkinter, welches dir verständlich
+   scheint. Arbeite das Tutorial durch und achte darauf, dass du die
+   Programmbeispiele auch selbst umsetzt und versuchst sie zu verstehen.
 
-2. Erstelle eine Dokumentation, welche beschreibt, wie du die folgenden
-   Vektoroperationen mit Vektoren mit Hilfe von :py:mod:`numpy` durchführst:
+2. Erstelle eine Dokumentation der wichtigsten Elemente und erstelle einfache
+   Beispiele für ihre Verwendung. Verweise auf die :py:mod:`tkinter` für die
+   Erklärung der genauen Benutzungsweise.
 
-   * Zusammenhängen von Vektoren: Addition
-   * Verlängern und verkürzen von Vektoren: Skalarmultiplikation
-   * Die Länge eines Vektors berechnen und Normieren eines Vektors
-   * Skalar- und Vektorprodukt
-
-3. Wähle aus den Vektorgeometrie-Aufgaben einige, möglichst unterschiedliche aus
-   und löse sie mit Python.
+3. Erstelle eine graphsiche Benutzeroberfläche für das Notenprogramm, so dass du
+   in einem Fenster die Noten eingeben kannst und auch die Ausgabe in diesem
+   Fenster erscheint. Du kannst frei wählen, wie du die Oberfläche gestaltest.
      
-4. Erstelle eine Dokumentation für das Erstellen von Funktionsgraphen und
-   vektorgeometrischen Sachverhalte mit Hilfe von :py:mod:`Matplotlib`
+4. *Zusatz*: Erstelle in einem Fenster ein Canvas-Objekt und schreibe Programme,
+   welche Bilder in diesem Fenster erstellen. Hier kannst du frei wählen, ob du
+   das Programm um eine Maussteuerung erweitern willst oder einfach Bilder
+   generieren möchtest.
 
 Dokumente
 =========
@@ -47,20 +44,21 @@ Dokumente
 Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 
 * Arbeitsjournal
-* Auflistung der Befehle eines TI-30 in Python.
-* Dokumentation zur Benutzung von :py:mod:`numpy` für Vektorgeometrie.
-* Musterlösungen von Vektorgeometrie-Aufgaben in Python.
-* Dokumentation zum Erstellen von Funktionsgraphen.
+* Beispielprogramme aus dem Tutorial, welche von dir durchgearbeitet wurden.
+* Dokumentation zur Benutzung von :py:mod:`tkinter` mit Beispielen. 
+* Programm mit graphischer Benutzeroberfläche für die Berechnung der letzten
+  Note im Semester für einen vorgegebenen Notenschnitt.
+* Programme zur Erstellung von Grafiken auf einem Canvas-Element
 
 
 Dokumentations-Links
 ====================
 
-http://www.numpy.org/
+Tkinter-Wiki:
+http://tkinter.unpythonic.net/wiki/
 
-http://matplotlib.org/
-
-http://www.scipy.org/
+Tkinter-Reference-Dokumentation:
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html
 
 
 	     

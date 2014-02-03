@@ -5,15 +5,17 @@ Projekt-Aufträge
 .. toctree::
    :maxdepth: 1
 	   
-   game
    vector
    gui
+   game
+   algorithmen
 
 
 Arbeitsjournal
 ==============
 
 Ende jeder Lektion werden die folgenden Punkte kurz stichwortartig beantwortet:
+
 * Was wurde diese Lektion gemacht?
 * Welche Hausaufgaben gebe ich mir auf die nächste Lektion?
 
