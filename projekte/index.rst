@@ -19,6 +19,15 @@ Ende jeder Lektion werden die folgenden Punkte kurz stichwortartig beantwortet:
 * Was wurde diese Lektion gemacht?
 * Welche Hausaufgaben gebe ich mir auf die nächste Lektion?
 
+Da du ja jetzt ein richtiger Programmierer bist, wird das Journal nicht in einem
+Worddokument verfasst, sondern wie ein Programm in einer reinen Textdatei. Diese
+bekommt die Dateiendung ``.txt`` und kann in jedem beliebigen Texteditor (also
+unter anderem auch mit IDLE) editiert werden. Falls du Ideen zur sauberen
+Formatierung von Textdateien benötigst, hilft dir evtl. die `Markdown`_ Syntax
+weiter.
+
+.. _Markdown: http://daringfireball.net/projects/markdown/syntax
+
 Bewertungskriterien
 ===================
 
