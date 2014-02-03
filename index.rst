@@ -8,20 +8,18 @@
 Einführung ins Programmieren mit Python
 =======================================
 
-Inhalt:
-
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    einfuehrung
    elemente
    datentypen
    kontrollstrukturen
    bool
-   funktion
-   objekte
    hilfsmittel
-	      
+   projekte/index.rst
+
 .. only:: html 
 
    Index
