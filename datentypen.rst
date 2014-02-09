@@ -1,12 +1,12 @@
-***********************
-Verschiedene Datentypen
-***********************
+****************
+Erste Datentypen
+****************
 
 Zahlen
 ======
 
 Python kann verschiedene Arten von Zahlen darstellen und speichern. Wir werden
-uns hier aber auf die Zahlen beschränken, welche in der Programmierung oft
+uns hier auf die Zahlen beschränken, welche in der Programmierung oft
 benutzt werden. Dies sind ganze Zahlen und Fliesskommazahlen. Python kann auch
 mit Brüchen, komplexen Zahlen oder Dezimalzahlen mit einer festen Anzahl
 Dezimalstellen rechnen. Diese werden wir aber hier nicht genauer anschauen.
@@ -15,16 +15,16 @@ Integer : Ganze Zahlen
   Ganze Zahlen sind sowohl negative als auch positive Zahlen ohne
   Nachkommastellen. Mit diesen kann Python sehr gut umgehen. Im gegensatz zu
   anderen Programmiersprachen sind sie in der Grösse nicht eingeschränkt. Ihr
-  könnt beliebig grosse ganze Zahlen speichern.
+  könnt beliebig grosse ganze Zahlen speichern. [#]_
 
 Float : Fliesskommazahlen
   Fliesskommazahlen gibt es in den meisten Programmiersprachen. Sie werden
-  benutzt um Dezimalzahlen zu speichern. Die Arbeit mit Fliesskommazahlen bietet
+  benutzt, um Dezimalzahlen zu speichern. Die Arbeit mit Fliesskommazahlen bietet
   aber auch einiges an Stolpersteinen. Vor allem wenn die Zahlen betragsmässig
   sehr gross werden oder sehr nahe bei 0 liegen, kann es Probleme mit der
-  Genauigkeit kommen - wie wir weiter unten selbst beobachten werden.
+  Genauigkeit geben - wie wir weiter unten selbst beobachten werden.
 
-Die folgenden Zahlen sind in Python alles zulässige Zahlen. Sobald ein Punkt,
+Die folgenden Zahlen sind in Python alle zulässig. Sobald ein Punkt,
 ein ``e`` oder ein ``E`` vorkommt werden sie als Fliesskommazahl interpretiert::
 
   # Ganze Zahlen (Integer)
@@ -41,6 +41,12 @@ ein ``e`` oder ein ``E`` vorkommt werden sie als Fliesskommazahl interpretiert::
   -1e-1
   12E4
 
+Eine kurze Erklärung braucht der Buchstabe ``e`` oder ``E``. Beide Schreibweisen
+stehen für das gleiche und sind dir vielleicht schon vom Taschenrechner
+bekannt. Es handelt sich dabei um die wissenschaftliche Schreibweise von Zahlen
+mit Zehnerpotenzen. So steht zum Beispiel ``1.2E4`` für :math:`1.2\cdot 10^{4}`
+oder ``-1e-1`` für :math:`-1\cdot 10^{-1}`. 
+
 .. seealso::
 
    Brüche :
@@ -49,7 +55,7 @@ ein ``e`` oder ein ``E`` vorkommt werden sie als Fliesskommazahl interpretiert::
      Probleme der Fliesskommazahlen umgangen werden.
 
    Dezimalzahlen:
-     Das Modul :py:mod:`decimal` kann zum präziserem - jedoch langsamerem -
+     Das Modul :py:mod:`decimal` kann zum präziseren - jedoch langsameren -
      Rechnen mit Dezimalzahlen benutzt werden.
 
   
@@ -76,8 +82,9 @@ Aufgaben
 
    >>> x // y
    
-2. Was ist der Rückgabewert vom unten stehenden Programm? Gehe es zuerst im Kopf
-   durch und probiere es anschliessend aus.
+2. Was ist der Rückgabewert des unten stehenden Programms? Gehe es zuerst im Kopf
+   durch und probiere es anschliessend aus, in dem du das Programm mit IDLE in
+   einer neuen Datei abspeicherst.
 
    .. code-block:: python
       :linenos:
@@ -95,29 +102,33 @@ Aufgaben
    erwartest du? Woran liegt es, dass du nicht das erwartete Ergebnis erhältst?
 
    >>> 0.1 + 0.1 + 0.1 - 0.3
+
    >>> 5 + 10**40 - 10**40
+
    >>> 5.0 + 10**40 - 10**40
 
-4. Angenommen du hast pro Semester vier Prüfungen in einem Fach. Nun sind drei
+4. Angenommen, du hast pro Semester vier Prüfungen in einem Fach. Nun sind drei
    dieser Prüfungen vorbei und du möchtest wissen, welche Note du in der vierten
    Prüfung haben musst, um deinen Wunschschnitt zu erreichen.
 
    Schreibe ein Programm, welches dir diese Frage beantwortet. Benutze vier
    Variablen um die drei Noten und den Wunsch-Durchschnitt abzuspeichern und
-   lasse dar Programm daraus den notwendigen Schnitt berechnen. Diesen kannst du
-   mit dem :py:func:`print()` Befehl ausgeben.
+   lasse das Programm daraus die letzte Note berechnen, welche du brauchst, um
+   den Wunsch-Durchschnitt zu erreichen. Diese kannst du mit dem
+   :py:func:`print()` Befehl ausgeben.
 
 
 Zeichenketten
 =============
 
 Beim Programmieren möchte man nicht nur mit Zahlen arbeiten. Man möchte auch
-Text abspeichern können um dem Benutzer etwas mitzuteilen oder um den Text zu
+Text abspeichern können, um dem Benutzer etwas mitzuteilen oder um den Text zu
 verarbeiten.
 
 Diesen Datentyp nennt man Zeichenketten oder auf englisch *String*. Er wird so
-genannt, weil wir nicht nur Text darin abspeichern können sondern beliebige
-Zeichen wie Satzzeichen, 
+genannt, weil wir nicht nur Text darin abspeichern können, sondern beliebige
+Zeichen wie Satzzeichen, Zahlen. Sogar Leerschläge, Tabulatoren und
+Zeilenumbrüche werden vom Computer als Zeichen behandelt.
 
 Wir haben zwei Möglichkeiten, in Python Zeichenketten darzustellen. So kann der
 String "Hallo Welt" wie folgt dargestellt und z.B. in einer Variable
@@ -152,7 +163,7 @@ Aufgaben
 1. Probiere die Operationen mit verschiedenen Strings im Befehlsprompt aus und
    notiere dir, was der entsprechende Befehlt tut. (Du musst für ``string_zwei``
    und ``string_eins`` einen String einsetzen oder zuerst in der Variable einen
-   String speichern.
+   String speichern.)
 
    >>> string_eins[3]
 
@@ -193,7 +204,7 @@ Aufgaben
    * Ergebnis wird mit :py:func:`print()` auf dem Bildschirm ausgegeben.
 
 
-3. Erkläre den Unterschied der folgenden Code-Zeilen? Was passiert hier? Kann
+3. Erkläre den Unterschied der folgenden Code-Zeilen. Was passiert hier? Kann
    Python nicht rechnen oder gibt es für dieses Verhalten eine Erklärung?
 
    >>> '23' + '7'
@@ -209,30 +220,30 @@ Listen
 ======
 
 Oft reichen Integer, Float und String Datentypen nicht aus, um die notwendigen
-Daten zu speichern. Oft wissen wir nämlich im Voraus nicht, wie viele Datensätze
+Daten zu speichern. Meist wissen wir nämlich im Voraus nicht, wie viele Datensätze
 gespeichert werden sollen. Wenn du dich an die Aufgabe zur Berechnung der Noten
 zurückerinnerst, sind wir davon ausgegangen, dass du im Semester vier grosse
 Prüfungen hast. Dies ist aber natürlich von Fach zu Fach verschieden, und es
 wäre vorteilhaft, wenn unser Programm eine im Voraus unbekannte Anzahl Noten
 speichern könnte.
 
-Python bietet für solche Problemstellungen verschiedene Datentypen, darunter
-*Listen*, *Dictionaries* und *Mengen (Sets)*.  Die einfachste Struktur sind die
-Listen, welche wir in diesem Kapitel genauer anschauen wollen.
+Python bietet für solche Problemstellungen verschiedene Datentypen. Die
+einfachste Struktur sind die Listen, welche wir in diesem Kapitel genauer
+anschauen wollen. [#]_
 
 In Python können in einer Liste beliebige Datentypen gemischt gespeichert
 werden - es können sogar Listen in Listen gespeichert werden. Eine Liste beginnt
-mit einer geöffneten, eckigen Klammer (``[``). Anschliessend werden die Elemente
+mit einer geöffneten, eckigen Klammer ``[``. Anschliessend werden die Elemente
 mit Kommas getrennt aufgelistet. Am Schluss wird die Liste wieder mit ``]``
-geschlossen. Listen dürfen sogar auch wieder Listen als Elemente enthalten.
+geschlossen. 
 
 Dies ist ein Beispiel einer Liste:
 
 >>> liste = [3, 'King Arthur', ['Rabbit', 3.4], 2.44]
 
 Auf die einzelnen Elemente der Liste kann anschliessend genau wie bei
-Zeichenketten über eckige Klammern zugegriffen werden. Die Elemente werden auch
-hier ab 0 nummeriert.
+Zeichenketten über die Nummer des Elements in eckigen Klammern zugegriffen
+werden. Die Elemente werden auch hier ab 0 nummeriert.
 
 >>> liste[0]
 3
@@ -266,13 +277,13 @@ speichern:
 >>> liste
 [11, 'King Arthur', ['Rabbit', 3.4], 2.44, 4]
 
-Wie bei anderen Datentypen haben Listen in Python viele nützliche Methoden. Wir
-haben die Methode ``sort()`` schon kennengelernt. In den Aufgaben unten findest
-du wiederum eine Aufgabe, bei der du solche Methoden ausprobieren kannst.
+Wie bei anderen Datentypen haben Listen in Python viele nützliche Methoden. In
+den Aufgaben unten findest du wiederum eine Aufgabe, bei der du solche Methoden
+ausprobieren kannst.
 
 Eine vollständige Auflistung findest du auch hier in der Dokumentation unter
 
-http://docs.python.org/3/tutorial/datastructures.html
+http://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 
 Aufgaben
 ~~~~~~~~
@@ -311,10 +322,10 @@ Aufgaben
       :linenos:
   
    Das Verhalten dieses Programms ist der Grund, warum wir uns in Python
-   Variablen nicht als Speicherplätze sondern als Namensschlider für Objekte
+   Variablen nicht als Speicherplätze sondern als Namensschilder für Objekte
    vorstellen. Kannst du dies erklären?
 
-3. In einer früheren Aufgabe hast du ein ein Programm erstellt, welches eine
+3. In einer früheren Aufgabe hast du ein Programm erstellt, welches eine
    feste Anzahl Noten einliest und anschliessend die notwendige Berechnung
    macht. Wir möchten dieses Programm nun anpassen, so dass die Noten in
    einer Liste gespeichert werden.
@@ -322,4 +333,14 @@ Aufgaben
    Dies hilft uns dann im nächsten Kapitel, dass wir eine beliebige, vom
    Benutzer wählbare, Anzahl Noten speichern können.
 
+   
+.. rubric:: Footnotes
+	  
+.. [#] Dies ist natürlich nur theoretisch korrekt. Der Arbeitspeicher deines
+       Computers ist beschränkt. Das heisst, wenn dieser voll ist, kann die Zahl
+       nicht mehr grösser werden. Aber um den Arbeitspreicher heutiger Rechner
+       zu füllen, braucht es unvorstellbar grosse Zahlen.
+
+.. [#] Weiter gibt es noch Key-Value Speicher, welche in Python "Dictionaries"
+       heissen. Oder auch Mengen und Tupel im mathematischen Sinn.
 

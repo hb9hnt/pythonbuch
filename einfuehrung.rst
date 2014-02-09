@@ -12,42 +12,38 @@ ist.
 
 Das erste Beispielprogramm, welches üblicherweise in einer Programmiersprache
 verfasst wird, ist ein sogenanntes "Hello World"-Programm, welches nichts
-anderes macht, als den Text "Hello World" auf dem Bildschirm ausgeben.
+anderes macht, als den Text "Hello World" auf dem Bildschirm auszugeben.
+
+In Python ist ein solches Programm im Verlgeich zu anderen Programmiersprachen
+sehr einfach umzusetzen. Es besteht nur aus einer Zeie:
 
 .. literalinclude:: code/HelloWorld.py
    :linenos:
 
 Beachte: Die Zahl ``1`` vor dem Programm gehört nicht zum Programm. Dies ist die
 Zeilennummer. In diesem Skript sind alle Programme mit Zeilennummern versehen.
-Zeilennummern sind im Programmieren wichtig um über Programme zu sprechen und
-Fehler zu finden. So werden zum Beispiel bei Fehlermeldungen oft die
-Zeilennummer angegeben, wo der Fehler passiert ist. Die hilft dir dann wiederum,
-den Fehler in deinem Programm zu finden.
-
-what : how
-  test hier bin
+Zeilennummern sind im Programmieren wichtig, um über Programme zu sprechen und
+Fehler zu finden. So wird zum Beispiel bei einer Fehlermeldung oft die
+Zeilennummer angegeben, wo der Fehler passiert ist. Die hilft dir dann, den
+Fehler in deinem Programm zu finden.
 
 
 IDLE - Ein Python IDE
 =====================
 
-Zum Programmieren reicht eigentlich ein Texteditor. Oft werden aber sogenannte
+Zum Programmieren reicht ein einfacher Texteditor. Oft werden aber sogenannte
 *IDEs (Integrated Development Environment)* benutzt. Diese besitzen viele
-hilfreiche Funktionen, welche ein Texteditor nicht hat. Unterstützt einem beim
-Programmieren mit den folgenden
+hilfreiche Funktionen, welche ein Texteditor nicht hat. Sie unterstützen einen
+beim Programmieren. Die folgenden Funktionen werden wir auch benutzen:
 
-
-* Die Syntax der Programmiersprache wird durch Farben hevorgehoben, um den Code
+* Die Syntax der Programmiersprache wird durch Farben hervorgehoben, um den Code
   leserlicher zu machen.
 * Das Programm kann direkt im IDE ausgeführt werden und muss nicht separat
-  ausgeführt werden.
+  aufgerufen werden.
 * Die Befehle werden automatisch vervollständigt, so dass man nicht die ganzen
-  Befehle tippen oder erinnern muss.
+  Befehle tippen oder erinnern muss. 
 
 Wir werden ein sehr einfaches IDE namens IDLE [#]_ benutzen.
-  
-.. [#] Oft erfinden Informatiker zweideutige Namen für ihre Programme. Schau
-       nach was "idle" auf englisch bedeutet.
 
 Falls du Python auf deinem eigenen Computer zu Hause installieren möchtest,
 findest du die nötigen Dateien hier:
@@ -68,9 +64,23 @@ Befehlsprompt. Dieser sieht ungefähr so aus::
    >>>
 
 Die Befehle im Befehlsprompt kannst du nicht als Programm speichern, du kannst
-sie nur einzeln hintereinander ausprobieren.  Nun wollen wir ein Programm
-erstellen, welches in einer Datei gespeichert ist. So kannst du es später auch
-wieder öffnen und verändern.
+sie nur einzeln hintereinander ausprobieren. In diesem Skript werden wir oft
+Beispiele benutzen, welche dafür gedacht sind, dass du sie direkt am
+Befehlspromt ausprobierst. Sie sind immer duch ``>>>`` markiert und haben keine
+Zeilennummern wie andere Programme. Du könntest also zum Beispiel
+
+>>> print("Hallo Welt!")
+
+oder
+
+>>> 2 + 3
+
+ausprobieren.
+
+Es macht aber oft keinen Sinn, die Befehle für ein Programm jedes mal am
+Befehlsprompt von neuem einzutippen. Wollen wir ein Programm mehrmals benutzen,
+macht es Sinn, es in einer Datei abzuspeichern. So kannst du es später auch
+wieder öffnen, verändern oder erneut ausführen.
 
 Im Menu von IDLE kannst du unter *File* - *New Window* ein neues Fenster
 öffnen. In dieses Fenster kannst du dein Programm schreiben, in dem du die
@@ -107,8 +117,7 @@ Aufgaben
       nicht weiter weisst, kannst du noch einmal den Anfang dieses Kapitels
       lesen.
    b) Das Programm kannst du mit der F5-Taste ausführen und testen. Wo wird der
-      Text "Hello World" ausgegeben'?
-   c) Wie sieht das Nassi-Shneiderman-Diagramm für dieses einfache Programm aus?
+      Text "Hello World" ausgegeben?
 
       
 3. a) Speichere das folgende Programm in einer Datei namens ``gui-beispiel.py``
@@ -119,4 +128,8 @@ Aufgaben
       :linenos:
 
 
-  
+.. rubric:: Footnotes
+	  
+.. [#] Oft erfinden Informatiker zweideutige Namen für ihre Programme. Schau
+       nach was "idle" auf englisch bedeutet.
+    

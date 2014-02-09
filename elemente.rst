@@ -7,9 +7,10 @@ Kommentare
 
 Kommentarzeilen in Programmen sind Zeilen, welche vom Computer nicht beachtet
 werden. In allen Programmiersprachen beginnen diese Zeilen mit einem bestimmten
-Zeichen. Zeilen, welche mit dem Zeichen ``#``, werden von Python als Kommentare
-betrachtet und ignoriert. Steht das Zeichen ``#`` nicht am Anfang einer Zeile,
-wird nur der Teil auf der Zeile ignoriert, welcher nach dem Zeichen kommt.
+Zeichen. Zeilen, welche mit dem Zeichen ``#`` beginnen, werden von Python als
+Kommentare betrachtet und ignoriert. Steht das Zeichen ``#`` nicht am Anfang
+einer Zeile, wird nur der Teil auf der Zeile ignoriert, welcher nach dem Zeichen
+kommt.
 
 **Beispiel:**
 
@@ -21,8 +22,8 @@ wird nur der Teil auf der Zeile ignoriert, welcher nach dem Zeichen kommt.
    print("Hallo!") # Die Zeile wird erst ab hier ignoriert.
 
 
-Nun fragt man sich was denn der Sinn hinter Zeilen ist, welche von Python gar
-nicht beachtet werden. Diese erfüllen sehr wichtige Funktionen
+Nun fragt man sich, was denn der Sinn hinter Zeilen ist, welche von Python gar
+nicht beachtet werden. Diese erfüllen sehr wichtige Funktionen:
 
 * Sie dienen dazu, dass andere Personen deine Programme einfacher lesen und
   verstehen können.
@@ -30,7 +31,7 @@ nicht beachtet werden. Diese erfüllen sehr wichtige Funktionen
 
 Wenn du zum Beispiel ein Programm schreiben möchtest, welches den Benutzer nach
 zwei Zahlen fragt, diese addiert und dann die Summe auf dem Bildschirm ausgibt,
-kannst du dieses Programm schon planen ohne eine Ahnung zu haben, wie die
+kannst du dieses Programm schon planen, ohne eine Ahnung zu haben, wie die
 einzelnen Schritte funktionieren.
 
 Dazu schreibst du das folgende Programm:
@@ -44,32 +45,33 @@ Dazu schreibst du das folgende Programm:
    ##                                       ##
    ###########################################
    
-   # Benutzer nach zwei Zahlen einlesen
+   # Benutzer nach zwei Zahlen fragen und diese speichern
    
    # Die erhaltenen Zahlen addieren
 
    # Die Summe auf dem Bildschirm ausgeben
 
-Wenn du Python dieses Programm ausführen lässt, passiert natürlich erst einmal
-gar nichts. Es besteht ja nur aus Zeilen, welche von Python nicht beachtet
-werden. Doch du hast nun eine ziemlich genaue Vorstellung, was du in welcher
+Wenn du Python dieses Programm ausführen lässt, passiert erst einmal gar
+nichts. Es besteht ja nur aus Zeilen, welche von Python nicht beachtet
+werden. Doch du hast nun eine ziemlich genaue Vorstellung, in welcher
 Reihenfolge du das Programm schreiben willst. Sobald du gelernt hast, wie man
 dies tut, kannst du die entsprechenden Blöcke zwischen die Kommentare
 programmieren.
 
-Beachte zum schreiben von Kommentaren folgende Regeln:
+Beachte zum Schreiben von Kommentaren folgende Regeln:
 
 * Schreibe am *Anfang* des Programms einen ausführlicheren Kommentar
   darüber, was das Programm tut.
 
 * Schreibe zu jedem *logisch zusammengehörenden* Block einen Kommentar, der
-  erklärt, was dieser Programmblock tut. Fällt dir keine passende beschreibung
+  erklärt, was dieser Programmblock tut. Fällt dir keine passende Beschreibung
   dazu ein, besteht die Möglichkeit, dass der Block nicht tut, was du möchtest
   oder er gar überflüssig ist.
 
-* Schreibe zu jeder *Variable* kurze Erklärung, wozu sie benutzt wird. Fällt dir
-  keine gute Erklärung ein brauchst du die entsprechende Variable vermutlich
-  nicht. (Was Variablen sind lernst du gleich im nächsten Abschnitt)
+* Schreibe zu jeder *Variable* eine kurze Erklärung, wozu sie benutzt
+  wird. Fällt dir keine gute Erklärung ein, brauchst du die entsprechende
+  Variable vermutlich nicht. (Was Variablen sind, lernst du gleich im nächsten
+  Abschnitt.)
 
 
 Variablen
@@ -80,11 +82,11 @@ Abspeichern oder Zwischenspeichern von Werten (Zahlen, Text, Listen usw.)
 benutzt.
 
 In Python stellt man sich Variablen jedoch besser als Namensschilder vor, welche
-man einem Objekt gibt. Wenn du zum Beispiel eine Zwischenergebnis einer Rechnung
+man einem Objekt gibt. Wenn du zum Beispiel ein Zwischenergebnis einer Rechnung
 hast, gibst du ihm einen Namen, welcher erklärt, um was es sich handelt. In
-diesem Fall ist vermutlich der Name ``Zwischenergebnis`` angebracht.
+diesem Fall ist vermutlich der Name ``zwischenergebnis`` angebracht.
 
-Die Anhängen eines Namensschildes wird in Python mit ``=`` ausgedrückt. Auf der
+Das Anhängen eines Namensschildes wird in Python mit "``=``" ausgedrückt. Auf der
 linken Seite des Gleichzeichens steht der neue Name und auf der rechten Seite
 das Objekt, welches den Namen erhalten soll. Probiere foldenden Code in der
 Python Konsole aus:
@@ -96,7 +98,7 @@ Python Konsole aus:
 Wie du siehst steht der Name ``zwischenergebnis`` jetzt für die Zahl
 ``3.1411222``.
 
-Die Wahl des Zeichens ``=`` ist aus Mathematischer Sicht ungünstig. In der
+Die Wahl des Zeichens ``=`` ist aus mathematischer Sicht ungünstig. In der
 Mathematik hat das Zeichen eine andere Bedeutung. Es sagt einfach, dass zwei
 Sachen gleich sind. Dabei spielt es aber keine Rolle, was links und was rechts
 des Gleichzeichens steht.
@@ -112,13 +114,13 @@ In Python macht es aber durchaus Sinn, die Befehlsabfolge
 >>> x
 5
 
-auszuführen. Es wir nämlich einfach der Wert der Variable um eins erhöht.
+auszuführen. Es wird nämlich einfach der Wert der Variable um eins erhöht.
 
 
 Aufgaben
 ========
 
-1. Im folgenden werden einige Zeilen Programmcode ausprobiert. Überlege dir, was
+1. Im Folgenden werden einige Zeilen Programmcode ausprobiert. Überlege dir, was
    nach dem Ausführen der Zeilen in den Variabeln ``erste_zahl``,
    ``zweite_zahl`` und ``temp`` gespeichert ist. Wozu dient der kurze
    Programm-Ausschnitt?
@@ -134,6 +136,6 @@ Aufgaben
       beliebige Zahl abspeicherst: ``zahl2``, ``Zahl2``, ``Zahl 2``, ``2zahl``,
       ``zahl.2``, ``Zahl_2``, ``2_Zahl``, ``_Zahl2``, ``2_Zahl``. Welche
       Variablennamen sind zulässig. 
-   b) Finde an Hand der obigen Beispielen und der Python-Dokumentation heraus,
+   b) Finde an Hand der obigen Beispiele und der Python-Dokumentation heraus,
       wie die Regeln für zulässige Variablennamen lauten.
 
