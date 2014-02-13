@@ -2,31 +2,31 @@
 Programmablauf-Steuerung
 ************************
 
-Wir wir in vorangehenden Kapitel gelernt haben, wird ein Programm zweilenweise
+Wir wir im vorangehenden Kapitel gelernt haben, wird ein Programm zweilenweise
 von oben nach unten abgearbeitet. Nun gibt es Fälle, wo wir einen Programmblock
-nur unter einer Bedingung ausführen wollen oder einige Anweisung mehrmals
-wiederholen.
+nur unter einer Bedingung ausführen oder einige Anweisung mehrmals
+wiederholen wollen.
 
 Es ist oft notwendig, einen ganzen Programmblock für jedes Element einer Liste
 zu wiederholen. Dies ist eine Form der Iteration. Wir sprechen von einer
 *Iteration über den Elementen einer Liste*, in Python wird dies mit einer
-:py:keyword:`for` Schleife gemacht [#]. Wir werden in diesem Zusammenhang auch
+:py:keyword:`for` Schleife gemacht. [#]_ Wir werden in diesem Zusammenhang auch
 lernen, wie in Python ein Programmblock gekennzeichnet wird.
 
-In anderen Fällen ist es notwendig, zu enschtscheiden, ob ein Programmblock
+In anderen Fällen ist es notwendig, zu entscheiden, ob ein Programmblock
 ausgeführt werden soll oder nicht. Hier handelt es sich um eine Selektion. Dafür
 müssen wir zuerst lernen, wie in Python Bedingungen formuliert
 werden. Anschliessend betrachten wir die :py:keyword:`if` Verzweigung, welche
 uns das bedingte Ausführen eines Programmblocks ermöglicht.
 
 Teilweise reicht diese sehr spezielle Form der Wiederholung nicht. Es kann auch
-notwendig sein, einen Block zu wiederholen, bis eine Bedinung nicht mehr wahr
+notwendig sein, einen Block zu wiederholen, bis eine Bedingung nicht mehr wahr
 ist. Dies nennen wir eine *bedingte Iteration*.
 
 Die :py:keyword:`for` Schleife
 ==============================
 
-Wie schon erwähnt ist die :py:keyword:`for` Schleife ist ein Sezialfall der
+Wie schon erwähnt ist, die :py:keyword:`for` Schleife ein Sezialfall der
 Iteration, nämlich eine Iteration über einer Liste. Man kann alle Probleme,
 welche mit :py:keyword:`for` gelöst werden können, auch mit der später
 besprochenen, allgemeineren :py:keyword:`while` Schleife lösen. Das Iterieren
@@ -46,11 +46,14 @@ ersten Anweisung nach der Schleife weitergefahren.
 
 In diesem Fall gehörten zwei Anweisungen zum Programmblock, welcher wiederholt
 wird, nämlich die Berechnung der Variable ``summe`` sowie die Ausgabe mit
-:py:func:`print()` Diese Anweisung wurde nach innen gerückt, um Python
+:py:func:`print()`. Diese Anweisung wurde nach innen gerückt, um Python
 mitzuteilen, dass sie zu der Schleife gehört.
 
-Wenn du in IDLE den Doppelpunkt am nach der Liste nicht vergisst, rückt IDLE die
-nächste Zeile automatisch ein. Andernfalls kannst du dies mit der TAB
+Wenn du in IDLE den Doppelpunkt am Ende der Zeile nach der Liste nicht vergisst,
+rückt IDLE die nächste Zeile automatisch ein. Andernfalls kannst du dies mit der
+<TAB>-Taste selbst machen. Achte darauf, dass wirklich alle Zeilen, welche zum
+gleichen Block gehören, gleich stark eingerückt sind. Schon nur ein Leerzeichen
+unterschied wird zu einer Fehlermeldung führen. [#]_
 
 Möchte man nun zum Beispiel etwas für die Zahlen von 1 bis 100 ausführen, wird
 es mühsam, die Liste von Hand wie oben einzutippen. Dafür gibt es in Python den
@@ -58,10 +61,11 @@ Befehl :py:func:`range()`. So enthält ``range(100)`` alle Zahlen von 0
 bis 99 (also insgesamt 100 Zahlen) und ``range(1, 101)`` alle Zahlen von 1
 bis 100.
 
-.. note:: Die letzte Zahl, welche dem :py:func:`range` Befehl übergeben wird aus
-	  dem Bereich ausgeschlossen. Will man alle Zahlen bis 100, muss man als
-	  Ende des Bereichs 101 angeben. Der Anfang ist jedoch enthalten. Gibt
-	  man 1 als Anfang an, so ist auch die 1 noch im Bereich enthalten.
+.. note:: Die letzte Zahl, welche wir dem :py:func:`range` Befehl übergeben,
+	  wird aus dem Bereich ausgeschlossen. Will man alle Zahlen bis 100,
+	  muss man als Ende des Bereichs 101 angeben. Der Anfang ist jedoch
+	  enthalten. Gibt man 1 als Anfang an, so ist auch die 1 noch im Bereich
+	  enthalten.
 
 Mit :py:func:`list` kannst du solche Bereiche in wirkliche Listen konvertieren,
 um an der Python-Konsole zu betrachten, wie sie aussehen:
@@ -85,8 +89,9 @@ Aufgaben
      animals = ["tiger", "mouse", "bird", "python", "elephant", "monkey"]
      # ...
 
-   Ergänze das Programm so, dass für jedes Tier aus der Liste ``animals``
-   den Satz "... ist ein Tier" auf dem Bildschirm ausgibt.
+   Ergänze das Programm so, dass für jedes Tier aus der Liste ``animals`` der
+   Satz "... ist ein Tier" in der Konsole ausgegeben wird. Benutze dafür die
+   :py:func:`print` Funktion.
 
 2. Mit :py:meth:`append` kannst du einer Liste ein Element hinten anfügen.
    Schreibe ein Programm, welches den Benutzer mit :py:func:`input` fünf mal
@@ -122,7 +127,7 @@ Aufgaben
      ...
 
 
-   *Zusatz*: Passe das Programm an, dass es einen Weihnachtsbaum aus Sternchen
+   *Zusatz*: Passe das Programm so an, dass es einen Weihnachtsbaum aus Sternchen
    zeichnet, dessen Höhe vom Benutzer gewählt werden kann.
 
 5. Passe das in einer früheren Aufgabe erweiterte Notenprogramm so an,dass
@@ -133,24 +138,36 @@ Die :py:keyword:`if` Verzweigung
 ================================
 
 Wie oben erklärt, kommt es vor, dass wir einen Programmblock nur unter einer
-Bedinung ausführen wollen. Falls die Bedingung nicht erfüllt ist, führen wir
+Bedingung ausführen wollen. Falls die Bedingung nicht erfüllt ist, führen wir
 entweder nichts oder einen anderen Block aus.
 
 .. literalinclude:: code/if-else.py
    :linenos:
-
+   :emphasize-lines: 3,5
+      
 Mit dem Wort :py:keyword:`if` wird eine Bedingung abgefragt. In diesem Fall ist
 dies die Frage, ob die als ``antwort`` gespeicherte Zeichenkette in der Liste
-enhtalten ist oder nicht. (Dieses Enthalten-Sein wird mit dem Wort
+enthalten ist oder nicht. (Dieses Enthalten-Sein wird mit dem Wort
 :py:keyword:`in` überprüft.)
 
 Der Programmblock, welcher nach dem Wort :py:keyword:`else` folgt, wird
-ausgeführt, falls die Bedingung oben falsch ist. Die wichtigen Zeilen sind also:
+ausgeführt, falls die Bedingung oben falsch ist. Die wichtigen Zeilen sind also
+die Zeilen
 
 .. literalinclude:: code/if-else.py
-   :linenos:
-   :emphasize-lines: 3,5
+   :language: python
+   :lines: 3
 
+und
+	   
+.. literalinclude:: code/if-else.py
+   :language: python
+   :lines: 5
+
+Achte auch hier darauf, wie die :py:func:`print` Befehle eingerückt wurden, um
+Python mitzuteilen, welche Zeilen zu den Blöcken gehören, welche nur bedingt
+ausgeführt werden sollen.
+	   
 Aufgaben
 ~~~~~~~~
 
@@ -163,14 +180,14 @@ Aufgaben
    iii) Mit dem Befehl :py:func:`print` wird entsprechend entweder "Die Zahl
 	ist grösser als 10" oder "Die Zahl ist kleiner als 10" ausgegeben.
 
-2. Ob ein Jahr im Gregorianischen Kalender ein Schaltjahr ist kann nach den
+2. Ob ein Jahr im Gregorianischen Kalender ein Schaltjahr ist, kann nach den
    folgenden Regeln entschieden werden:
 
    * Jahre sind Schaltjahre, falls ihre Jahrzahl durch 400 teilbar ist.
    * Jahre sind Schaltjahre, falls ihre Jahrzahl durch 4 teilbar ist, ausser die
      Jahrzahl ist durch 100 teilbar.  
 
-     Schreibe ein Programm, welches den Benutzer nach einer Jahreszahl fragt und
+*     Schreibe ein Programm, welches den Benutzer nach einer Jahreszahl fragt und
      anschliessend prüft, ob es sich um ein Schaltjahr handelt.
 
 Die :py:keyword:`while`-Schleife
@@ -184,7 +201,7 @@ Man könnte sich zum Beispiel vorstellen, dass wir in einem Programm dem Benutze
 eine Frage gestellt haben, welche mit "Ja" oder "Nein" zu beantworten ist. Wenn
 der Benutzer nicht entweder ``J`` für Ja oder ``N`` für Nein eingibt, ist die
 Eingabe ungültig und wir müssen nochmals nachfragen. Dies würde in Python wie
-folgt umgesetzt
+folgt umgesetzt:
 
 .. literalinclude:: code/while.py
    :linenos:
@@ -201,7 +218,7 @@ Aufgaben
    schreibt, ohne dafür eine :py:keyword:`for` Schleife zu verwenden.
 
 2. Aus dem Kapitel über die :py:keyword:`for` Schleife kennst du das folgende
-   Beispielprogramm
+   Beispielprogramm:
 
    .. literalinclude:: code/for.py
       :linenos:
@@ -211,11 +228,11 @@ Aufgaben
 
 3. Die Folge aus Fibonacci-Zahlen wird wie folgt gebildet:
 
-   * Das erste und das zweite Element sind 1.
+   * Das erste und das zweite Element sind 0 und 1.
    * Jedes folgende Element wird gebildet, in dem die letzten zwei Elemente
      addiert werden. 
 
-   Das heisst, die Folge sieht so aus: :math:`1, 1, 2, 3, 5, 8, 13, 21, 34,
+   Das heisst, die Folge sieht so aus: :math:`0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
    \cdots`
 
    Schreibe ein Programm, welches die Fibonacci-Zahlen bis zu einer vom Benutzer
@@ -233,3 +250,7 @@ Aufgaben
 .. [#] Falls du schon andere Programmiersprachen kennst, kann es sein, dass dich
        die :py:keyword:`for` Schleife in Python zuerst verwirrt. Sie ist nicht
        gleich aufgebaut wie etwa in C++ oder Java.
+   
+.. [#] Dies ist einer der Nachteile von Python. Andere Sprachen benutzen
+       geschweifte Klammern { und } um zusammengehörende Blöcke zu
+       kennzeichnen. 

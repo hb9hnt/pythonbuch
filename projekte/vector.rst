@@ -9,7 +9,7 @@ Vektorgeometrie mit Python
 
 Im folgenden Projekt ist das Ziel, möglichst viele Funktionen des im Unterricht
 benutzten grossen Taschenrechners durch Python zu ersetzen. Dabei wirst du dich
-hauptsächlich aber nicht ausschliesslich mit Vektorgeometrie beschäftigen. Ziel
+hauptsächlich (aber nicht ausschliesslich) mit Vektorgeometrie beschäftigen. Ziel
 ist es, die folgenden Fragen ausgiebig zu untersuchen:
 
 * Wie können Vektorrechnungen mit Python durchgeführt werden?
@@ -25,10 +25,10 @@ Aufträge
 
 1. Erstelle eine kurze Auflistung, welche erklärt, wie man mit Python die
    Funktionen eines einfachen Taschenrechners benutzen kann. Halte dich dabei an
-   die von dir oft benutzen Funktionen des TI-30.
+   die von dir oft benutzten Funktionen des TI-30.
 
 2. Erstelle eine Dokumentation, welche beschreibt, wie du die folgenden
-   Vektoroperationen mit Vektoren mit Hilfe von :py:mod:`numpy` durchführst:
+   Vektoroperationen mit Hilfe von :py:mod:`numpy` durchführst:
 
    * Zusammenhängen von Vektoren: Addition
    * Verlängern und verkürzen von Vektoren: Skalarmultiplikation
@@ -39,7 +39,7 @@ Aufträge
    und löse sie mit Python.
      
 4. Erstelle eine Dokumentation für das Erstellen von Funktionsgraphen und
-   vektorgeometrischen Sachverhalte mit Hilfe von :py:mod:`Matplotlib`
+   vektorgeometrischen Sachverhalten mit Hilfe von :py:mod:`Matplotlib`.
 
 Dokumente
 =========

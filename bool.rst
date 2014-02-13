@@ -2,9 +2,9 @@
 Boolsche Ausdrücke
 ******************
 
-Sowohl die :py:keyword:`if` Verzweigung sowie die :py:keyword:`while` Schleife
-beötigen eine Bedingung. Im folgenden Kapitel wollen wir etwas genauer
-analysieren, wie solche Bedingungen formuliert werden könne.
+Sowohl die :py:keyword:`if` Verzweigung als auch die :py:keyword:`while`
+Schleife benötigen eine Bedingung. Im folgenden Kapitel wollen wir etwas genauer
+analysieren, wie solche Bedingungen formuliert werden können.
     
 Ein *boolscher Ausdruck* ist ein Ausdruck, der entweder *wahr* oder
 *falsch* ist, in Python :py:data:`True` und :py:data:`False`
@@ -40,7 +40,7 @@ Boolsche Operatoren
 ===================
 
 Mit boolschen Operatoren können verschiedene boolsche Ausdrücke verkettet oder
-verneint werden. So können komplizierte Bedinungen wie "Ist A gleich B oder B
+verneint werden. So können komplizierte Bedingungen wie "Ist A gleich B oder B
 gleich D" formuliert werden. Es gibt die folgenden Operatoren:
 
 :py:keyword:`not`:
@@ -67,8 +67,8 @@ das Ergebnis falsch, wenn man dieselbe Frage mit einem *und* stellt:
 >>> 4 == 4 and 4 == 5
 False
 
-Denn 4 kann nicht gleich 4 und gleich 5 sein. Da 4 nicht gleich 5 ist, ist aber
-die Frage danach, ob *4 nicht gleich 4* sei wahr:
+Denn vier kann nicht gleich vier und gleich fünf sein. Da vier nicht gleich fünf
+ist, ist aber die Frage danach, ob *vier nicht gleich fünf* sei wahr:
 
 >>> not 4 == 5
 True
@@ -76,7 +76,7 @@ True
 Aufgaben
 ~~~~~~~~
 1. Entscheide für jede Codezeile, ob der Boolsche Ausdruck wahr oder falsch
-   ist, ohne das Beispiel in die Python-Konsole einzugeben. Prüfge deine Antwort
+   ist, ohne das Beispiel in die Python-Konsole einzugeben. Prüfe deine Antwort
    anschliessend mit der Konsole.
 
    >>> 3 > 4

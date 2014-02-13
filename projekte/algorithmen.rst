@@ -11,9 +11,9 @@ Falls du dich mehr für Algorithmen in der Informatik interessierst und
 eigentlich keine weiteren Funktionalitäten von Python kennen lernen möchtest,
 ist dies das Projekt für dich.
 
-In diesem Projekt wirst du nicht von Python benötigen, was wir nicht schon
-kennen. Die bisher bekannten Schleifen und Verzweigungen sowie Eingabe und
-Ausgabe über :py:func:`input` und :py:func:`print` reichen vollkommen aus.
+In diesem Projekt wirst du nur Python-Befehle und Strukturen benötigen, welche
+wir schon kennen. Die bisher bekannten Schleifen und Verzweigungen sowie Eingabe
+und Ausgabe über :py:func:`input` und :py:func:`print` reichen vollkommen aus.
 
 Dies bedeutet aber nicht, dass dieses Projekt einfacher ist als die
 anderen. Denn hier geht es um das eigentliche Handwerk von Programmierern. Ein
@@ -42,12 +42,14 @@ Aufträge
    Benutze diese Aufgaben, um herauszufinden, wie `SPOJ`_ deine Lösung
    automatisch korrigieren kann. 
      
-2. Auf der Seite der schweizer Informatik-Olympiade `SOI`_ gibt es ein Archiv, in
-   welchem alle Aufgaben der letzten Jahre gesammelt sind. Such dir dort oder auf
-   `SPOJ`_ weitere Aufgaben aus zum lösen. Löse möglichst viele spannende Aufgaben.
+2. Auf der Seite der schweizer Informatik-Olympiade `SOI`_ gibt es ein Archiv,
+   in welchem alle Aufgaben der letzten Jahre gesammelt sind. Auch `Projekt
+   Euler`_ bietet viele spannende Aufgaben. Such dir dort oder auf `SPOJ`_
+   weitere Aufgaben zum Lösen aus. Löse möglichst viele spannende Aufgaben.
 
 .. _SPOJ: http://www.spoj.com/
 .. _SOI: http://www.soi.ch/
+.. _Projekt Euler: https://projecteuler.net/
 
 Dokumente
 =========

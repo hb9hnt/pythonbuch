@@ -11,11 +11,11 @@ Dieses Projekt hat zum Ziel, ein Programm mit einer einfachen graphischen
 Benutzeroberfläche zu erstellen. Dazu wirst du die Bibliothek :py:mod:`tkinter`
 verwenden, welche standartmässig bei Python installiert ist.
 
-Sie bietet Funktionen zum Fenster, Schaltflächen und Eingabeelemente zu
+Sie bietet Funktionen um Fenster, Schaltflächen und Eingabeelemente zu
 erstellen. Das Ziel des Projekts ist es, das Notenberechnungsprogramm aus der
-Einführung mit einer graphischen Benutzeroberfläche zu versehen. Weiter wirst du
-auch das Canvas-Element aus :py:mod:`tkinter` benutzen, um Zeichnungen und
-Grafiken zu erstellen.
+Einführung mit einer graphischen Benutzeroberfläche zu versehen. Falls noch Zeit
+dafür bleibt, wirst du auch das Canvas-Element aus :py:mod:`tkinter` benutzen,
+um Zeichnungen und Grafiken zu erstellen.
 
 		
 Aufträge
@@ -23,13 +23,13 @@ Aufträge
 
 1. Suche im Internet ein Tutorial zu tkinter, welches dir verständlich
    scheint. Arbeite das Tutorial durch und achte darauf, dass du die
-   Programmbeispiele auch selbst umsetzt und versuchst sie zu verstehen.
+   Programmbeispiele auch selbst umsetzt und versuchst, sie zu verstehen.
 
 2. Erstelle eine Dokumentation der wichtigsten Elemente und erstelle einfache
-   Beispiele für ihre Verwendung. Verweise auf die :py:mod:`tkinter` für die
-   Erklärung der genauen Benutzungsweise.
+   Beispiele für ihre Verwendung. Verweise auf die :py:mod:`tkinter`
+   Dokumentation für die Erklärung der genauen Benutzungsweise.
 
-3. Erstelle eine graphsiche Benutzeroberfläche für das Notenprogramm, so dass du
+3. Erstelle eine graphische Benutzeroberfläche für das Notenprogramm, so dass du
    in einem Fenster die Noten eingeben kannst und auch die Ausgabe in diesem
    Fenster erscheint. Du kannst frei wählen, wie du die Oberfläche gestaltest.
      
@@ -48,8 +48,8 @@ Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 * Dokumentation zur Benutzung von :py:mod:`tkinter` mit Beispielen. 
 * Programm mit graphischer Benutzeroberfläche für die Berechnung der letzten
   Note im Semester für einen vorgegebenen Notenschnitt.
-* Programme zur Erstellung von Grafiken auf einem Canvas-Element
-
+* Programme zur Erstellung von Grafiken auf einem Canvas-Element (Falls die Zeit
+  ausreichte, um diesen Punkt zu bearbeiten.)
 
 Dokumentations-Links
 ====================

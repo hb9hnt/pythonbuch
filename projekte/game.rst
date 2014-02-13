@@ -10,7 +10,7 @@ Gamedesign mit :py:mod:`pygame`
 In diesem Projekt geht es darum, selbst ein Game basierend auf der
 :py:mod:`pygame` Bibliothek zu erstellen. Dazu muss zuerst weitere Kenntnis der
 Python-Programmiersprache erarbeitet werden. Am Ende der Projekts sollten die
-folgenden Fragen ausführlich beantwortet werden können.
+folgenden Fragen ausführlich beantwortet werden können:
 
 * Was sind die Grundfunktionen der :py:mod:`pygame` Library?
 
@@ -27,11 +27,11 @@ Aufträge
    halte deine Wahl im Arbeitsjournal fest.
 
 2. Arbeite das Tutorial durch und achte darauf, dass du die Aufgaben und
-   Beispiele auch in Python durcharbeitest. Erstelle dir parallel eine
+   Beispiele auch in Python durcharbeitest. Erstelle dir parallel dazu eine
    Dokumentation der wichtigsten Funktionen von :py:mod:`pygame`.
 
-3. Nutze dein erlangtes Wissen, um selbst ein Spiel zu entwickeln. Diese darf
-   auch eine erweiterung eines Spiels aus einem Tutorial sein. Es sollte aber
+3. Nutze dein erlangtes Wissen, um selbst ein Spiel zu entwickeln. Dies darf
+   auch eine Erweiterung eines Spiels aus einem Tutorial sein. Es sollte aber
    eigenständige Ideen enthalten.
 
 Dokumente
@@ -41,7 +41,7 @@ Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 
 * Arbeitsjournal
 * Beispielprogramme aus einem Tutorial.
-* Dokumentation der wichtigsten Funktion von :py:mod:`pygame`.
+* Dokumentation der wichtigsten Funktionen von :py:mod:`pygame`.
 * Selbständig programmiertes Spiel, welches eigene Spielideen umsetzt.
 
 
