@@ -1,0 +1,9 @@
+* Nächste Ziele
+** TODO Kapitel: Funktionen
+** TODO Kapitel: Objekte
+** TODO Kapitel: Lösungen
+** TODO Kapitel: Impressum
+** TODO Lizenz auf CC ändern
+** TODO Autoren anpassen
+* Future plans
+** TODO Interaktive Beispiele
