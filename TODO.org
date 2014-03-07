@@ -5,5 +5,6 @@
 ** TODO Kapitel: Impressum
 ** TODO Lizenz auf CC ändern
 ** TODO Autoren anpassen
+** TODO Fehler korrigieren
 * Future plans
 ** TODO Interaktive Beispiele
