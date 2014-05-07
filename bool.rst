@@ -44,7 +44,7 @@ verneint werden. So können komplizierte Bedingungen wie "Ist A gleich B oder B
 gleich D" formuliert werden. Es gibt die folgenden Operatoren:
 
 :py:keyword:`not`:
-    Kehrt den Wahrheitswert eines Ausdrucks um. Der Operator macht das selbe wie
+    Kehrt den Wahrheitswert eines Ausdrucks um. Der Operator macht dasselbe wie
     das deutsche Wort *nicht*.
 
 :py:keyword:`and`:

@@ -9,7 +9,7 @@ wiederholen wollen.
 
 Es ist oft notwendig, einen ganzen Programmblock für jedes Element einer Liste
 zu wiederholen. Dies ist eine Form der Iteration. Wir sprechen von einer
-*Iteration über den Elementen einer Liste*, in Python wird dies mit einer
+*Iteration über den Elementen einer Liste*. In Python wird dies mit einer
 :py:keyword:`for` Schleife gemacht. [#]_ Wir werden in diesem Zusammenhang auch
 lernen, wie in Python ein Programmblock gekennzeichnet wird.
 
@@ -26,7 +26,7 @@ ist. Dies nennen wir eine *bedingte Iteration*.
 Die :py:keyword:`for` Schleife
 ==============================
 
-Wie schon erwähnt ist, die :py:keyword:`for` Schleife ein Sezialfall der
+Wie schon erwähnt, ist die :py:keyword:`for` Schleife ein Sezialfall der
 Iteration, nämlich eine Iteration über einer Liste. Man kann alle Probleme,
 welche mit :py:keyword:`for` gelöst werden können, auch mit der später
 besprochenen, allgemeineren :py:keyword:`while` Schleife lösen. Das Iterieren

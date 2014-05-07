@@ -60,8 +60,8 @@ programmieren.
 
 Beachte zum Schreiben von Kommentaren folgende Regeln:
 
-* Schreibe am *Anfang* des Programms einen ausführlicheren Kommentar
-  darüber, was das Programm tut.
+* Schreibe am *Anfang* des Programms einen ausführlicheren Kommentar, was das 
+  Programm tut.
 
 * Schreibe zu jedem *logisch zusammengehörenden* Block einen Kommentar, der
   erklärt, was dieser Programmblock tut. Fällt dir keine passende Beschreibung
@@ -93,7 +93,7 @@ Python Konsole aus:
 
 >>> zwischenergebnis = 3.14111222
 >>> zwischenergebnis
-3.13111222
+3.14111222
 
 Wie du siehst steht der Name ``zwischenergebnis`` jetzt für die Zahl
 ``3.1411222``.

@@ -13,7 +13,7 @@ Dezimalstellen rechnen. Diese werden wir aber hier nicht genauer anschauen.
 
 Integer : Ganze Zahlen
   Ganze Zahlen sind sowohl negative als auch positive Zahlen ohne
-  Nachkommastellen. Mit diesen kann Python sehr gut umgehen. Im gegensatz zu
+  Nachkommastellen. Mit diesen kann Python sehr gut umgehen. Im Gegensatz zu
   anderen Programmiersprachen sind sie in der Grösse nicht eingeschränkt. Ihr
   könnt beliebig grosse ganze Zahlen speichern. [#]_
 
@@ -130,7 +130,7 @@ genannt, weil wir nicht nur Text darin abspeichern können, sondern beliebige
 Zeichen wie Satzzeichen, Zahlen. Sogar Leerschläge, Tabulatoren und
 Zeilenumbrüche werden vom Computer als Zeichen behandelt.
 
-Wir haben zwei Möglichkeiten, in Python Zeichenketten darzustellen. So kann der
+Wir haben zwei Möglichkeiten Zeichenketten in Python darzustellen. So kann der
 String "Hallo Welt" wie folgt dargestellt und z.B. in einer Variable
 abgespeichert werden::
 
@@ -184,8 +184,8 @@ Aufgaben
 
 
 2. Benutzereingaben: Das folgende Programm liest eine Eingabe vom Benutzer ein
-   und speichert dies in der Variable ``eingabe``. Der Befehl :py:func:`input()` liest
-   immer Zeichenketten -- nicht etwa Zahlen -- ein.
+   und speichert dies in der Variable ``eingabe``. Der Befehl :py:func:`input()`
+   liest immer Zeichenketten -- nicht etwa Zahlen -- ein.
 
    .. code-block:: python
       :linenos:
@@ -243,7 +243,7 @@ Dies ist ein Beispiel einer Liste:
 
 Auf die einzelnen Elemente der Liste kann anschliessend genau wie bei
 Zeichenketten über die Nummer des Elements in eckigen Klammern zugegriffen
-werden. Die Elemente werden auch hier ab 0 nummeriert.
+werden. Die Elemente werden auch hier, wie bei den Strings, ab 0 nummeriert.
 
 >>> liste[0]
 3
@@ -304,9 +304,9 @@ Aufgaben
 
    >>> liste.count(3.14)
 
-   >>> liste.index(3.14)} 
+   >>> liste.index(3.14) 
 
-   >>> liste.remove(3.14)}
+   >>> liste.remove(3.14)
 
    >>> liste.pop()
 
