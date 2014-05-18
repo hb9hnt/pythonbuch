@@ -17,6 +17,7 @@ Einführung ins Programmieren mit Python
    datentypen
    kontrollstrukturen
    bool
+   funktion
    hilfsmittel
    projekte/index.rst
 

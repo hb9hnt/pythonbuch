@@ -160,26 +160,30 @@ Aufgaben
 4. Welche der folgenden Definitionen sind zulässig? Welche nicht und wieso?
    Überlege zuerst und tippe es danach zur Kontrolle ein.
 
-   a. .. code-block:: python
-         :linenos:
+   Definition 1:
+      
+   .. code-block:: python
          
          def print(zahl):
 	     print("Hallo Welt")
 
-   b. .. code-block:: python
-         :linenos:
+   Definition 2:
+
+   .. code-block:: python
          
          def print1(zahl)
 	     print("Hallo Welt")
 		   
-   c. .. code-block:: python
-         :linenos:
+   Definition 3:
+
+   .. code-block:: python
          
          def print1(zahl):
 	     print("Hallo Welt")
 
-   d. .. code-block:: python
-         :linenos:
+   Definition 4:
+
+   .. code-block:: python
          
          def print(zahl):
 	 print("Hallo Welt")
