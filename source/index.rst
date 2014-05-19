@@ -18,6 +18,7 @@ Einführung ins Programmieren mit Python
    kontrollstrukturen
    bool
    funktion
+   objekte
    hilfsmittel
    projekte/index.rst
 
