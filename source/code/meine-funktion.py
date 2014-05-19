@@ -4,4 +4,3 @@ def meine_funktion(a,b):
         a = b
         b = t
     return a
-    

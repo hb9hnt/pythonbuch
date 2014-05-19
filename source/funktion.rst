@@ -64,7 +64,7 @@ Aufgaben
 2. Schreibe eine Funktion :py:func:`summe()`, welche für die Eingabe einer 
    Zahl :math:`n` folgendes Resultat ausgibt:
 
-   .. math:: summe := 1 + 2 + \dots + n
+   .. math:: \text{summe} := 1 + 2 + \dots + n
    
    Es sollte dann z.B. folgendermassen aussehen:
 
@@ -114,9 +114,17 @@ verwendet werden.
 10
 
 .. note:: Eine Funktion mit einem :py:keyword:`return` Statement kommt dem 
-	  Konzept einer Funktion im Sinne der Mathematik sehr nahe.
-	  .. math:: y = f(x)
+	  Konzept einer Funktion im Sinne der Mathematik sehr nahe:
+	  
+	  .. math::  y = f(x) 
 
+	  wobei 
+
+	  .. math::  \begin{array}{ll}  f: &\text{Funktionsname}\\
+					x: &\text{Argument}\\
+					y: &\text{Rückgabewert}
+					\end{array}
+ 
   
 Mehr zum Thema Funktionen findest du in der Dokumentation unter
 
@@ -145,7 +153,7 @@ Aufgaben
    könnte.
    
    .. literalinclude:: code/meine-funktion.py
-   :linenos:
+      :linenos:
 
    Hast du eine Vermutung? Teste sie an einigen Beispielen:
 
@@ -198,7 +206,7 @@ Aufgaben
       in die entsprechende Dezimalzahl um. 
 
    c. Teste deine beiden Funktionen indem du sie mit den von Python
-      zur Verfügung gestellten Funktionen vergleichst:
+      zur Verfügung gestellten Funktionen vergleichst (``bin()`` und ``int()``):
       
       .. code-block:: python
 
