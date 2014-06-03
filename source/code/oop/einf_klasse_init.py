@@ -29,3 +29,5 @@ class Person:
         # und in die Instanzvariable speichern
         self.gewicht = str(neues_gew) + " kg"
         print("Neues Gewicht:",self.gewicht)
+
+        return ("Neues Gewicht: " + self.gewicht)

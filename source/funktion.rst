@@ -106,7 +106,8 @@ eine Weiterverarbeitung zurückgeben, so kann dies mit der Anweisung
    :linenos:
    :emphasize-lines: 2
 
-Nun kann das Ergebnis der Funktion :py:func:`flaeche_rechteck()` weiter 
+Nun kann das Ergebnis der Funktion :py:func:`flaeche_rechteck()` in 
+einer Variable gespeichert und weiter 
 verwendet werden.
 
 >>> a = flaeche_rechteck(2,5)
@@ -172,28 +173,28 @@ Aufgaben
       
    .. code-block:: python
          
-         def print(zahl):
+         def print():
 	     print("Hallo Welt")
 
    Definition 2:
 
    .. code-block:: python
          
-         def print1(zahl)
+         def print1()
 	     print("Hallo Welt")
 		   
    Definition 3:
 
    .. code-block:: python
          
-         def print1(zahl):
+         def print1():
 	     print("Hallo Welt")
 
    Definition 4:
 
    .. code-block:: python
          
-         def print(zahl):
+         def print1():
 	 print("Hallo Welt")
 
 
@@ -217,6 +218,123 @@ Aufgaben
          # Konvertiert eine Binärzahl in eine Dezimalzahl
          >>> int('11000',2)
 	 24
+
+Mehrere Rückgabewerte
+=====================
+
+Bis jetzt haben unsere Funktionen immer nur einen Wert zurückgeben.
+Mit Python ist es überhaupt kein Problem, 
+auch Funktionen zu definieren, welche mehr als einen Wert zurückgeben.
+Hier ein Beispiel dazu:
+
+.. literalinclude:: code/funktionen-rueckgabewerte.py
+   :linenos:
+
+Dieses Programm gibt die Summe und das Produkt zweier 
+Zahlen (hier ``zahl1`` und ``zahl2``) zurück.
+Folgende  Ausgabe erhalten wir auf der Konsole:
+
+.. code-block:: python
+
+	(14, 40) 14 40
+	14 40
+
+Wir sehen bei der Zuweisung in Zeile 4, dass 
+die mehreren Rückgabewerte als Tupel der einen Variable ``a`` 
+übergeben werden. Man kann aber auch jeden Rückgabewert einer einzigen Variablen 
+zuweisen, so wie es in Zeile 7 gemacht wurde.
+
+
+``lambda``-Operator
+===================
+
+Der ``lambda``-Operator bietet eine Möglichkeit *anonyme Funktionen*, 
+also Funktionen ohne Namen, zu schreiben und zu benutzen. 
+Anstelle des Keywords :py:keyword:`def` gebrauchen wir das Keyword
+:py:keyword:`lambda`. Sie können, wie *normal definierte Funktionen*,
+eine beliebe Anzahl von Parametern haben, führen Befehle aus und können 
+einen Rückgabewert liefern. 
+Die Syntax sieht folgendermassen aus:
+
+	.. code-block:: python
+
+		lambda [arg1 [,arg2,.....argn]]:expression
+
+Das nächste Beispiel zeigt den Unterschied zwischen einer *normalen Funktion* 
+und einer *lambda Funktion*:
+
+>>> def f(x): return x**2
+>>> print(f(8))
+64
+>>> g = lambda x: x**2 
+>>> print(g(8))
+64
+
+Wir sehen, dass die beiden Funktionen ``f`` und ``g`` genau das gleiche
+ausführen und auf die gleiche Weise benutzt werden können.
+Sie unterscheiden sich hier lediglich in der Definition.
+Wie aber der Name (*anonyme Funktionen*) schon sagt, 
+müssen wir einem ``lambda``-Ausdruck
+keinen Namen zuweisen, was wir am folgenden Beispiel gut sehen:
+
+>>> (lambda x: x**2)(8)
+64
+
+Der ``lambda``-Operator kann dann gut gebraucht werden,
+wenn beispielsweise eine Funktion als Argument einer weiteren Funktion
+übergeben werden soll
+und man diese erste Funktion nachher nicht mehr braucht.
+Schauen wir dazu folgendes Beispiel an:
+
+	.. literalinclude:: code/lambda_fkt.py
+    	  :linenos:
+
+Diese Programm liefert dann folgenden Output:
+
+	.. code-block:: python
+
+		[42, 43, 44, 45, 46]
+
+Nehmen wir an, dass die Funktion :py:func:`temp_funktion` 
+in einem späteren Programmverlauf nie mehr gebraucht wird.
+So können wir uns die Namensvergabe sparen und ändern denn Code 
+folgendermassen:
+
+	.. literalinclude:: code/lambda_fkt2.py
+	    	  :linenos:
+
+Dieses Programm hat den gleichen Output wie das erste, 
+jedoch mussten wir nicht eine Funktion definieren, welche wir 
+später sowieso nicht gebraucht hätten.
+
+Aufgaben
+~~~~~~~~
+
+1. Welche der folgenden Eingaben sind zulässig? Welche nicht und wieso?
+   Wie müsste es richtig sein?
+   Überlege zuerst und tippe es danach zur Kontrolle ein.
+
+	>>> a = lambda arg1, arg2: arg1 + arg2
+	>>> print(a(0,2))
+
+	>>> a = (lambda arg1, arg2: arg1 + arg2)(0,2)
+	>>> print(a(0,2))
+
+	>>> a = lambda arg1, arg2: arg1 + arg2
+	>>> print(a(2+2))
+
+	>>> a = lambda arg1, arg2: arg1 + arg2
+	>>> b = lambda x: a(2, x)
+	>>> print(b(3,4))
+
+2. Gegeben ist folgendes Programm:
+
+	.. literalinclude:: code/lambda_aufg.py
+	    	  :linenos:
+
+   Schreibe das Programm mit dem ``lambda``-Operator so um, dass
+   die Zeilen 1-12 weggelassen werden können, jedoch der gleiche Output
+   produziert wird.
 
 .. rubric:: Footnotes
 	  

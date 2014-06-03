@@ -83,6 +83,61 @@ zur Verwirrung führt.
           welche nicht ein Objekt, sondern die Klasse selbst beschreibt.
 
 
+Aufgaben
+~~~~~~~~
+1. Wir haben folgendes Programm gegeben:
+
+   .. code-block:: python
+      :linenos:
+
+      class Person:
+    	  pass
+
+      my_person1 = Person()
+      my_person2 = Person()
+      my_person1.vorname = "Patrick"
+      my_person2.name = "vonBerg"
+      
+   Erkläre warum folgende Eingaben nicht funktionieren.
+
+   >>> print(my_person1.name)
+   >>> print(my_person2.vorname) 
+
+
+2. Erstelle eine Instanz der Klasse :py:class:`Person` und nenne das Objekt
+   ``dummy``. Erstelle für ``dummy`` folgende Instanzvariablen: 
+   ``name = "Müller"``, ``vorname = "Jürg"``.
+   Überlege zuerst was bei den folgenden Eingaben herauskommen sollte und 
+   kontrolliere es dann, indem du es laufen lässt.
+   Interpretiere die Resultate.
+
+   .. code-block:: python
+      :linenos:
+      
+      print(dummy.vorname, dummy.name)
+      x = dummy
+      x.vorname = "Giovanni"
+      print(dummy.vorname, dummy.name)
+
+3. Erkläre was im folgenden Programm gemacht wird:
+
+   .. code-block:: python
+      :linenos:
+      :emphasize-lines: 11
+
+      class Person:
+      	pass
+
+      class Auto:
+	pass
+
+      dummy = Person()
+      my_car = Auto()
+      my_car.marke = "Seat"
+      dummy.car = my_car
+      print(dummy.car.marke)
+
+
 Die :py:func:`__init__()` Methode
 =================================
 Von oben ist eigentlich klar, dass es vielleicht keinen Sinn macht,
@@ -118,7 +173,7 @@ Die Person ``p2`` wurde instanziert und die geforderten Instanzvariablen
 sind garantiert belegt.
 
 .. note:: Das erste Argument ``self`` bei :py:func:`__init__()`
-          steht als Vertreter für das Objekt.
+          ist eine Referenz auf das Objekt.
 	  Auf diese Weise ist z.B. die Zuordnung in der Klasse :py:class:`Person` 
 		
 	  .. literalinclude:: code/oop/einf_klasse_init.py
@@ -155,11 +210,14 @@ realisiert werden:
    	   :linenos:
 	   :lines: 1-18
 
+Wir haben also innerhalb der Klasse eine Funktion definiert. Das Argument 
+``self`` in der Klammer ist, wie schon bei der Funktion :py:func:`__init__()`,
+eine Referenz auf das Objekt, auf welche diese Funktion angewendet wird. [#]_ 
 
-Mit dieser Methode bekommen wir, ohne viel Tipparbeit, gleich die Informationen
+Auf diese Weise bekommen wir, ohne viel Tipparbeit, gleich die Informationen
 der jeweiligen Personen, indem sie sich selber vorstellt.
 Wenden wir die Methode :py:func:`vorstellen` auf die beiden Personen 
-``p1`` und ``p2`` von oben an:
+``p1`` und ``p2`` von oben an, so erhalten wir:
 
 
 >>> p1.vorstellen()
@@ -219,11 +277,229 @@ nach dem Aufruf der Funktion :py:func:`abnehmen`, verändert wurde.
 	  und somit die Funktion :py:func:`vorstellen` als Integer nicht kennt.
 
 
+*Public-, Protected- und Private* Instanzvariablen
+==================================================
+
+Manchmal macht es Sinn, dass gewisse Instanzvariablen nicht ohne Überprüfung
+einfach geändert werden können oder sie erst gar nicht gegen Aussen sichtbar
+sein sollten. Nehmen wir als Beispiel folgende Eingabe:
+
+>>> p1.gewicht = "-20 kg"
+
+``p1`` ist eine Instanz der Klasse :py:class:`Person`, wie wir es oben schon
+definiert haben. Hier wurde nun dem Gewicht der Person ``p1`` einen
+negativen Wert zugeordnet, was in der Realität gar nicht vorkommen kann.
+
+Möchte man verhindern, dass die Instanzvariablen einer Klasse von aussen
+ohne weiteres geändert oder gar gelesen werden, gibt es zwei Möglichkeiten, 
+die Python einem zur Verfügung stellt. 
+
+	1) Jedes Attribut, welches mit genau einem Unterstrich beginnt, 
+	   ist **protected**. 
+	   In diesem Fall kann man zwar das Attribut immer noch lesen 
+ 	   und verändern, aber durch den Unterstrich hat man klar gemacht, 
+	   dass dies *verboten* oder *nicht erwünscht* ist. 
+
+	2) Zwingend wird die Aufforderung erst, wenn der Name eines Attributes 
+	   mit zwei Unterstrichen beginnt. 
+	   Ein solches Attribut wird **private** genannt und man kann ausserhalb
+	   der Klasse nicht darauf zugreifen oder es verändern.
+
+Dazu sehen wir uns folgende Beispielklasse an: [#]_
+
+	.. literalinclude:: code/oop/private_protected.py
+   	   :linenos:
+
+Wir haben hier also folgende Situation:
+
++------------+--------------+----------------------------------------+ 
+| Name       | Bezeichnung  | Bedeutung 		             | 
++============+==============+========================================+ 
+| pub	     | *public*     | Kann von Aussen gelesen und geändert   |
+|            |		    | werden.   			     |
++------------+--------------+----------------------------------------+ 
+| _prot	     | *protected*  | Kann von Aussen gelesen und geändert   |
+|            |		    | werden, jedoch sollte es nicht gemacht |
+|	     |		    | werden (Empfehlung vom Entwickler).    |
++------------+--------------+----------------------------------------+ 
+| __priv     | *private*    | Kann von Aussen weder gelesen noch     |
+|            |		    | geändert werden.                       |
++------------+--------------+----------------------------------------+ 
+
+Im folgenden Code-Snippet sehen wir sehr gut, wie sich die Entsprechenden 
+Instanzvariablen verhalten:
+
+>>> x = A()
+>>> x.pub 
+'Ich bin öffentlich'
+>>> x.pub = "Man kann meinen Wert ändern und das ist gut so"
+>>> x.pub 
+'Man kann meinen Wert ändern und das ist gut so' 
+>>> x._prot
+'Ich bin protected'
+>>> x._prot = "Man Wert kann aber sollte nicht von außen geändert werden!"
+>>> x._prot
+'Man Wert kann aber sollte nicht von außen geändert werden!'
+>>> x.__priv
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'A' object has no attribute '__priv'
+
+Wir sehen also, dass wir auf die Instanzvarible ``__priv`` des Objekts ``x``
+keinen Zugriff erhalten.
+
+*Setter-* und *Getter*-Methoden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Nun kann man sich fragen, wozu solche **private** Instanzvariablen gut sind.
+Sehen wir uns dazu die folgende Klasse an:
+
+	.. literalinclude:: code/oop/setter_getter.py
+   	   :linenos:
+	   :lines: 1-4
+
+Wir wollen nicht, dass ein Benutzer ein Motorrad mit negativem Hubraum
+modelliert. Aus diesem Grund haben wir hier die Instanzvariable ``__hubraum``
+**private** gesetzt. Der Wert kann nun unter Beobachtung mit einer 
+sogenannten :py:func:`setter` Methode geändert werden:
+
+	.. literalinclude:: code/oop/setter_getter.py
+	   :linenos:
+	   :lines: 1-12
+	   :emphasize-lines: 6-12
+	   
+Auf diese Weise haben wir in Zeile 6 die Kontrolle, 
+dass ``__hubraum`` keine negativen
+Werte annehmen kann. Um nun noch den Wert denoch abfragen zu können, 
+erstellen wir zusätzlich noch eine :py:func:`getter` Methode. Dies kann dann 
+so aussehen:
+
+	.. literalinclude:: code/oop/setter_getter.py
+   	   :linenos:
+	   :emphasize-lines: 14, 15
+
+In der Python-Konsole können wir die Klasse nun testen,
+was dann wie folgt aussieht:
+
+>>> toeff = Motorrad("Yamaha", 600)
+>>> toeff.get_hubraum()
+600
+>>> toeff.set_hubraum(-300)
+Error: Negativer Wert für den Hubraum! Der Wert wurde nicht geändert
+>>> toeff.get_hubraum()
+600
+>>> toeff.set_hubraum(300)
+Hubraum wurde geändert.
+>>> toeff.get_hubraum()
+300
+
+
+Aufgaben
+========
+
+1. Überlege dir, was die Python-Konsole ausgibt, wenn folgende Programme 
+   ausgeführt werden. Erkläre weshalb.
+   
+   Klasse 1:
+
+   .. literalinclude:: code/oop/velo.py
+      :linenos:
+
+   Klasse 2:
+
+   .. literalinclude:: code/oop/velo2.py
+      :linenos:
+
+
+2. In dieser Aufgabe wird eine Mitarbeiterdatenbank irgendeiner Firma 
+   simuliert.
+
+   a) Schreibe eine Klasse :py:class:`Mitarbeiter` mit den drei Instanzvariablen 
+      ``vorname``, ``nachname`` und ``lohn``. 
+      Achte darauf, dass bei der Instanzierung eines Mitarbeiters, die
+      Instanzvariablen auch sicher belegt werden.
+
+   b) Erstelle in der Klasse :py:class:`Mitarbeiter` Methoden mit folgenden 
+      Funktionalitäten:
+      
+      i) :py:func:`get_mitarbeiter_id`
+
+         Diese Methode soll auf der Konsole folgendes rausgeben, wenn sie 
+         auf einen Mitarbeiter angewandt wird:
+	
+	 *"Ich heisse Hans Mustermann. 
+         Mein Lohn bei dieser Firma beträgt 100 sfr."*
+
+      ii) :py:func:`lohn_erhoehen`
+
+	  Beim Ausführen dieser Methode, erhälte der jeweilige Mitarbeiter einen
+          höheren Lohn. Wie viel mehr Lohn er erhält, kann als Argument der 
+	  Methode übergeben werden.
+
+      iii) :py:func:`lohn_senken`
+
+           Hier wird, wie der Name schon sagt, der Lohn gesenkt. Um wie viel 
+           der Lohn gesenkt wird, kann wiederrum als Argument der Methode 
+           übergeben werden. Zusätzlich gibt die Methode einen ``String`` 
+           zurück, welcher mitteilt, ob die Senkung erfolgreich war, oder nicht.
+	   Denn falls der Lohn bei der Senkung unter 3500 sfr. fällt,
+	   so wird das Unterfangen abgebrochen. Dies könnte dann 
+           z.B. so aussehen:
+	   
+	   >>> info = arbeiter.lohn_senken(200)
+           >>> print(info)
+           Erfolg: Der Lohn wurde um 200 sfr. gesenkt und beträgt nun 3600 sfr.
+	   >>> info = arbeiter.lohn_senken(150)
+           >>> print(info)
+           Error: Der Lohn kann wegen der Mindestlohninitative nicht gesenkt werden. 
+           Er bleibt bei 3600 sfr. 
+           Bitte mit der Gewerkschaft reden.
+
+      iv) :py:func:`get_initialen`
+	
+	  Die Methode gibt lediglich die Initalen des betroffenen Mitarbeites 
+          zurück. Bei einem Mitarbeiter mit dem Namen *Hans Müller* wäre das 
+          also *H.M.* Baue diese Methode auch in der bereits erstellten Methode
+	  :py:func:`get_mitarbeiter_id` ein, um z.B. folgende Ausgabe zu 
+          erstellen:
+
+	  *"Ich heisse Hans Mustermann (alias H.M.). 
+          Mein Lohn bei dieser Firma beträgt 100 sfr."*
+
+   c) Test dein Programm.
+
+
+3. **Brüche**
+
+   a) Definiere eine Klasse :py:class:`Brueche`, 
+      welche eine Bruchzahl modelliert. Die Klasse soll die Instanzvariablen 
+      ``zaehler`` und ``nenner`` vom Typ ``Integer`` besitzen.
+      Stelle immer sicher, dass der Nenner nicht den Wert 0 annehmen kann.
+
+   b) Füge der Klasse eine Methode mit dem Namen :py:func:`print_wert` hinzu, 
+      welche keine Parameter erwartet und den Wert des Bruches auf der Konsole
+      ausgibt. Die Ausgabe konnte zum Beispiel so aussehen:
+
+      	*"Der Wert des Bruches beträgt 2/3."*
+
+   c) Füge der Klasse eine weitere Methode hinzu und zwar
+      mit dem Namen :py:func:`add`. Diese Methode erhält als Argument ein
+      Objekt derselben Klasse :py:class:`Brueche` und addiert diesen mit dem
+      Bruch-Objekt, auf welche die Methode angewandt wird.
+      Speichere das Resultat in ein neues Objekt der Klasse :py:class:`Brueche`
+      und gib es als ``return`` zurück.
+
+   d) Das gleiche Prinzip wende nochmals für die Methode :py:func:`multiply`
+      an.
+
+   e) Füge noch eine letzte Methode :py:func:`kuerzen` hinzu, welche 
+      den referenzierten Bruch kürzt, falls möglich.
+
+
 .. rubric:: Footnotes
 	  
 .. [#] Die Verwendung von Objekten und Klassen wird *objektorientierte 
        Programmierung* (kurz *OOP*) genannt. Für eine umfassende Beschreibung
-       siehe unter http://openbook.galileocomputing.de/oop/ nach.
+       siehe z.B. unter http://openbook.galileocomputing.de/oop/ nach.
 
 .. [#] Diejenigen die vielleicht mal in Java programmiert haben, 
        könnten meinen, dass es sich bei :py:func:`__init__()` um einen
@@ -235,3 +511,9 @@ nach dem Aufruf der Funktion :py:func:`abnehmen`, verändert wurde.
        nach dem eigentlichen Konstruktor gestartet 
        und dadurch entsteht der Eindruck, 
        als handele es sich um einen Konstruktor.
+.. [#] Man könnte auch einen anderen Namen als  ``self`` verwenden 
+       (z.B. ``this``). Denn über diesen Parameter erhält die Methode 
+       beim Aufruf eine Referenz auf das Objekt für welches sie aufgerufen wird.
+       Es ist aber in Python üblich, dass der Name ``self`` verwendet wird.
+.. [#] Beispiel aus http://www.python-kurs.eu/python3_klassen.php
+        
