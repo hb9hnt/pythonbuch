@@ -1,10 +1,14 @@
 * Nächste Ziele
-** TODO Kapitel: Funktionen
 ** TODO Kapitel: Objekte
 ** TODO Kapitel: Lösungen
-** TODO Kapitel: Impressum
 ** TODO Lizenz auf CC ändern
-** TODO Autoren anpassen
 ** TODO Fehler korrigieren
 * Future plans
 ** TODO Interaktive Beispiele
+* Changelog
+** DONE Autoren anpassen
+   CLOSED: [2014-06-30 Mon 15:28]
+** DONE Kapitel: Funktionen
+   CLOSED: [2014-06-30 Mon 15:27]
+** DONE Kapitel: Impressum
+   CLOSED: [2014-06-30 Mon 15:27]
