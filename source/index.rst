@@ -22,13 +22,7 @@ Einführung ins Programmieren mit Python
    gui
    hilfsmittel
    projekte/index.rst
-
-.. only:: html 
-
-   Index
-   =====
-
-   * :ref:`genindex`
+   impressum
 
 .. todolist::
 

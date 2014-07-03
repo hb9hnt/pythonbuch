@@ -7,7 +7,7 @@ Lizenz
 
 .. image:: images/cc_by_sa.png
 
-Dieses Skript darf unter den Lizenzbestimmungen den Bestimmungen der
+Dieses Skript darf unter den Lizenzbestimmungen der
 `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_
 weiter verwendet werden. Dies bedeutet insbesondere:
 
