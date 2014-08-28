@@ -1,3 +1,14 @@
+* Korrekturen
+** TODO Endung .py wird zu früh erwähnt.
+** TODO Das Shell und das normale Fenster von IDLE erklären
+** TODO Neues Fenster in IDLE erstellen
+** TODO Kapitel 1, Aufgabe 3: Copy Paste statt abtippen
+** TODO Kapitel 2, Aufgabe 2:
+   - Kein Programmausschnitt sondern einzelne Befehle für die Shell
+** TODO Kapitel 2, Aufgabe 2
+   - Anweisung hinzufügen, dass etwas abgespeichert werden muss
+* Ideen
+** TODO Aufgabenidee: Teilen mit Rest
 * Nächste Ziele
 ** TODO Kapitel: Objekte
 ** TODO Kapitel: Lösungen
