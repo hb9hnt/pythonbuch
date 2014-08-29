@@ -134,8 +134,18 @@ Aufgaben
 
 2. a) Probiere im Befehlsprompt die folgenden Variablennamen aus, in dem du eine
       beliebige Zahl abspeicherst: ``zahl2``, ``Zahl2``, ``Zahl 2``, ``2zahl``,
-      ``zahl.2``, ``Zahl_2``, ``2_Zahl``, ``_Zahl2``, ``2_Zahl``. Welche
-      Variablennamen sind zulässig. 
+      ``zahl.2``, ``Zahl_2``, ``2_Zahl``, ``_Zahl2``, ``2_Zahl``. 
+      
+      Dies machst du am einfachsten, in dem du versuchst, etwas unter der
+      Variable abzuspeichern und anschliessend kontrollierst, ob es geklappt
+      hat. Etwa so:
+
+      >>> variablen_name = 28
+      >>> variablen_name
+      28
+
+      Welche Variablennamen sind zulässig?
+
    b) Finde an Hand der obigen Beispiele und der Python-Dokumentation heraus,
       wie die Regeln für zulässige Variablennamen lauten.
 

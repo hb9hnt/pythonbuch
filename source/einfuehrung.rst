@@ -75,7 +75,8 @@ oder
 
 >>> 2 + 3
 
-ausprobieren.
+ausprobieren. IDLE hat immer nur einen Befehlsprompt. Du kannst also kein neues
+Befehlsprompt-Fenster öffnen.
 
 Es macht aber oft keinen Sinn, die Befehle für ein Programm jedes mal am
 Befehlsprompt von neuem einzutippen. Wollen wir ein Programm mehrmals benutzen,
@@ -86,13 +87,15 @@ Im Menu von IDLE kannst du unter *File* - *New Window* ein neues Fenster
 öffnen. In dieses Fenster kannst du dein Programm schreiben, in dem du die
 Befehle untereinander auf einzelne Zeilen schreibst.
 
-Speichere aber die leere Datei zuerst unter dem Namen ``helloworld.py``
-ab.
+Sobald du die Datei unter *File* - *Save* abgespeichert hast, kannst du mit der
+Taste ``F5`` das Programm starten. 
 
 .. note:: Du musst die Endung ``.py`` selbst anhängen, IDLE macht dies nicht für
 	  dich. Wenn du es vergisst, erkennt IDLE deine Datei nicht als Programm
 	  und wird dir den Code nicht farbig darstellen.
 
+Beachte, dass du ein solches neues Fenster erst in Aufgabe 2 benötigsts. Die
+ersten Befehle kannst du am Befehlsprompt ausprobieren. 
    
 Aufgaben
 ========
@@ -113,16 +116,16 @@ Aufgaben
    >>> (4 + 3) // 5
 
 
-2. a) Erstelle in einem leeren Fenster ein "Hello World"-Programm. Falls du
-      nicht weiter weisst, kannst du noch einmal den Anfang dieses Kapitels
-      lesen.
+2. a) Erstelle wie oben erklärt ein neues Fenster. Erstelle nun in diesem
+      Fenster ein Hello-Wolrld-Programm. Falls du nicht weiter weisst, kannst du
+      noch einmal den Anfang dieses Kapitels lesen.
    b) Das Programm kannst du mit der F5-Taste ausführen und testen. Wo wird der
       Text "Hello World" ausgegeben?
 
       
 3. a) Speichere das folgende Programm in einer Datei namens ``gui-beispiel.py``
       und führe es aus. Was macht das Programm?
-   b) Musst du wirklich alle Zeilen abtippen, damit es funktioniert?
+   b) Musst du wirklich alle Zeilen kopieren, damit es funktioniert?
 
    .. literalinclude:: code/CanvasExample.py
       :linenos:
