@@ -20,6 +20,7 @@ Einführung ins Programmieren mit Python
    funktion
    objekte
    gui
+   aufgabensammlung
    hilfsmittel
    projekte/index.rst
 
