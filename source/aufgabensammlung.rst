@@ -31,7 +31,7 @@ Erstelle ein Programm, das deinen Vorname, Nachname und Geburtsdatum auf der
 Konsole aufdruckt.
 
 **Musterlösung:**
-:download:`hello_i_am.py <code/musterloesungen_Martino/hello_i_am.py>`.
+:download:`hello_i_am.py <code/musterloesungen/hello_i_am.py>`.
 
 **Zusatzaufgabe:** Erweitere dein Programm, indem es auch zum Beispiel deine 
 Adresse oder dein Telefonnummer aufdruckt.
@@ -59,7 +59,7 @@ Hinweise:
 
 **Musterlösung:**
 :download:`bogen_nach_gradmass.py 
-<code/musterloesungen_Martino/bogen_nach_gradmass.py>`.
+<code/musterloesungen/bogen_nach_gradmass.py>`.
 
 **Zusatzaufgabe:** Schreibe ein anderes Programm, das die umgekehrte Umrechnung
 durchführt.
@@ -93,7 +93,7 @@ Hinweise:
 
 
 **Musterlösung:** :download:`temperatur_umwandler.py 
-<code/musterloesungen_Martino/temperatur_umwandler.py>`.
+<code/musterloesungen/temperatur_umwandler.py>`.
 
 **Zusatzaufgabe:** Passe deine Lösung der Aufgabe `Winkelmass Umwandler`_ so an,
 dass beide Umrechnungen (Bogen- nach Gradmass und umgekehrt) in einem einzelnen
@@ -141,7 +141,7 @@ Hinweise:
 	    	  :linenos:
 
 **Musterlösung:** :download:`temperatur_umwandler_erweiterung.py 
-<code/musterloesungen_Martino/temperatur_umwandler_erweiterung.py>`.
+<code/musterloesungen/temperatur_umwandler_erweiterung.py>`.
 
 **Zusatzaufgabe:** Erweitere die Lösung der vorherigen Zusatzaufgabe (Winkelmass
 Umwandler), indem du Funktionen implementierst.
@@ -171,7 +171,7 @@ Für die Erstellung des OptionMenus kannst du folgendes Muster anpassen:
    Beispiel eines möglichen Layouts des Fensters.
 
 **Musterlösung:** :download:`temperatur_gui.py
-<code/musterloesungen_Martino/temperatur_gui.py>`.
+<code/musterloesungen/temperatur_gui.py>`.
 
 **Zusatzaufgabe:** Erstelle auch für den Winkelmass Umwandler eine GUI.
 
@@ -189,7 +189,7 @@ beenden.
 Hinweis: :py:keyword:`while`
 
 **Musterlösung:** :download:`sortierprogramm.py 
-<code/musterloesungen_Martino/sortierprogramm.py>`.
+<code/musterloesungen/sortierprogramm.py>`.
 
 **Zusatzaufgabe:** Schreibe ein anderes Programm, das eine Liste von
 Zeichenkette alphabetisch sortiert.
@@ -204,7 +204,7 @@ Erstelle ein Programm, das die Summe aller natürliche Zahlen :math:`n \le 10000
 mit :math:`7 \mid n` und :math:`5 \nmid n` berechnet.
 
 **Musterlösung:** :download:`sum_that.py 
-<code/musterloesungen_Martino/sum_that.py>`.
+<code/musterloesungen/sum_that.py>`.
 
 **Zusatzaufgabe:** *List comprehension* ist ein syntaktisches Konstrukt, um 
 Listen zu erzeugen. Schau hier wie es in Python funktioniert:
@@ -231,7 +231,7 @@ Hinweise:
   ``from-import`` vom Module ``math`` importiert werden.
 
 **Musterlösung:** :download:`quadratische_gleichungen.py 
-<code/musterloesungen_Martino/quadratische_gleichungen.py>`.
+<code/musterloesungen/quadratische_gleichungen.py>`.
 
 **Zusatzaufgabe:** Gegeben eine quadratische Funktion :math:`f(x) = ax^2+bx+c`
 durch den Koeffizienten ``a, b, c`` und eine lineare Funktion
@@ -273,7 +273,7 @@ Hinweis: Wie kann man auf halbe Noten runden? Die Funktion :py:func:`round()`
 rundet auf ganze Noten, z.B. ``round(5.4) = 5`` aber ``round(5.4*2) = 11``... ;)
 
 **Musterlösung:** :download:`ungerechtmann.py 
-<code/musterloesungen_Martino/ungerechtmann.py>`.
+<code/musterloesungen/ungerechtmann.py>`.
 
 **Zusatzaufgabe:** Erfinde und implementiere einige neue Bedingungen, von denen 
 die Abschlussnote abhängt.
@@ -317,7 +317,7 @@ Schreibe ein Programm, das, gegeben zwei natürliche Zahlen ``a`` und ``b`` mit
 	7 -> 11
 
 **Musterlösung:** :download:`anzahl_schritte.py 
-<code/musterloesungen_Martino/anzahl_schritte.py>`.
+<code/musterloesungen/anzahl_schritte.py>`.
 
 **Zusatzaufgabe:** Das `Collatz-Problem`_ ist ein ungelöstes mathematisches 
 Problem. Es handelt sich um eine Zahlenfolge, die in den Zyklus 4-2-1 mündet,
@@ -346,7 +346,7 @@ Zum Beispiel ist 371 eine PPDI:
 
 Schreibe ein Programm, das alle die PPDI mit drei Ziffern bestimmt.
 
-**Musterlösung:** :download:`ppdi.py <code/musterloesungen_Martino/ppdi.py>`.
+**Musterlösung:** :download:`ppdi.py <code/musterloesungen/ppdi.py>`.
 
 
 153
@@ -372,7 +372,7 @@ nimmt als Argument eine ganze Zahl und gibt als Rückgabewert die Summe der
 dritten Potenzen der Ziffern dieser Zahl.
 
 **Musterlösung:** :download:`hundertdreiundfuenfzig.py 
-<code/musterloesungen_Martino/hundertdreiundfuenfzig.py>`.
+<code/musterloesungen/hundertdreiundfuenfzig.py>`.
 
 Sieb des Eratosthenes
 ---------------------
@@ -421,7 +421,7 @@ Das Programm soll folgende Struktur haben:
 Als Test für dein Programm benutze folgende Tatsache: die Anzahl Primzahlen
 kleiner 1'000'000 ist 78'498.
 
-**Musterlösung:** :download:`sieb.py <code/musterloesungen_Martino/sieb.py>`.
+**Musterlösung:** :download:`sieb.py <code/musterloesungen/sieb.py>`.
 
 Zeitmessung
 -----------
@@ -436,7 +436,7 @@ Hinweis: Schau dir was die Funktion :py:func:`time.time()` von Module ``time``
 macht.
 
 **Musterlösung:** :download:`sieb_zeit.py
-<code/musterloesungen_Martino/sieb_zeit.py>`.
+<code/musterloesungen/sieb_zeit.py>`.
 
 Primfaktorzerlegung
 -------------------
@@ -447,7 +447,7 @@ Mit Hilfe vom Sieb des Eratosthenes, erstelle ein Programm, der die
 Primfaktorzerlegung einer natürliche Zahl bestimmt.
 
 **Musterlösung:** :download:`primfaktorzerlegung.py
-<code/musterloesungen_Martino/primfaktorzerlegung.py>`.
+<code/musterloesungen/primfaktorzerlegung.py>`.
 
 **Zusatzaufgabe:** Mit Hilfe der Programme, die du geschrieben hast, erstelle 
 nun ein weiteres Programm, welches gegeben eine Zahl :math:`n`, alle die
@@ -483,7 +483,7 @@ Der Steuersatz ist gemäss folgender Tabelle bestimmt:
 =============================  ==============
 
 **Musterlösung:** :download:`flache_steuern.py 
-<code/musterloesungen_Martino/flache_steuern.py>`.
+<code/musterloesungen/flache_steuern.py>`.
 
 **Zusatzaufgabe:** Berücksichtige in deinem Programm neben das Einkommen
 auch die Habseligkeit.
@@ -580,7 +580,7 @@ Falls aller korrekt implementiert wird, soll die Ausgabe Folgende sein::
 Der Inhalt der :py:func:`main()`-Methode kannst du allerdings ändern.
 
 **Musterlösung:** :download:`fahrrad_aufgabe.py 
-<code/musterloesungen_Martino/fahrrad_aufgabe.py>`.
+<code/musterloesungen/fahrrad_aufgabe.py>`.
 
 **Zusatzaufgabe:** Erstelle eine Klasse `Radfahrer()`. Erfinde und implementiere
 neue Instanzvariablen und Methoden für beide Klassen. Beispiel: ein Fahrrad 
@@ -656,7 +656,7 @@ Hinweise:
 - :py:func:`random.randint()`
 
 **Musterlösung:** :download:`sparse.py 
-<code/musterloesungen_Martino/sparse.py>`.
+<code/musterloesungen/sparse.py>`.
 
 **Zusatzaufgabe:** implementiere eine zusätzliche Funktion, die den Winkel
 zwischen zwei gegeben Objekten der Klasse ``Sparse()`` bestimmt.
@@ -705,7 +705,7 @@ Beachte Folgendes:
 	'b'
 
 **Musterlösung:** :download:`caesar.py 
-<code/musterloesungen_Martino/caesar.py>`.
+<code/musterloesungen/caesar.py>`.
 
 **Zusatzaufgabe:** Pass dein Programm so an, dass es ``.txt``-files 
 verschlüsseln kann. Documentation über hilfreiche Funktionen kannst du hier
@@ -749,9 +749,9 @@ herunterladen. Teste dein Programm mit einem solchen Bücher (zum Beispiel
 )
 
 **Musterlösung:** :download:`frequency_analysis.py 
-<code/musterloesungen_Martino/frequency_analysis.py>`,
+<code/musterloesungen/frequency_analysis.py>`,
 :download:`pg76.txt 
-<code/musterloesungen_Martino/pg76.txt>`.
+<code/musterloesungen/pg76.txt>`.
 
 **Zusatzaufgabe:** Implementiere eine graphische Oberfläche, die die
 Häufigkeitsanalyse als Histogramm darstellt.
@@ -796,12 +796,12 @@ Hinweise:
   Beispiel ``doorA.configure(state=DISABLED)`` deaktiviert Button ``doorA``.
 
 **Musterlösung:** :download:`monty_hall.py 
-<code/musterloesungen_Martino/monty_hall.py>`. Diese Musterlösung enthält 3
+<code/musterloesungen/monty_hall.py>`. Diese Musterlösung enthält 3
 Bilder. Um diese Datei korrekt auszuführen muss man auch diese Bilder
 herunterladen:
-:download:`door.gif <code/musterloesungen_Martino/door.gif>`,
-:download:`fiat500.gif <code/musterloesungen_Martino/fiat500.gif>`,
-:download:`Boer-Goat.gif <code/musterloesungen_Martino/Boer-Goat.gif>`.
+:download:`door.gif <code/musterloesungen/door.gif>`,
+:download:`fiat500.gif <code/musterloesungen/fiat500.gif>`,
+:download:`Boer-Goat.gif <code/musterloesungen/Boer-Goat.gif>`.
 
 
 **Zusatzaufgabe:** Bereiche dein Programm. Menüleiste, Informationen über die

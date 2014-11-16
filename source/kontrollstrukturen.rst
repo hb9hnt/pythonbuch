@@ -187,8 +187,8 @@ Aufgaben
    * Jahre sind Schaltjahre, falls ihre Jahrzahl durch 4 teilbar ist, ausser die
      Jahrzahl ist durch 100 teilbar.  
 
-*     Schreibe ein Programm, welches den Benutzer nach einer Jahreszahl fragt und
-     anschliessend prüft, ob es sich um ein Schaltjahr handelt.
+   Schreibe ein Programm, welches den Benutzer nach einer Jahreszahl fragt und
+   anschliessend prüft, ob es sich um ein Schaltjahr handelt.
 
 Die :py:keyword:`while`-Schleife
 ================================
