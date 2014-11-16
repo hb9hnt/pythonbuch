@@ -156,6 +156,16 @@ geschieht mit dem :py:func:`float()` Befehl für Fliesskommazahlen respektive mi
 >>> float('23.22') # Dies gibt eine Fliesskommazahl zurück
 23.22
 
+Haben wir hingegen eine Zahl, können wir mit dem Befehl :py:func:`str()` daraus
+eine Zeichenkette machen.
+
+>>> str(7)
+'7'
+>>> str(2.5)
+'2.5'
+
+Dies funktioniert unabhängig davon, ob es sich um eine ganze Zahl oder eine
+Fliesskommazahl handelt.
 
 Aufgaben
 ~~~~~~~~

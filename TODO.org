@@ -1,7 +1,12 @@
 * Korrekturen
+** TODO Gleichzeichen erklären
+   - Es wird zu wenig genau erklärt, dass das Gleichzeichen
+     eine bestimmte Richtung hat.
 * Ideen
+** TODO Aufgabe: Umrechung Binär
 ** TODO Aufgabenidee: Teilen mit Rest
 * Nächste Ziele
+** TODO Einführungs von input ist nicht optimal
 ** TODO Kapitel: Objekte
 ** TODO Kapitel: Lösungen
 ** TODO Lizenz auf CC ändern
