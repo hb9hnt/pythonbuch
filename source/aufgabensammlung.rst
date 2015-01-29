@@ -22,8 +22,11 @@ Diese Dateien können auf zwei Arten ausgeführt werden:
 
 Ausserdem gibt es Zusatzaufgaben, für die keine Musterlösung vorhanden ist.
 
+Allgemein
+=========
+
 Hello World! I'm...
-===================
+-------------------
 
 **Vorkenntnisse:** Kapitel 1.
 
@@ -36,8 +39,6 @@ Konsole aufdruckt.
 **Zusatzaufgabe:** Erweitere dein Programm, indem es auch zum Beispiel deine 
 Adresse oder dein Telefonnummer aufdruckt.
 
-Umwandler
-=========
 
 Winkelmass Umwandler
 --------------------
@@ -176,7 +177,7 @@ Für die Erstellung des OptionMenus kannst du folgendes Muster anpassen:
 **Zusatzaufgabe:** Erstelle auch für den Winkelmass Umwandler eine GUI.
 
 Sortierprogramm
-===============
+---------------
 
 **Vorkenntnisse:** Kapitel 1 bis 4.
 
@@ -195,51 +196,8 @@ Hinweis: :py:keyword:`while`
 Zeichenkette alphabetisch sortiert.
 
 
-Sum that
-========
-
-**Vorkenntnisse:** Kapitel 1 bis 5.
-
-Erstelle ein Programm, das die Summe aller natürliche Zahlen :math:`n \le 10000`
-mit :math:`7 \mid n` und :math:`5 \nmid n` berechnet.
-
-**Musterlösung:** :download:`sum_that.py 
-<code/musterloesungen/sum_that.py>`.
-
-**Zusatzaufgabe:** *List comprehension* ist ein syntaktisches Konstrukt, um 
-Listen zu erzeugen. Schau hier wie es in Python funktioniert:
-https://docs.python.org/3.3/tutorial/datastructures.html#list-comprehensions.
-Versuche nachher mit diesem Konstrukt ein äquivalentes Programm zu schreiben.
-
-Quadratische Gleichungen
-========================
-
-**Vorkenntnisse:** Kapitel 1 bis 5.
-
-Erstelle ein Programm zur Lösung von quadratische Gleichungen
-
-.. math:: ax^2 + bx + c = 0.
-
-Die reellen Koeffizienten :math:`a, b, c` sind den Benutzer gefragt.
-
-Hinweise:
-
-- Das Programm kann man elegant gestalten, indem man am Anfang verschiedene
-  Fälle unterscheidet. Was passiert zum Beispiel wenn :math:`a=0`? Wenn 
-  :math:`b^2-4ac < 0`? ...
-- Analog wie die Zahl :math:`\pi` kann die quadratische Wurzel (``sqrt``) mit
-  ``from-import`` vom Module ``math`` importiert werden.
-
-**Musterlösung:** :download:`quadratische_gleichungen.py 
-<code/musterloesungen/quadratische_gleichungen.py>`.
-
-**Zusatzaufgabe:** Gegeben eine quadratische Funktion :math:`f(x) = ax^2+bx+c`
-durch den Koeffizienten ``a, b, c`` und eine lineare Funktion
-:math:`g(x) = mx + q` durch ``m, q``, erstelle ein Programm, das
-die Schnittpunkte von :math:`f` und :math:`g` findet.
-
 Prof. Ungerechtmann
-===================
+-------------------
 
 **Vorkenntnisse:** Kapitel 1 bis 5.
 
@@ -278,8 +236,104 @@ rundet auf ganze Noten, z.B. ``round(5.4) = 5`` aber ``round(5.4*2) = 11``... ;)
 **Zusatzaufgabe:** Erfinde und implementiere einige neue Bedingungen, von denen 
 die Abschlussnote abhängt.
 
-Besonderheiten der Mathematik
-=============================
+
+Flache Steuern
+--------------
+
+**Vorkenntnisse:** Kapitel 1 bis 5.
+
+Der Steueramtchef von Flächenland stellt dich an, um ein einfaches Programm in
+Python zu schreiben. Dieses Programm soll den Steuersatz jedes Steuerzahlers
+berechnen. Die Eigabeparameter sind:
+
+- Vorname und Nachname des Steuerzahlers
+- Einkommen (in Dublonen, die Währung von Flächenland)
+
+Die Ausgabe soll folgender Form sein:
+
+   ``Der Steuerzahler Vorname Nachname muss für das laufende Jahr X Dublonen dem
+   Steueramt bezahlen.``
+
+Der Steuersatz ist gemäss folgender Tabelle bestimmt:
+
+=============================  ==============
+**Einkommen** :math:`E`        **Steuersatz**
+-----------------------------  --------------
+:math:`E \le 10'000`           40\%
+:math:`10'000 < E \le 30'000`  55\%
+:math:`30'000 < E \le 70'000`  75\%
+:math:`E > 70'000`             82\%
+=============================  ==============
+
+**Musterlösung:** :download:`flache_steuern.py 
+<code/musterloesungen/flache_steuern.py>`.
+
+**Zusatzaufgabe:** Berücksichtige in deinem Programm neben das Einkommen
+auch die Habseligkeit.
+
+=================================  ==============
+**Habseligkeit** :math:`H`         **Steuersatz**
+---------------------------------  --------------
+:math:`H \le 100'000`              5\%
+:math:`100'000 < H \le 500'000`    8\%
+:math:`500'000 < H \le 1'000'000`  13\%
+:math:`H > 1'000'000`              21\%
+=================================  ==============
+
+Hat zum Beispiel ein Steuerzahler :math:`25'000` Dublonen Einkommen und 
+:math:`600'000` Dublonen Habseligkeit, so muss er
+
+.. math:: 25'000 \cdot \frac{55}{100} + 600'000 \cdot \frac{13}{100} = 91'750
+
+Dublonen dem Steueramt bezahlen.
+
+
+Mathematische Probleme
+======================
+
+Sum that
+--------
+
+**Vorkenntnisse:** Kapitel 1 bis 5.
+
+Erstelle ein Programm, das die Summe aller natürliche Zahlen :math:`n \le 10000`
+mit :math:`7 \mid n` und :math:`5 \nmid n` berechnet.
+
+**Musterlösung:** :download:`sum_that.py 
+<code/musterloesungen/sum_that.py>`.
+
+**Zusatzaufgabe:** *List comprehension* ist ein syntaktisches Konstrukt, um 
+Listen zu erzeugen. Schau hier wie es in Python funktioniert:
+https://docs.python.org/3.3/tutorial/datastructures.html#list-comprehensions.
+Versuche nachher mit diesem Konstrukt ein äquivalentes Programm zu schreiben.
+
+Quadratische Gleichungen
+------------------------
+
+**Vorkenntnisse:** Kapitel 1 bis 5.
+
+Erstelle ein Programm zur Lösung von quadratische Gleichungen
+
+.. math:: ax^2 + bx + c = 0.
+
+Die reellen Koeffizienten :math:`a, b, c` sind den Benutzer gefragt.
+
+Hinweise:
+
+- Das Programm kann man elegant gestalten, indem man am Anfang verschiedene
+  Fälle unterscheidet. Was passiert zum Beispiel wenn :math:`a=0`? Wenn 
+  :math:`b^2-4ac < 0`? ...
+- Analog wie die Zahl :math:`\pi` kann die quadratische Wurzel (``sqrt``) mit
+  ``from-import`` vom Module ``math`` importiert werden.
+
+**Musterlösung:** :download:`quadratische_gleichungen.py 
+<code/musterloesungen/quadratische_gleichungen.py>`.
+
+**Zusatzaufgabe:** Gegeben eine quadratische Funktion :math:`f(x) = ax^2+bx+c`
+durch den Koeffizienten ``a, b, c`` und eine lineare Funktion
+:math:`g(x) = mx + q` durch ``m, q``, erstelle ein Programm, das
+die Schnittpunkte von :math:`f` und :math:`g` findet.
+
 
 Zahlenfolge
 -----------
@@ -454,58 +508,64 @@ nun ein weiteres Programm, welches gegeben eine Zahl :math:`n`, alle die
 vollkommene Zahlen kleiner oder gleich :math:`n` findet. Was eine vollkommene
 Zahl ist, kannst du hier lesen: http://de.wikipedia.org/wiki/Vollkommene_Zahl.
 
-Flache Steuern
-==============
 
-**Vorkenntnisse:** Kapitel 1 bis 5.
+Monty Hall Problem
+------------------
 
-Der Steueramtchef von Flächenland stellt dich an, um ein einfaches Programm in
-Python zu schreiben. Dieses Programm soll den Steuersatz jedes Steuerzahlers
-berechnen. Die Eigabeparameter sind:
+**Vorkenntnisse:** Kapitel 1 bis 8.
 
-- Vorname und Nachname des Steuerzahlers
-- Einkommen (in Dublonen, die Währung von Flächenland)
+Das Monty-Hall-Problem (auch Ziegenproblem) ist eine Aufgabe mit Bezug zur
+Wahrscheinlichkeitstheorie. Aus http://de.wikipedia.org/wiki/Ziegenproblem:
 
-Die Ausgabe soll folgender Form sein:
+	Nehmen Sie an, Sie wären in einer Spielshow und hätten die Wahl
+	zwischen drei Toren. Hinter einem der Türen ist ein Auto, hinter den 
+	anderen sind Ziegen. Sie wählen eine Tür, sagen wir, Tür A, und 
+	der Showmaster, der weiss, was hinter den Türen ist, öffnet eine andere 
+	Tür, sagen wir, Tür C, hinter dem eine Ziege steht. Er fragt Sie nun:
+	\"Möchten Sie die Tür B?\" Ist es von Vorteil, die Wahl der Tür zu 
+	ändern?
 
-   ``Der Steuerzahler Vorname Nachname muss für das laufende Jahr X Dublonen dem
-   Steueramt bezahlen.``
+Selbst wenn du nicht antworten kannst, versuch nun dieses Spiel zu 
+implementieren.
 
-Der Steuersatz ist gemäss folgender Tabelle bestimmt:
+.. note:: Es gibt keine *richtige* oder *falsche* Art, ein solches Programm zu
+	  schreiben. Hier gibt es aber einige Hinweise, die für die Erstellung
+	  nützlich sein können. Du musst sie aber nicht unbedingt befolgen!
 
-=============================  ==============
-**Einkommen** :math:`E`        **Steuersatz**
------------------------------  --------------
-:math:`E \le 10'000`           40\%
-:math:`10'000 < E \le 30'000`  55\%
-:math:`30'000 < E \le 70'000`  75\%
-:math:`E > 70'000`             82\%
-=============================  ==============
+Hinweise:
 
-**Musterlösung:** :download:`flache_steuern.py 
-<code/musterloesungen/flache_steuern.py>`.
+- ``indicate_goat(n)``: eine Funktion, die gegeben die gewählte Tür
+  (``n=0,1`` oder ``2``) eine andere Tür zeigt, hinter welcher eine Ziege ist.
+  (Aufpassen: Falls der Spieler am Anfang "eine Ziege wählt", gibt es nur eine
+  Möglichkeit. Falls er aber "das Auto wählt", kann der Showmaster eine der
+  beiden anderen Türen öffnen und damit das Spiel fair bleibt, soll er
+  zufälligerweise entscheiden.)
+- Die drei Türen können als Buttons implementiert werden. In diesem Fall soll
+  man drei Funktionen definieren (z.B. ``def doorA_action()``, ...).
+  das Programm soll aber irgendwie die zwei Situationen (erste oder
+  zweite Wahl) erkennen.
+- Hilfreiche Funktion: :py:func:`configure()` (siehe
+  https://docs.python.org/3.3/library/tkinter.html#setting-options). Zum
+  Beispiel ``doorA.configure(state=DISABLED)`` deaktiviert Button ``doorA``.
 
-**Zusatzaufgabe:** Berücksichtige in deinem Programm neben das Einkommen
-auch die Habseligkeit.
+**Musterlösung:** :download:`monty_hall.py 
+<code/musterloesungen/monty_hall.py>`. Diese Musterlösung enthält 3
+Bilder. Um diese Datei korrekt auszuführen muss man auch diese Bilder
+herunterladen:
+:download:`door.gif <code/musterloesungen/door.gif>`,
+:download:`fiat500.gif <code/musterloesungen/fiat500.gif>`,
+:download:`Boer-Goat.gif <code/musterloesungen/Boer-Goat.gif>`.
 
-=================================  ==============
-**Habseligkeit** :math:`H`         **Steuersatz**
----------------------------------  --------------
-:math:`H \le 100'000`              5\%
-:math:`100'000 < H \le 500'000`    8\%
-:math:`500'000 < H \le 1'000'000`  13\%
-:math:`H > 1'000'000`              21\%
-=================================  ==============
 
-Hat zum Beispiel ein Steuerzahler :math:`25'000` Dublonen Einkommen und 
-:math:`600'000` Dublonen Habseligkeit, so muss er
+**Zusatzaufgabe:** Bereiche dein Programm. Menüleiste, Informationen über die
+Version oder der Entwickler, Laute, ...
 
-.. math:: 25'000 \cdot \frac{55}{100} + 600'000 \cdot \frac{13}{100} = 91'750
 
-Dublonen dem Steueramt bezahlen.
+Objektorientierte Aufgaben
+==========================
 
 Fahrrad
-=======
+-------
 
 **Vorkenntnisse:** Kapitel 1 bis 7.
 
@@ -589,7 +649,7 @@ Fahrräder; ein Radfahrer kann ein von seinen Fahrräder einem anderen Radfahrer
 schenken; ...
 
 Sparse vectors
-==============
+--------------
 
 **Vorkenntnisse:** Kapitel 1 bis 7.
 
@@ -755,54 +815,3 @@ herunterladen. Teste dein Programm mit einem solchen Bücher (zum Beispiel
 
 **Zusatzaufgabe:** Implementiere eine graphische Oberfläche, die die
 Häufigkeitsanalyse als Histogramm darstellt.
-
-Monty Hall Problem
-==================
-
-**Vorkenntnisse:** Kapitel 1 bis 8.
-
-Das Monty-Hall-Problem (auch Ziegenproblem) ist eine Aufgabe mit Bezug zur
-Wahrscheinlichkeitstheorie. Aus http://de.wikipedia.org/wiki/Ziegenproblem:
-
-	Nehmen Sie an, Sie wären in einer Spielshow und hätten die Wahl
-	zwischen drei Toren. Hinter einem der Türen ist ein Auto, hinter den 
-	anderen sind Ziegen. Sie wählen eine Tür, sagen wir, Tür A, und 
-	der Showmaster, der weiss, was hinter den Türen ist, öffnet eine andere 
-	Tür, sagen wir, Tür C, hinter dem eine Ziege steht. Er fragt Sie nun:
-	\"Möchten Sie die Tür B?\" Ist es von Vorteil, die Wahl der Tür zu 
-	ändern?
-
-Selbst wenn du nicht antworten kannst, versuch nun dieses Spiel zu 
-implementieren.
-
-.. note:: Es gibt kein *richtige* oder *falsche* Art, ein solches Programm zu
-	  schreiben. Hier gibt es aber einige Hinweise, die für die Erstellung
-	  nützlich sein können. Du muss sie aber nicht unbedingt folgen!
-
-Hinweise:
-
-- ``indicate_goat(n)``: eine Funktion, die gegeben die gewählte Tür
-  (``n=0,1`` oder ``2``) eine andere Tür zeigt, hinter welcher eine Ziege ist.
-  (Aufpassen: Falls der Spieler am Anfang "eine Ziege wählt", gibt es nur eine
-  Möglichkeit. Falls er aber "das Auto wählt", kann der Showmaster eine der
-  beiden anderen Türen öffnen und damit das Spiel fair bleibt, soll er
-  zufälligerweise entscheiden.)
-- Die drei Türen können als Buttons implementiert werden. In diesem Fall soll
-  man drei Funktionen definieren (z.B. ``def doorA_action()``, ...).
-  das Programm soll aber irgendwie die zwei Situationen (erste oder
-  zweite Wahl) erkennen.
-- Hilfreiche Funktion: :py:func:`configure()` (siehe
-  https://docs.python.org/3.3/library/tkinter.html#setting-options). Zum
-  Beispiel ``doorA.configure(state=DISABLED)`` deaktiviert Button ``doorA``.
-
-**Musterlösung:** :download:`monty_hall.py 
-<code/musterloesungen/monty_hall.py>`. Diese Musterlösung enthält 3
-Bilder. Um diese Datei korrekt auszuführen muss man auch diese Bilder
-herunterladen:
-:download:`door.gif <code/musterloesungen/door.gif>`,
-:download:`fiat500.gif <code/musterloesungen/fiat500.gif>`,
-:download:`Boer-Goat.gif <code/musterloesungen/Boer-Goat.gif>`.
-
-
-**Zusatzaufgabe:** Bereiche dein Programm. Menüleiste, Informationen über die
-Version oder der Entwickler, Laute, ...
