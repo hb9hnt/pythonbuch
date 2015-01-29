@@ -4,13 +4,14 @@
 Aufgabensammlung
 ****************
 
-In diesem Kapitel findest du eine Sammlung von Aufgaben. Die zwölf Abschnitte
-sind unabhängig voneinander.
-Am Anfang jeder Aufgabe ist eine Liste der Kapiteln vorgegeben, die man für das
-Lösen gelesen haben soll. Zu jeder Aufgabe gibt es eine Musterlösung. Die 
-Musterlösungen sind ``.py``-files und können heruntergeladen werden. Die
-Kommentare am Anfang der Dateien können ignoriert werden. 
-Diese Dateien können auf zwei Arten ausgeführt werden:
+In diesem Kapitel findest du eine Sammlung von Aufgaben. Die Aufgaben sind in
+vier Teilgebiete gegliedert.
+
+Am Anfang jeder Aufgabe ist eine Liste der Kapiteln vorgegeben, die
+man für das Lösen gelesen haben soll. Zu jeder Aufgabe gibt es eine
+Musterlösung. Die Musterlösungen sind ``.py``-files und können heruntergeladen
+werden. Die Kommentare am Anfang der Dateien können ignoriert werden.  Diese
+Dateien können auf zwei Arten ausgeführt werden:
 
 - File mit IDLE öffnen und Programm mit der F5-Taste (Run -> Run Module) 
   ausführen.
