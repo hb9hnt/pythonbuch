@@ -68,13 +68,21 @@ bewertet:
 * *Arbeitsprozess*:
   
   * Wurde in den Lektionen gearbeitet?
-  * Wurden in einem vernünftigen Ausmass Hausaufgaben gegeben? (ca. 10 - 20
+  * Wurden in einem vernünftigen Ausmass Hausaufgaben gegeben? (ca. 10 - 15
     Minuten pro Woche)
   * Wurde das Arbeitsjournal konsequent und vollständig geführt?
+    (Achtung: Bist du eine Informatiklektion krank, sollte dies im
+    Arbeitsjournal aufgef"uhrt sein.
   * Wurde selbständig gearbeitet?
 
 * *Produkt*:
       
+  * Programmcode:
+    * Wurden die im ersten Semester gelernten Strukturen sinnvoll und
+      wo m"oglich eingesetzt?
+    * Ist der Programmcode sauber und ausf"uhrlich kommentiert?
+    * Sind die Programme so einfach wie m"oglich programmiert, gibt es
+      keine unn"otigen Elemente oder zu komplizierte L"osungsans"atze.
   * Wurden übersichtlich gestaltete, verständliche Dokumente erstellt?
   * Sind alle im Projekt geforderten Punkte erfüllt?
   * Ist die Dokumentation so aufgebaut, dass sie auch für eine(n) andere(n)
@@ -82,7 +90,7 @@ bewertet:
   * Wurde alles in korrekter deutscher Sprache und vollständigen Sätzen
     erklärt?
   * Ist das Arbeitsjournal vollständig und sauber geführt?
-  * Wurden die Programmdateien sauber kommentiert und abgelegt.
+  * Wurden alle Dateien in einer sinnvollen Ordnerstruktur abgelegt.
 
 .. |*| image:: /images/star-full.png
 .. |o| image:: /images/star-empty.png

@@ -44,12 +44,13 @@ Dokumente
 Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 
 * Arbeitsjournal
-* Beispielprogramme aus dem Tutorial, welche von dir durchgearbeitet wurden.
+* Beispielprogramme aus dem Tutorial, mit welchen du dir das Benutzen
+  von :py:mod:`tkinter` beigebracht hast.
 * Dokumentation zur Benutzung von :py:mod:`tkinter` mit Beispielen. 
 * Programm mit graphischer Benutzeroberfläche für die Berechnung der letzten
   Note im Semester für einen vorgegebenen Notenschnitt.
-* Programme zur Erstellung von Grafiken auf einem Canvas-Element (Falls die Zeit
-  ausreichte, um diesen Punkt zu bearbeiten.)
+* Programme zur Erstellung von Grafiken auf einem Canvas-Element
+  (Freiwillig für Bonuspunkte.)
 
 Dokumentations-Links
 ====================
@@ -59,7 +60,6 @@ http://tkinter.unpythonic.net/wiki/
 
 Tkinter-Reference-Dokumentation:
 http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html
-
 
 	     
 .. |*| image:: /images/star-full.png
