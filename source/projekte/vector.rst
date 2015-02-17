@@ -74,7 +74,7 @@ Aufträge
      >>> v1.crossp(v2)
      TODO
 
-     Als erweiterung könntest du deine Klasse so ausbauen, dass auch
+     Als Erweiterung könntest du deine Klasse so ausbauen, dass auch
      die folgenden Operationen unterstützt werden:
 
      >>> v1 + v1

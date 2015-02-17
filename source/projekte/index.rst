@@ -18,7 +18,7 @@ Python :
 
 Informatik :
   In dieser Kategorie geht es nicht um eine bestimmte Programmiersprache. Sie
-  gibt dir an, wie anspruchsvoll das Verstehnen der notwendigen Datenstrukturen
+  gibt dir an, wie anspruchsvoll das Verstehenden der notwendigen Datenstrukturen
   und Algorithmen ist.
 
 Mathematik :

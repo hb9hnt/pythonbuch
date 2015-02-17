@@ -45,7 +45,7 @@ Aufträge
    Benutze diese Aufgaben, um herauszufinden, wie `SPOJ`_ deine Lösung
    automatisch korrigieren kann. 
      
-2. Auf der Seite der schweizer Informatik-Olympiade `SOI`_ gibt es ein Archiv,
+2. Auf der Seite der Schweizer Informatik-Olympiade `SOI`_ gibt es ein Archiv,
    in welchem alle Aufgaben der letzten Jahre gesammelt sind. Auch `Projekt
    Euler`_ bietet viele spannende Aufgaben. Such dir dort oder auf `SPOJ`_
    weitere Aufgaben zum Lösen aus. Löse möglichst viele spannende Aufgaben.
