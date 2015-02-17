@@ -48,14 +48,17 @@ beantwortet und die Antworten in einem fortlaufenden Journal festgehalten:
 * Was wurde diese Lektion gemacht?
 * Welche Hausaufgaben gebe ich mir auf die nächste Lektion?
 
-Da du ja jetzt ein richtiger Programmierer bist, wird das Journal nicht in einem
-Word-Dokument verfasst, sondern wie ein Programm in einer reinen
-Textdatei. Diese bekommt die Dateiendung ``.txt`` und kann in jedem beliebigen
-Texteditor (also unter anderem auch mit IDLE) editiert werden. Falls du Ideen
-zur sauberen Formatierung von Textdateien benötigst, hilft dir evtl. die
-`Markdown`_ Syntax weiter.
+Häufig benutzen Programmierer zum Erstellen von Dokumenten keine komplexe
+Textverarbeitungssoftware sondern verfassen reine Textdokumente. Damit zu
+arbeiten sind sie sich vom Programmcode schreiben gewohnt. Darum wird das
+Journal nicht in einem Word-Dokument verfasst, sondern wie ein Programm in einer
+reinen Textdatei. Diese bekommt die Dateiendung ``.txt`` und kann in jedem
+beliebigen Texteditor (also unter anderem auch mit IDLE) editiert werden. Falls
+du Ideen zur sauberen Formatierung von Textdateien benötigst, hilft dir
+evtl. die `Markdown`_ Syntax weiter.
 
-Achte auf jeden Fall darauf, dass der Text sauber strukturiert ist.
+Achte auf jeden Fall darauf, dass der Text -- genau wie Programmcode -- sauber
+strukturiert ist.
 
 .. _Markdown: http://daringfireball.net/projects/markdown/syntax
 

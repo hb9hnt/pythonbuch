@@ -7,8 +7,8 @@ Gamedesign mit :py:mod:`pygame`
 
 :Python-Module: :py:mod:`pygame`
 
-In diesem Projekt geht es darum, selbst ein Game basierend auf der
-:py:mod:`pygame` Bibliothek zu erstellen. Dazu muss zuerst weitere Kenntnis der
+In diesem Projekt geht es darum, basierend auf der :py:mod:`pygame` Bibliothek
+selbst ein Game zu erstellen. Dazu müssen zuerst weitere Kenntnis der
 Python-Programmiersprache erarbeitet werden. Am Ende der Projekts sollten die
 folgenden Fragen ausführlich beantwortet werden können:
 
@@ -23,8 +23,9 @@ programmieren.
 Aufträge
 ========
 
-1. Suche ein Tutorial für :py:mod:`pygame`, welches dir verständlich erscheint und
-   halte deine Wahl im Arbeitsjournal fest.
+1. Suche ein Tutorial für :py:mod:`pygame`, welches dir verständlich erscheint
+   und halte deine Wahl im Arbeitsjournal fest. Für einen schnellen Einstieg
+   lohnt es sich, nach Video-Tutorials zu suchen.
 
 2. Arbeite das Tutorial durch und achte darauf, dass du die Aufgaben und
    Beispiele auch in Python durcharbeitest. Erstelle dir parallel dazu eine
