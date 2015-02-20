@@ -81,6 +81,7 @@ bewertet:
 * *Produkt*:
       
   * Programmcode:
+
     * Wurden die im ersten Semester gelernten Strukturen sinnvoll und
       wo möglich eingesetzt?
     * Ist der Programmcode sauber und ausführlich kommentiert?
