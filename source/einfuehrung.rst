@@ -48,20 +48,20 @@ Wir werden ein sehr einfaches IDE namens IDLE [#]_ benutzen.
 Falls du Python auf deinem eigenen Computer zu Hause installieren möchtest,
 findest du die nötigen Dateien hier:
 
-http://www.python.org/download/releases/3.3.2/
+https://www.python.org/downloads/
 
 Die Dokumentation von Python findest du entweder in IDLE im Menu unter
 *Help* - *Python Docs* oder online unter
 
-http://docs.python.org/py3k/
+https://docs.python.org/py3k/
 
 Wenn du IDLE startest, siehst du zuerst nur den sogenannten
 Befehlsprompt. Dieser sieht ungefähr so aus::
   
-   Python 3.2.3 (default, Feb 20 2013, 14:44:27) 
-   [GCC 4.7.2] on linux2
+   Python 3.4.3 (default, Mar 14 2015, 16:02:22) 
+   [GCC 4.8.2] on linux
    Type "help", "copyright", "credits" or "license" for more information.
-   >>>
+   >>> 
 
 Die Befehle im Befehlsprompt kannst du nicht als Programm speichern, du kannst
 sie nur einzeln hintereinander ausprobieren. In diesem Skript werden wir oft

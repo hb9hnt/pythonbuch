@@ -33,11 +33,10 @@ Dieses Skript wurde bisher hauptsächlich von den folgenden Autoren verfasst:
 Fehler und Erweiterungen
 ========================
 
-Der `Source-Code
-<https://gitorious.org/unterrichtsunterlagen/python-skript-rst>`_ dieses Skripts
-kann auf Gitorious.org heruntergeladen werden.
+Der `Source-Code <https://github.com/puremath/pythonbuch>`_ dieses Skripts kann
+auf GitHub heruntergeladen werden.
 
 Falls jemand Fehler im Skript korrigieren möchte oder neue Kapitel und
-Erweiterungen in das Skript integrieren, kann der Source-Code auf Gitorious
+Erweiterungen in das Skript integrieren, kann der Source-Code auf GitHub
 geklont und die gewünschten Änderungen als Merge-Request übmittelt werden. Wir
 sind natürlich froh um jede Korrektur oder Verbesserung der Unterlagen.
