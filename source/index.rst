@@ -12,6 +12,7 @@ Einführung ins Programmieren mit Python
    :maxdepth: 2
    :numbered:
 
+   einleitung
    einfuehrung
    elemente
    datentypen

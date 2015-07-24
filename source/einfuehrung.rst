@@ -1,3 +1,5 @@
+.. _kap-einfuehrung:
+
 ****************************
 Einführung ins Programmieren
 ****************************
