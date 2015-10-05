@@ -98,6 +98,14 @@ Taste ``F5`` das Programm starten.
 
 Beachte, dass du ein solches neues Fenster erst in Aufgabe 2 benötigsts. Die
 ersten Befehle kannst du am Befehlsprompt ausprobieren. 
+
+.. seealso:: Es gibt noch weiter IDEs für Python. IDLE ist im Funktionsumfang
+             sehr eingeschränkt und bietet dir wenig Unterstützung beim
+             Programmieren von grösseren Projekten. Eine mögliche proprietäre
+             Alternative, welche auch gratis zur Verfügung steht, ist PyCharm:
+
+	     http://www.jetbrains.com/pycharm/
+
    
 Aufgaben
 ========

@@ -170,16 +170,25 @@ Fliesskommazahl handelt.
 Aufgaben
 ~~~~~~~~
 
-1. Probiere die Operationen mit verschiedenen Strings im Befehlsprompt aus und
-   notiere dir, was der entsprechende Befehlt tut. (Du musst für ``string_zwei``
-   und ``string_eins`` einen String einsetzen oder zuerst in der Variable einen
-   String speichern.)
+1. Probiere die Operationen mit verschiedenen Strings in der Pythonkonsole aus
+   und notiere dir, was der entsprechende Befehlt tut. Speichere dafür zuerst
+   unter den Variablen ``string_eins`` und ``string_zwei`` zwei
+   Zeichenketten, zum Beispiel so:
+
+   >>> string_eins = "Hallo schöne, neue Welt"
+   >>> string_zwei = "Hallo Mars, ich bin ein Marsroboter"
+
+   Probiere nun die folgenden Befehle aus. Setze im folgenden Befehlanstelle der
+   Zahl ``3`` auch andere Zahlen ein.
 
    >>> string_eins[3]
 
    >>> string_eins.capitalize()
 
    >>> string_eins.lower()
+
+   Probiere die folgenden zwei Befehle auch mit anderen Buchstaben anstelle von
+   ``'e'`` aus.
 
    >>> string_eins.count('e')
 
