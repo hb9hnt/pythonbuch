@@ -2,7 +2,7 @@
 # -*- coding: utf8 -*-
 # author: Martino Antognini (uzh)
 
-# Wir brauchen die Zahl pi vom library "math"
+# Wir brauchen die Zahl pi von der Library "math"
 from math import pi
 
 rad = float(input("Winkel in Bogenmass eingeben: "))

@@ -75,7 +75,7 @@ info = Label(fenster, justify = LEFT, font=("Helvetica", 16),
 ************* TEMPERATUR UMWANDLER *************
        1) Gewünschte Umrechnung wählen.
        2) Temperatur eingeben.
-       3) Taste "Umrechnen" dränglen.""")
+       3) Taste "Umrechnen" drücken.""")
 
 u1 = "von Celsius nach Kelvin"
 u2 = "von Celsius nach Fahrenheit"

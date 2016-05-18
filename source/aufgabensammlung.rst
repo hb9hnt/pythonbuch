@@ -7,21 +7,15 @@ Aufgabensammlung
 In diesem Kapitel findest du eine Sammlung von Aufgaben. Die Aufgaben sind in
 vier Teilgebiete gegliedert.
 
-Am Anfang jeder Aufgabe ist eine Liste der Kapiteln vorgegeben, die
-man für das Lösen gelesen haben soll. Zu jeder Aufgabe gibt es eine
-Musterlösung. Die Musterlösungen sind ``.py``-files und können heruntergeladen
-werden. Die Kommentare am Anfang der Dateien können ignoriert werden.  Diese
-Dateien können auf zwei Arten ausgeführt werden:
+Zu Beginn jeder Aufgabe sind die Vorkenntnisse angegeben,
+d.h. welche Kapitel mal zum Lösen gelesen haben sollte.
+Zu jeder Aufgabe gibt es eine Musterlösung. 
+Die Musterlösungen sind die ``*.py``-files 
+und können heruntergeladen werden. 
+Die Kommentare am Anfang der Dateien können ignoriert werden. 
 
-- File mit IDLE öffnen und Programm mit der F5-Taste (Run -> Run Module) 
-  ausführen.
-- Befehl ``python3 filename.py`` im Terminal eingeben. Man muss aber zuerst im
-  richtigen Verzeichnis sein. Zum Beispiel, wenn die Datei im Verzeichnis
-  *Home->Workspace->PythonWorkspace* gespeichert wurde, muss man zuerst mit
-  ``cd Home/Workspace/PythonWorkspace`` sich verlagern (``cd`` bedeutet *change
-  directory*).
-
-Ausserdem gibt es Zusatzaufgaben, für die keine Musterlösung vorhanden ist.
+Weiter gibt es jeweils noch eine Zusatzaufgabe, 
+für welche keine Musterlösung vorhanden ist.
 
 Allgemein
 =========
@@ -31,14 +25,14 @@ Hello World! I'm...
 
 **Vorkenntnisse:** Kapitel 1.
 
-Erstelle ein Programm, das deinen Vorname, Nachname und Geburtsdatum auf der
-Konsole aufdruckt.
+Erstelle ein Programm, das deinen Vorname, Nachname 
+und dein Geburtsdatum auf der Konsole ausgibt.
 
 **Musterlösung:**
 :download:`hello_i_am.py <code/musterloesungen/hello_i_am.py>`.
 
-**Zusatzaufgabe:** Erweitere dein Programm, indem es auch zum Beispiel deine 
-Adresse oder dein Telefonnummer aufdruckt.
+**Zusatzaufgabe:** Erweitere dein Programm, 
+indem es zum Beispiel auch deine Adresse oder deine Telefonnummer ausgibt.
 
 
 Winkelmass Umwandler
@@ -46,34 +40,38 @@ Winkelmass Umwandler
 
 **Vorkenntnisse:** Kapitel 1 bis 3.
 
-Schreibe ein Programm, das, gegeben einen Winkel in Bogenmass, den 
-entsprechenden Winkel in Gradmass berechnet. Die Ausgabe muss mit Grad (°),
-Bogenminuten (\') und Bogensekunden (\") aufgewiesen werden.
+Schreibe ein Programm, 
+das zu einem gegebenen Winkel im Bogenmass
+(Eingabe in der Konsole durch den Benutzer), 
+den entsprechenden Winkel im Gradmass berechnet. 
+Die Ausgabe soll mit Grad (°), Bogenminuten (\') 
+und Bogensekunden (\") ausgegeben werden.
 
 Hinweise:
 
-- Die Zahl :math:`\pi` kannst du vom Modul ``math`` importieren, indem du
-  folgendes Befehl am Anfang deines Programms schreibst:
-  ``from math import pi``. Du kannst dann im Programm mit der Variable ``pi``
-  arbeiten.
+- Die Zahl :math:`\pi` kann vom Modul ``math`` mit dem folgenden Befehl
+  geladen werden: ``from math import pi``. 
+  Der Wert ist dann in der Variable ``pi`` gespeichert.
 - Überlege dir, wie man die zwei Befehle :py:func:`input()` und 
-  :py:func:`float()` benutzen kann, um eine Flieskommazahl lesen zu können.
+  :py:func:`float()` benutzen kann, 
+  um eine Flieskommazahl einzulesen.
 
 **Musterlösung:**
 :download:`bogen_nach_gradmass.py 
 <code/musterloesungen/bogen_nach_gradmass.py>`.
 
-**Zusatzaufgabe:** Schreibe ein anderes Programm, das die umgekehrte Umrechnung
-durchführt.
+**Zusatzaufgabe:** Schreibe ein Programm, 
+welches die Umrechnung vom Gradmass ins Bogenmass übernimmt.
 
 Temperatur Umwandler
 --------------------
 
 **Vorkenntnisse:** Kapitel 1 bis 5.
 
-Schreibe ein Programm, das Temperaturen in verschiedenen Skalensystemen
-umwandelt. Das Programm soll ein Anfangsmenü mit den verschiedenen
-Möglichkeiten haben::
+Schreibe ein Programm, 
+das Temperaturen in verschiedene Skalensystemen ineinander umwandelt. 
+Das Programm soll zu Beginn eine Auswahl mit den verschiedenen
+Möglichkeiten anbieten::
 
    (1) Umrechnung von Celsius nach Kelvin
    (2) Umrechnung von Celsius nach Fahrenheit
@@ -82,62 +80,66 @@ Möglichkeiten haben::
    (5) Umrechnung von Fahrenheit nach Celsius
    (6) Umrechnung von Fahrenheit nach Kelvin
 
-Achte auf folgende Bemerkungen:
+.. note:: Dies kann dir sicher helfen.
 
-- Celsius = 5/9 * (Fahrenheit - 32).
-- Celsius = Kelvin - 273.15.
-- Die tiefste mögliche Temperatur ist den absoluten Nullpunkt ``0K``.
+	  * Celsius = 5/9 * (Fahrenheit - 32).
+
+	  * Celsius = Kelvin - 273.15.
+
+	  * Die tiefste mögliche Temperatur ist den absoluten Nullpunkt ``0K``.
 
 Hinweise:
 
-- Benutze die :py:keyword:`if`-:py:keyword:`elif`-:py:keyword:`else`
+* Benutze die :py:keyword:`if`-:py:keyword:`elif`-:py:keyword:`else`
   Verzweigung.
 
 
 **Musterlösung:** :download:`temperatur_umwandler.py 
 <code/musterloesungen/temperatur_umwandler.py>`.
 
-**Zusatzaufgabe:** Passe deine Lösung der Aufgabe `Winkelmass Umwandler`_ so an,
-dass beide Umrechnungen (Bogen- nach Gradmass und umgekehrt) in einem einzelnen
-Programm möglich sind.
+**Zusatzaufgabe:** Passe deine Lösung aus der Aufgabe 
+`Winkelmass Umwandler` so an,
+dass beide Umrechnungen (Bogen- nach Gradmass und umgekehrt) 
+in einem einzelnen Programm möglich sind.
 
 Mit Funktionen
 --------------
 
 **Vorkenntnisse:** Kapitel 1 bis 6.
 
-Erweitere deine Lösung der vorherige Aufgabe, indem du für die
-Umrechnung 6 verschiedene Funktionen definierst. Passt ausserdem dein
-Programm so an, dass der Benutzer mehrere Temperaturen nacheinander umrechnen
-kann und selber dann das Programm beenden kann.
+Erweitere deine Lösung der vorherigen Aufgabe, 
+indem du für die Umrechnung 6 verschiedene Funktionen definierst. 
+Passe ausserdem dein Programm so an, 
+dass der Benutzer mehrere Temperaturen nacheinander umrechnen kann 
+und den Zeitpunkt zum Beenden des Programms selber bestimmt.
 
 Hinweise:
 
-- Bei der Implementierung von Programmen braucht man einige konstante Werte
-  (zum Beispiel brauchst du in dieser Aufgabe den Wert des absoluten Nullpunktes
-  :math:`-273.15` in Celsius-Skala).
-  Es ist lohnenswert, solche Konstanten am Anfang des Programms
-  zu definieren. In einiger Programmiersprache gibt es sogar die Möglichkeit, 
-  \"Variablen\" zu definieren, deren Wert nicht geändert werden kann. In Python
-  gibt allerdings diese Möglichkeit nicht. Per Konvention benennt der Ersteller
-  die Konstanten mit grossgeschriebenen Namen
-  (z.B. ``ABSOLUTER_NP_C = -273.15``).
-- Um nach einer Eingabe dem Benutzer zu fragen, kannst du folgende Funktion
-  benutzen:
+- Bei der Implementierung braucht man einige konstante Werte
+  (zum Beispiel brauchst du in dieser Aufgabe 
+  den Wert des absoluten Nullpunktes -273.15 in Grad Celsius).
+  Es lohnt sich solche Konstanten am Anfang des Programms zu definieren. 
+  In einigen Programmiersprachen gibt es sogar die Möglichkeit, 
+  \"Variablen\" zu definieren, deren Werte nicht geändert werden können. 
+  In Python gibt es diese Möglichkeit jedoch nicht. 
+  Per Konvention benennt der Entwickler die Konstanten mit 
+  grossgeschriebenen Buchstaben (z.B. ``ABSOLUTER_NP_C = -273.15``).
+- Um nach einer gültigen Eingabe des Benutzers zu fragen, 
+  kannst du die folgende Funktion benutzen:
 
 	.. literalinclude:: code/exception_muster.py
 	    	  :linenos:
 
-  Diese Funktion hat ein optionales Argument ``msg``. Wenn die Funktion ohne
-  Argumente aufgerufen wird, nimmt ``msg`` den vorgegebenen Wert
-  ``"Bitte Zahl eingeben: "``. Falls der Benutzer eine Zahl eingibt, so wird
-  diese zurückgegeben. Andere Eingaben werden allerdings nicht akzeptiert: das
-  Programm erkennt ungültige Eingabe mit der Ausnahmebehandlung
-  (:py:keyword:`try`-:py:keyword:`except`) und fragt unmittelbar nach einer
-  anderen Eingabe.
+  Diese Funktion hat ein optionales Argument ``msg``. 
+  Wenn die Funktion ohne Argumente aufgerufen wird, 
+  nimmt ``msg`` den vorgegebenen Wert ``"Bitte Zahl eingeben: "`` an. 
+  Falls der Benutzer eine Zahl eingibt, so wird diese zurückgegeben. 
+  Andere Eingaben werden nicht akzeptiert: das
+  Programm erkennt ungültige Eingaben mit der Ausnahmebehandlung
+  (:py:keyword:`try`-:py:keyword:`except`) und fragt solange,
+  bis eine gültige Eingabe getätigt wurde.
 - Analog kannst du ungültige Eingabewerte für die Temperatur mit
-  :py:keyword:`raise` wie im folgenden Beispiel (Funktion für die Umrechnung von
-  Celsius nach Kelvin) überprüfen:
+  :py:keyword:`raise` überprüfen. Siehe folgendes Beispiel:
 
 	.. literalinclude:: code/exception_muster2.py
 	    	  :linenos:
@@ -145,17 +147,17 @@ Hinweise:
 **Musterlösung:** :download:`temperatur_umwandler_erweiterung.py 
 <code/musterloesungen/temperatur_umwandler_erweiterung.py>`.
 
-**Zusatzaufgabe:** Erweitere die Lösung der vorherigen Zusatzaufgabe (Winkelmass
-Umwandler), indem du Funktionen implementierst.
+**Zusatzaufgabe:** Erweitere die Lösung der vorherigen Zusatzaufgabe 
+(Winkelmass Umwandler), indem du Funktionen implementierst.
 
 Mit GUI
 -------
 
 **Vorkenntnisse:** Kapitel 1 bis 8.
 
-Versuche deine Lösung von vorherigen Aufgabe mit einer
-graphische Benutzeroberfläche zu erweitern. Die Fenster soll folgende Elemente
-enthalten:
+Versuche deine Lösungen von den vorherigen Aufgaben mit einer
+graphische Benutzeroberfläche zu erweitern. 
+Das Fenster soll folgende Elemente enthalten:
 
 - ein OptionMenu Widget für die Wahl der Umrechnung (Celsius nach Kelvin, ...).
 - ein Entry Widget, für die Eingabe der Temperatur.
@@ -175,26 +177,28 @@ Für die Erstellung des OptionMenus kannst du folgendes Muster anpassen:
 **Musterlösung:** :download:`temperatur_gui.py
 <code/musterloesungen/temperatur_gui.py>`.
 
-**Zusatzaufgabe:** Erstelle auch für den Winkelmass Umwandler eine GUI.
+**Zusatzaufgabe:** Erstelle auch für den Winkelmass Umwandler ein GUI.
 
 Sortierprogramm
 ---------------
 
 **Vorkenntnisse:** Kapitel 1 bis 4.
 
-Schreibe ein Programm, welches eine Liste von ganzen Zahlen wachsend sortiert.
-Die Elementen der Liste werden nacheinander den Benutzer gefragt. Der Benutzer
-soll so viele Elementen eingeben, wie er will. Wenn er mit der Eingabe fertig
-ist, soll er mit einem Befehl (zum Beispiel ``q`` eingeben) die Eingabe
-beenden.
+Schreibe ein Programm, welches eine Liste bestehend aus ganzen Zahlen 
+aufsteigend sortiert.
+Der Benutzer soll per Eingabe entscheiden, 
+welche Elemente in die Liste kommen 
+und er soll so viele Elementen eingeben können, 
+wie er will. Wenn er mit der Eingabe fertig ist, 
+soll er mit einem Befehl (zum Beispiel ``q``) die Eingabe beenden.
 
 Hinweis: :py:keyword:`while`
 
 **Musterlösung:** :download:`sortierprogramm.py 
 <code/musterloesungen/sortierprogramm.py>`.
 
-**Zusatzaufgabe:** Schreibe ein anderes Programm, das eine Liste von
-Zeichenkette alphabetisch sortiert.
+**Zusatzaufgabe:** Schreibe ein anderes Programm, 
+welches eine Liste aus Zeichenketten alphabetisch sortiert.
 
 
 Prof. Ungerechtmann
@@ -203,15 +207,15 @@ Prof. Ungerechtmann
 **Vorkenntnisse:** Kapitel 1 bis 5.
 
 Professor Ungerechtmann der Kantonsschule Unfairdorf braucht ein Programm für
-die Notenvergabe der Abschlussprüfung. Die Abschlussnote hängt von folgenden
-Parameter ab:
+die Notenvergabe der Abschlussprüfung. Die Abschlussnote hängt von 
+den folgenden Parametern ab:
 
 - Prüfungsnote (von 1 bis 6 mit Halbpunkten);
 - Augenfarbe (z.B. dunkel=1, hell=0);
 - Frisur (z.B. kurze Haare=1, lange Haare=0);
 - Wetter (z.B. schön=1, nicht schön=0).
 
-Es gilt Folgendes:
+Es gilt folgendes:
 
 - Hat der Prüfling dunkle Augen und...
 
@@ -245,17 +249,17 @@ Flache Steuern
 
 Der Steueramtchef von Flächenland stellt dich an, um ein einfaches Programm in
 Python zu schreiben. Dieses Programm soll den Steuersatz jedes Steuerzahlers
-berechnen. Die Eigabeparameter sind:
+berechnen. Die Eingabeparameter sind:
 
 - Vorname und Nachname des Steuerzahlers
 - Einkommen (in Dublonen, die Währung von Flächenland)
 
-Die Ausgabe soll folgender Form sein:
+Die Ausgabe soll von folgender Form sein:
 
    ``Der Steuerzahler Vorname Nachname muss für das laufende Jahr X Dublonen dem
    Steueramt bezahlen.``
 
-Der Steuersatz ist gemäss folgender Tabelle bestimmt:
+Der Steuersatz wird gemäss folgender Tabelle bestimmt:
 
 =============================  ==============
 **Einkommen** :math:`E`        **Steuersatz**
@@ -269,11 +273,11 @@ Der Steuersatz ist gemäss folgender Tabelle bestimmt:
 **Musterlösung:** :download:`flache_steuern.py 
 <code/musterloesungen/flache_steuern.py>`.
 
-**Zusatzaufgabe:** Berücksichtige in deinem Programm neben das Einkommen
-auch die Habseligkeit.
+**Zusatzaufgabe:** Berücksichtige in deinem Programm neben dem Einkommen
+auch das Vermögen.
 
 =================================  ==============
-**Habseligkeit** :math:`H`         **Steuersatz**
+**Vermögen** :math:`H`     	   **Steuersatz**
 ---------------------------------  --------------
 :math:`H \le 100'000`              5\%
 :math:`100'000 < H \le 500'000`    8\%
@@ -282,7 +286,7 @@ auch die Habseligkeit.
 =================================  ==============
 
 Hat zum Beispiel ein Steuerzahler :math:`25'000` Dublonen Einkommen und 
-:math:`600'000` Dublonen Habseligkeit, so muss er
+:math:`600'000` Dublonen Vermögen, so muss er
 
 .. math:: 25'000 \cdot \frac{55}{100} + 600'000 \cdot \frac{13}{100} = 91'750
 
@@ -317,23 +321,24 @@ Erstelle ein Programm zur Lösung von quadratische Gleichungen
 
 .. math:: ax^2 + bx + c = 0.
 
-Die reellen Koeffizienten :math:`a, b, c` sind den Benutzer gefragt.
+Die reellen Koeffizienten :math:`a, b, c` werden vom Benutzer eingegeben.
 
 Hinweise:
 
 - Das Programm kann man elegant gestalten, indem man am Anfang verschiedene
   Fälle unterscheidet. Was passiert zum Beispiel wenn :math:`a=0`? Wenn 
   :math:`b^2-4ac < 0`? ...
-- Analog wie die Zahl :math:`\pi` kann die quadratische Wurzel (``sqrt``) mit
-  ``from-import`` vom Module ``math`` importiert werden.
+- Analog wie die Zahl :math:`\pi` kann die Funktion zur Berechnung von 
+  Quadratwurzeln (``sqrt``) vom Module ``math`` importiert werden.
 
 **Musterlösung:** :download:`quadratische_gleichungen.py 
 <code/musterloesungen/quadratische_gleichungen.py>`.
 
-**Zusatzaufgabe:** Gegeben eine quadratische Funktion :math:`f(x) = ax^2+bx+c`
-durch den Koeffizienten ``a, b, c`` und eine lineare Funktion
-:math:`g(x) = mx + q` durch ``m, q``, erstelle ein Programm, das
-die Schnittpunkte von :math:`f` und :math:`g` findet.
+**Zusatzaufgabe:** Sei eine quadratische Funktion 
+:math:`f(x) = ax^2+bx+c` durch ihre Koeffizienten ``a, b, c``
+und eine lineare Funktion :math:`g(x) = mx + q` durch ``m`` und ``q`` gegeben.
+Erstelle ein Programm, das die Schnittpunkte 
+der Graphen von :math:`f` und :math:`g` berechnet.
 
 
 Zahlenfolge
