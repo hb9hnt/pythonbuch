@@ -348,25 +348,26 @@ Zahlenfolge
 
 Sei :math:`n \in \mathbb N`. Es gelten folgende Regeln:
 
-- Falls :math:`3 \mid n`, dann soll :math:`n` um 4 erhöht.
+- Falls :math:`3 \mid n`, dann soll :math:`n` um :math:`4` erhöht werden.
 - Falls :math:`3 \nmid n` aber :math:`4 \mid n`, dann soll :math:`n` halbiert
   werden.
-- Falls :math:`3 \nmid n` und :math:`4 \nmid n`, dann soll :math:`n` um 1
-  verkleinert.
+- Falls :math:`3 \nmid n` und :math:`4 \nmid n`, dann soll :math:`n` 
+  um :math:`1` verkleinert werden.
 
-Man soll sukzessiv vorherige Regeln anwenden, bis :math:`n = 0`. Zum Beispiel,
-für :math:`n = 7` hat man:
+Diese Regeln sollen nun sukzessive angewendet werden bis :math:`n = 0` ist. 
+Zum Beispiel hat man für :math:`n = 7`:
 
 .. math:: 7 \rightarrow 6 \rightarrow 10 \rightarrow 9 \rightarrow 13
           \rightarrow 12 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow
           2 \rightarrow 1 \rightarrow 0.
 
-In diesem Fall braucht man 11 Schritte, um 0 zu erreichen.
+In diesem Beispiel braucht man 11 Schritte, um die 0 zu erreichen.
 
-Schreibe ein Programm, das, gegeben zwei natürliche Zahlen ``a`` und ``b`` mit 
-``a < b``, auf der Konsole die Anzahl benötigte Schritte für jede
-:math:`a \le n \le b` veranschaulichen. Zum Beispiel soll die Ausgabe für
-``a = 1`` und ``b = 7`` folgende sein::
+Schreibe ein Programm, welches zu zwei gegebenen natürliche Zahlen 
+``a`` und ``b`` mit ``a < b``, 
+auf der Konsole die Anzahl benötigte Schritte für jedes :math:`n`
+(:math:`a \le n \le b`) ausgibt. 
+Für ``a = 1`` und ``b = 7`` soll die Ausgabe folgendermassen aussehen::
 
 	1 -> 1
 	2 -> 2
@@ -380,11 +381,13 @@ Schreibe ein Programm, das, gegeben zwei natürliche Zahlen ``a`` und ``b`` mit
 <code/musterloesungen/anzahl_schritte.py>`.
 
 **Zusatzaufgabe:** Das `Collatz-Problem`_ ist ein ungelöstes mathematisches 
-Problem. Es handelt sich um eine Zahlenfolge, die in den Zyklus 4-2-1 mündet,
-unabhängig davon, welche Startzahl :math:`n` wählt. Schau zuerst wie die Folge 
-definiert ist und erstelle dann ein Programm, welches gegeben
-eine Startzahl, die Anzahl benötigten Schritte für die Erreichung des Zyklus
-4-2-1 berechnet.
+Problem. Es handelt sich dabei um eine Zahlenfolge, 
+die im Zyklus 4-2-1 mündet,
+unabhängig davon, welche Startzahl :math:`n` gewählt wird. 
+Schaue dir zuerst an, wie die Folge definiert ist 
+und erstelle dann ein Programm, welches bei einer gegeben Startzahl 
+die Anzahl benötigte Schritte für die Erreichung des Zyklus
+4-2-1 ausgibt.
 
 .. _`Collatz-Problem`: http://de.wikipedia.org/wiki/Collatz-Problem
 
@@ -393,8 +396,10 @@ PPDI
 
 **Vorkenntnisse:** Kapitel 1 bis 5.
 
-Die **narzisstischen Zahlen** sind eine Teilmenge natürlicher Zahlen, die durch
-bestimmte Rechenvorschriften ihrer Ziffern sich selbst erzeugen
+Die Menge der **narzisstischen Zahlen** ist eine Teilmenge 
+der natürlicher Zahlen, 
+die durch bestimmte Rechenvorschriften mit ihren Ziffern 
+sich selbst wieder erzeugen
 (siehe http://de.wikipedia.org/wiki/Narzisstische_Zahl).
 
 Die **PPDI** (*Pluperfect digital invariants*, auch *Armstrong-Zahlen*) sind
@@ -404,7 +409,7 @@ Zum Beispiel ist 371 eine PPDI:
 
 .. math:: 371 = 3^3 + 7^3 + 1^3.
 
-Schreibe ein Programm, das alle die PPDI mit drei Ziffern bestimmt.
+Schreibe ein Programm, welches alle PPDIs mit drei Ziffern bestimmt.
 
 **Musterlösung:** :download:`ppdi.py <code/musterloesungen/ppdi.py>`.
 
@@ -420,11 +425,12 @@ teilbar ist:
 
 .. math:: 8^3+6^3+1^3+4^3+5^3 = 918.
 
-Von dieser neue Zahl kann man nochmals die Summe der dritten Potenzen der
+Von dieser neuen Zahl kann man nochmals die Summe der dritten Potenzen der
 Ziffern berechnen und diese ist wieder durch 3 teilbar
 (:math:`9^3+1^3+8^3 = 1242`), usw.
-Man kann beweisen, dass dieser Vorgang irgendwann zum Fixpunkt 153 kommt.
-Bemerke, dass 153 eine PPDI ist (:math:`1^3+5^3+3^3 = 153`).
+Man kann beweisen, dass dieser Vorgang irgendwann zur 153 gelangt und
+bei dieser Zahl auch bleibt.
+Man bemerke, dass 153 eine PPDI ist (:math:`1^3+5^3+3^3 = 153`).
 
 Erstelle ein Programm, das diese Tatsache verifiziert. Im Programm musst du
 eine Funktion :py:func:`quersumme_dritter_potenzen()` definieren. Diese Funktion
@@ -441,7 +447,8 @@ Sieb des Eratosthenes
 
 Das Sieb des Eratosthenes ist ein Algorithmus zur Bestimmung einer Liste oder
 Tabelle aller Primzahlen kleiner oder gleich einer vorgegebenen Zahl.
-Von http://de.wikipedia.org/wiki/Sieb_des_Eratosthenes:
+
+Aus http://de.wikipedia.org/wiki/Sieb_des_Eratosthenes:
 
 	Zunächst werden alle Zahlen 2, 3, 4, ... bis zu einem frei wählbaren 
 	Maximalwert N aufgeschrieben. Die zunächst unmarkierten Zahlen sind 
@@ -467,19 +474,20 @@ Von http://de.wikipedia.org/wiki/Sieb_des_Eratosthenes:
    Beispiel mit N = 120. Quelle: 
    http://de.wikipedia.org/wiki/Sieb_des_Eratosthenes
 
-Schreibe ein Programm, das, gegeben eine natürliche Zahl :math:`N \ge 2`, die
-Liste aller Primzahlen kleiner oder gleich N erzeugt.
+Schreibe ein Programm, das bei einer gegebenen natürliche Zahl 
+:math:`N \ge 2`, 
+die Liste aller Primzahlen kleiner oder gleich :math:`N` erzeugt.
 
 Das Programm soll folgende Struktur haben:
 
-- Eine Funktion ``sieb()`` mit ``N`` als Eingabeparameter und die Liste der
-  Primzahlen kleiner oder gleich ``N`` als Rückgabe.
-- Eine Funktion ``main()``, in der den Benutzer nach der Eingabe gefragt wird
+- Eine Funktion ``sieb()`` mit ``N`` als Eingabeparameter und welche 
+  die Liste der Primzahlen kleiner oder gleich ``N`` zurückgibt.
+- Eine Funktion ``main()``, in der der Benutzer zur Eingabe aufgefordert wird
   und die Funktion ``sieb()`` aufruft.
 - Der Aufruf der ``main()``-Funktion.
 
-Als Test für dein Programm benutze folgende Tatsache: die Anzahl Primzahlen
-kleiner 1'000'000 ist 78'498.
+Als Test für dein Programm benutze folgende Tatsache: Es gibt 78'498 Primzahlen,
+welche kleiner als 1'000'000 sind.
 
 **Musterlösung:** :download:`sieb.py <code/musterloesungen/sieb.py>`.
 
@@ -488,12 +496,12 @@ Zeitmessung
 
 **Vorkenntnisse:** Kapitel 1 bis 6.
 
-Passe deine Lösung der Aufgabe `Sieb des Eratosthenes`_ so an, dass das Programm
-neben der Liste der Primzahlen, auch die von der Funktion ``sieb()`` benötigte 
-Zeit angibt.
+Passe deine Lösung aus der Aufgabe `Sieb des Eratosthenes`_ so an, 
+dass das Programm neben der Liste der Primzahlen, 
+auch die von der Funktion ``sieb()`` benötigte Zeit ausgibt.
 
-Hinweis: Schau dir was die Funktion :py:func:`time.time()` von Module ``time``
-macht.
+.. note::  Die Funktion :py:func:`time()` aus dem Module ``time`` kann dir da
+	   sicher helfen.
 
 **Musterlösung:** :download:`sieb_zeit.py
 <code/musterloesungen/sieb_zeit.py>`.
@@ -503,16 +511,18 @@ Primfaktorzerlegung
 
 **Vorkenntnisse:** Kapitel 1 bis 6.
 
-Mit Hilfe vom Sieb des Eratosthenes, erstelle ein Programm, der die
-Primfaktorzerlegung einer natürliche Zahl bestimmt.
+Mit Hilfe des Siebs des Eratosthenes sollst du nun ein Programm erstellen, 
+weches die Primfaktorzerlegung einer natürliche Zahl berechnet.
 
 **Musterlösung:** :download:`primfaktorzerlegung.py
 <code/musterloesungen/primfaktorzerlegung.py>`.
 
-**Zusatzaufgabe:** Mit Hilfe der Programme, die du geschrieben hast, erstelle 
-nun ein weiteres Programm, welches gegeben eine Zahl :math:`n`, alle die
-vollkommene Zahlen kleiner oder gleich :math:`n` findet. Was eine vollkommene
-Zahl ist, kannst du hier lesen: http://de.wikipedia.org/wiki/Vollkommene_Zahl.
+**Zusatzaufgabe:** Mit Hilfe der bisherigen Programme, 
+welche du geschrieben hast, erstelle nun ein weiteres Programm, 
+welches zu einer gegebenen Zahl :math:`n`, alle *vollkommenen Zahlen* 
+kleiner oder gleich :math:`n` findet. 
+Was eine *vollkommene Zahl* ist, 
+kannst du hier nachlesen: http://de.wikipedia.org/wiki/Vollkommene_Zahl.
 
 
 Monty Hall Problem
@@ -531,8 +541,9 @@ Wahrscheinlichkeitstheorie. Aus http://de.wikipedia.org/wiki/Ziegenproblem:
 	\"Möchten Sie die Tür B?\" Ist es von Vorteil, die Wahl der Tür zu 
 	ändern?
 
-Selbst wenn du nicht antworten kannst, versuch nun dieses Spiel zu 
-implementieren.
+Selbst wenn du die Frage jetzt noch nicht beantworten kannst, 
+versuche dieses Spiel mit einer graphischen Benutzeroberfläche 
+zu implementieren. Benutze dazu das Modul ``tkinter``.
 
 .. note:: Es gibt keine *richtige* oder *falsche* Art, ein solches Programm zu
 	  schreiben. Hier gibt es aber einige Hinweise, die für die Erstellung
@@ -540,13 +551,16 @@ implementieren.
 
 Hinweise:
 
-- ``indicate_goat(n)``: eine Funktion, die gegeben die gewählte Tür
-  (``n=0,1`` oder ``2``) eine andere Tür zeigt, hinter welcher eine Ziege ist.
-  (Aufpassen: Falls der Spieler am Anfang "eine Ziege wählt", gibt es nur eine
-  Möglichkeit. Falls er aber "das Auto wählt", kann der Showmaster eine der
-  beiden anderen Türen öffnen und damit das Spiel fair bleibt, soll er
-  zufälligerweise entscheiden.)
-- Die drei Türen können als Buttons implementiert werden. In diesem Fall soll
+- ``indicate_goat(n)``: eine Funktion, die bei gegebener Tür 
+  (``n=0,1`` oder ``2``) eine andere Tür anzeigt, 
+  hinter welcher sich eine Ziege befindet.
+  
+  **Aufgepasst:** Falls der Spieler 
+  am Anfang "eine Ziege" wählt, gibt es nur eine einzige Möglichkeit. 
+  Falls er aber "das Auto" wählt, kann der Showmaster eine der
+  beiden anderen Türen öffnen. Damit das Spiel fair bleibt, soll er
+  zufällig eine Türe wählen.
+- Die drei Türen können als Buttons implementiert werden. In diesem Fall kann
   man drei Funktionen definieren (z.B. ``def doorA_action()``, ...).
   das Programm soll aber irgendwie die zwei Situationen (erste oder
   zweite Wahl) erkennen.
@@ -563,8 +577,8 @@ herunterladen:
 :download:`Boer-Goat.gif <code/musterloesungen/Boer-Goat.gif>`.
 
 
-**Zusatzaufgabe:** Bereiche dein Programm. Menüleiste, Informationen über die
-Version oder der Entwickler, Laute, ...
+**Zusatzaufgabe:** Ergänze dein Programm z.B. mit einer Menüleiste, 
+Informationen über die Version oder die Entwickler, ...
 
 
 Objektorientierte Aufgaben
@@ -578,15 +592,15 @@ Fahrrad
 Erstelle eine Klasse ``Fahrrad``. Die Instanzen dieser Klasse sollen folgende
 Attribute besitzen:
 
-- eine Zeichenkette ``__marke`` (private): die Attribut beschreibt die Marke des
+- eine Zeichenkette ``__marke`` (private): das Attribut beschreibt die Marke des
   Fahrrads
-- die positive ganze Zahl ``__anz_zahnkraenze`` (private): diese Attribut
+- eine positive ganze Zahl ``__anz_zahnkraenze`` (private): diese Attribut
   beschreibt die Anzahl Zahnkränze des Fahrrads.
-- die positive ganze Zahl ``__anz_ritzel`` (private): diese Attribut beschreibt
+- eine positive ganze Zahl ``__anz_ritzel`` (private): diese Attribut beschreibt
   die Anzahl Ritzel des Fahrrads.
-- die positive ganze Zahl ``_zahnkranz`` (protected): diese Attribut beschreibt
+- eine positive ganze Zahl ``_zahnkranz`` (protected): diese Attribut beschreibt
   den gegenwärtige Zahnkranz des Fahrrads.
-- die positive ganze Zahl ``_ritzel`` (protected): diese Attribut beschreibt das
+- eine positive ganze Zahl ``_ritzel`` (protected): diese Attribut beschreibt das
   gegenwärtige Ritzel des Fahrrads.
 
 Ausserdem soll die Klasse folgenden Methoden besitzen:
@@ -675,24 +689,26 @@ Beispiel vorheriges Vektor, wie folgt darstellen:
 
 .. math:: [3: 1, 6: 3, 13: 1]
 
-.. note:: Pass immer auf den Indizes auf! In der Mathematik fangen normalerweise
-	  die Indizes eines Vektors bei 1 an; in der Informatik bei 0!
+Dies liesst sich wie folgt: An der 1. Stelle ist eine 1, an der 6. Stelle eine 3
+und an der 13. Stelle eine 1.
+
+.. note:: Pass auf die Indizes auf! In der Mathematik beginnen die Indizes
+          eines Vektors normalerweise bei der 1; in der Informatik bei der 0.
 
 Schreibe eine Klasse ``Sparse()``, die schwachbesetzte Vektoren darstellt.
-Diese Klasse soll nützliche Funktionen besitzen, die zum Beispiel erlauben, den
-Betrag eines Vektor zu berechnen, den Gegenvektor zu bestimmen, einen Eintrag
-zu verändern, den Vektor auf der Konsole ausdrucken (kompakte oder vollständige
-Version).
+Diese Klasse soll nützliche Funktionen anbieten, die zum Beispiel erlauben, den
+Betrag eines Vektors zu berechnen, den Gegenvektor zu bestimmen, einen Eintrag
+zu verändern oder den Vektor auf der Konsole ausgibt 
+(in kompakter oder vollständiger Schreibweise).
 
-Implementiere dann drei zusätzliche Funktionen:
+Implementiere ebenfalls die folgenden Funktionen:
 
-- eine Funktion ``add_sparse(a, b)``, die, gegeben zwei Objekten der Klasse
-  ``Sparse``, ein drittes ``Sparse``-Objekt ``s`` erzeugt, so dass ``s = a + b``
-  (Summe).
-- eine Funktion ``dot_sparse(a, b)``, die, gegeben zwei Objekten der Klasse
-  ``Sparse``, das Skalarprodukt ``p`` zurückgibt.
+- eine Funktion ``add_sparse(a, b)``, welche aus den zwei Sparse Vektoren ``a`` 
+  und ``b``	die Summe bildet und diesen als neues ``Sparse``-Objekt zurückgibt.
+- eine Funktion ``dot_sparse(a, b)``, welche das Skalarprodukt der beiden 
+  Sparse Vektoren berechnet und zurückgibt.
 - eine Funktion ``create_random_sparse(n,m,a,b)``, die ein Objekt der Klasse
-  ``Sparse`` mit folgenden Eigenschaften erzeugt:
+  ``Sparse`` mit den folgenden Eigenschaften erzeugt:
 
   - Dimension ``n``
   - höchstens ``m`` von Null verschiedene Einträge, deren Wert im Intervall
@@ -700,15 +716,19 @@ Implementiere dann drei zusätzliche Funktionen:
 
 Hinweise:
 
-- Achtung! In Python passiert Folgendes:
+- Achtung!
 
 	>>> vector1 = [1, 3, 7, 9, 0]
 	>>> vector2 = vector1
 	>>> vector2[0] = 5
 	>>> vector1
 	[5, 3, 7, 9, 0]
-
-  Um das zu vermeiden, kannst du folgendes Trick benutzen:
+  
+  Bei der Zuordnung``vector2 = vector1`` wird keine Kopie der Liste 
+  erzeugt, sondern eine Referenz auf das gleiche Objekt
+  (siehe auch Kapitel `Listen <./datentypen.html#listen>`_).
+  
+  Um denoch eine Kopie zu erstellen, benutze folgenden Befehl:
 
 	>>> vector3 = vector2[:]
 	>>> vector3[0] = 400
@@ -724,8 +744,8 @@ Hinweise:
 **Musterlösung:** :download:`sparse.py 
 <code/musterloesungen/sparse.py>`.
 
-**Zusatzaufgabe:** implementiere eine zusätzliche Funktion, die den Winkel
-zwischen zwei gegeben Objekten der Klasse ``Sparse()`` bestimmt.
+**Zusatzaufgabe:** Implementiere eine zusätzliche Funktion, die den Winkel
+zwischen zwei gegeben Sparse Vektoren bestimmt.
 
 Kryptographie
 =============
@@ -745,7 +765,7 @@ Aus http://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung:
 	bildet den Schlüssel, der für die gesamte Verschlüsselung unverändert 
 	bleibt.
 
-Zum Beispiel wird das Klartext ``Python`` mit Schlüssel 2 in Geheimtext
+Zum Beispiel wird der Klartext ``Python`` mit dem Schlüssel 2 in den Geheimtext
 ``Sbwkrq`` abgebildet.
 
 .. figure:: images/Caesar3.png
@@ -755,9 +775,9 @@ Zum Beispiel wird das Klartext ``Python`` mit Schlüssel 2 in Geheimtext
    Schematische Darstellung einer Verschiebechiffre mit Verschiebung um drei
    Buchstaben.
 
-Implementiere einen Caesar-Verschlüsseler.
+Implementiere eine Caesar-Verschlüsselung.
 
-Beachte Folgendes:
+Beachte folgendes:
 
 	>>> ord('A')
 	65
@@ -773,10 +793,10 @@ Beachte Folgendes:
 **Musterlösung:** :download:`caesar.py 
 <code/musterloesungen/caesar.py>`.
 
-**Zusatzaufgabe:** Pass dein Programm so an, dass es ``.txt``-files 
-verschlüsseln kann. Documentation über hilfreiche Funktionen kannst du hier
-lesen:
-https://docs.python.org/3.3/tutorial/inputoutput.html#reading-and-writing-files.
+**Zusatzaufgabe:** Passe dein Programm so an, dass es ganze ``.txt``-Files 
+verschlüsseln kann. Die Seite 
+https://docs.python.org/3.3/tutorial/inputoutput.html#reading-and-writing-files
+kann dir dabei sicher helfen.
 
 Häufigkeitsanalyse
 ------------------
@@ -803,21 +823,24 @@ http://de.wikipedia.org/wiki/H%C3%A4ufigkeitsanalyse:
 	Nachricht steigt, ist eine lange Nachricht deutlich einfacher zu 
 	entschlüsseln, als eine kurze.
 
-Schreibe ein Programm, welches gegeben ein ``.txt``-Datei, die Häufigkeitsanalyse
-der Buchstaben in der Datei durchführt.
+Schreibe ein Programm, welches zu einer gegebenen ``.txt``-Datei, 
+die Häufigkeitsanalyse der Buchstaben in der Datei durchführt.
 
-Hinweis: Eine Unterscheidung zwischen Gross- und Kleinbuchstaben ist nicht
-notwendig. Ignoriere ausserdem die Besondercharakteren (ü, à, $, ...).
+**Hinweis:** Eine Unterscheidung zwischen Gross- und Kleinbuchstaben ist nicht
+notwendig. Ignoriere ausserdem alle Sonderzeichen/-laute (ü, à, $, ...).
 
 Von http://www.gutenberg.org/ kann man gratis einige Bücher im ``.txt``-Format
-herunterladen. Teste dein Programm mit einem solchen Bücher (zum Beispiel
-*Adventure of Huckleberry Finn*: http://www.gutenberg.org/cache/epub/76/pg76.txt
-)
+herunterladen. Teste dein Programm mit einem solchen Buch (zum Beispiel
+*Adventure of Huckleberry Finn*: 
+http://www.gutenberg.org/cache/epub/76/pg76.txt)
 
 **Musterlösung:** :download:`frequency_analysis.py 
 <code/musterloesungen/frequency_analysis.py>`,
 :download:`pg76.txt 
 <code/musterloesungen/pg76.txt>`.
 
-**Zusatzaufgabe:** Implementiere eine graphische Oberfläche, die die
+**Zusatzaufgabe:** Implementiere eine graphische Oberfläche, welche die
 Häufigkeitsanalyse als Histogramm darstellt.
+Die Bibliothek ``matplotlib`` kann dir vielleicht helfen ein Histogramm 
+darzustellen. Sie befindet sich jedoch nicht in den Standardlibraries von 
+Python und muss eventuell nachinstalliert werden.
