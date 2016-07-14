@@ -491,8 +491,20 @@ Aufgaben
    d) Das gleiche Prinzip wende nochmals für die Methode :py:func:`multiply`
       an.
 
-   e) Füge noch eine letzte Methode :py:func:`kuerzen` hinzu, welche 
-      den referenzierten Bruch kürzt, falls möglich.
+   e) Füge noch eine Methode :py:func:`kuerzen` hinzu, welche 
+      den referenzierten Bruch kürzt, falls möglich. 
+      Erweitere mit ihr die Methoden :py:func:`add` 
+      und :py:func:`multiply`.
+      
+   f) Definiere noch eine letzte Methode :py:func:`equal`. 
+	  Die Methode soll wahr zurückliefern, 
+	  sofern der übergebene Bruch dem gleichen Wert 
+	  wie dem aufgerufenen Bruch entspricht.
+	  
+4. Mache dich z.B. im Internet über das Thema **Operatorüberladung** schlau.
+   Benutze das Wissen um für die Klasse :py:class:`Brueche` von oben
+   die Addition mittels des "+"-Operators zu definieren.
+   Mache das gleiche auch für den "*"-Operator und den "=="-Operator.
 
 
 .. rubric:: Footnotes
