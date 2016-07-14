@@ -392,6 +392,91 @@ Hubraum wurde geändert.
 >>> toeff.get_hubraum()
 300
 
+Vererbung
+=========
+Das Konzept der Vererbung erlaubt es uns spezialisiertere Klassen 
+einer allgemeinen Klasse zu erstellen. 
+Die spezialisierte Klasse soll dabei alle Eigenschaften 
+der allgemeinen Klasse besitzen,
+so dass nur noch wenige Eigenschaften hinzugefügt werden müssen. 
+Die Klasse, von welcher geerbt wird, 
+nennt man **Oberklasse**, **Superklasse** oder **Basisklasse** 
+und die Klasse, welche erbt, 
+wird **Unterklasse**, **abgeleitete Klasse** oder **Subklasse** genannt.
+
+So könnte z.B. die Klasse :py:class:`Fahrzeug` eine Oberklasse 
+der Unterklassen :py:class:`Personenwagen` und :py:class:`Lastwagen` sein.
+Jedes :py:class:`Fahrzeug` ist durch 
+die ``marke``, den ``hubraum`` und die ``leistung`` charakterisiert. 
+Bei den :py:class:`Personenwagen` möchte man noch zusätzlich wissen, 
+wie viele Sitzplätze es hat 
+und beim :py:class:`Lastwagen` wie schwer die Fracht sein darf.
+
+	|erben|
+
+Um im Programm zu deklarieren, 
+dass die Klasse :py:class:`Personenwagen` von der Klasse :py:class:`Fahrzeug`
+erbt, setzt man beim Namen der Unterklasse einfach 
+den Namen der Oberklasse in Klammern (:py:class:`Personnenwagen(Fahrzeug)`).
+In einem Programm könnte das folgendermassen aussehen:
+
+	.. literalinclude:: code/oop/vererbung.py
+	   :linenos:
+	   :lines: 1-15
+	   :emphasize-lines: 11, 14
+	   
+Testen wir die Klasse in der Konsole, so sieht das so aus:
+
+>>> pw = Personenwagen("Opel", 222, 100)
+>>> lkw = Lastwagen("Mercedes", 5000, 300)
+>>> print(pw.get_infos())
+Marke: Opel, Hubraum: 222, Leistung: 100
+>>> print(lkw.get_infos())
+Marke: Mercedes, Hubraum: 5000, Leistung: 300
+
+Wir sehen also, dass die beiden Unterklassen alle Eigenschaften,
+d.h. alle Instanzvariablen und alle Methoden der Oberklasse geerbt haben.
+
+
+Überschreiben
+~~~~~~~~~~~~~
+Das obige Beispiel zeigt,
+dass die abgeleiteten Klassen die Eigenschaften der Oberklassen geerbt haben.
+Nun möchten wir aber noch die speziellen Eigenschaften der Unterklassen 
+im Programm einbauen.
+Damit sind bei der Klasse :py:class:`Personnenwagen` die Anzahl Sitzplätze
+und bei der Klasse :py:class:`Lastwagen` die Schwere der Fracht gemeint.
+
+Um diese Eigenschaften zu implementieren führen wir in den 
+Unterklassen eigene :py:func:`__init__` - Methoden ein.
+Dies hat zur Folge, 
+dass wenn wir ein Obejkt der Klasse :py:class:`Personnenwagen` erstellen,
+nun nicht mehr die :py:func:`__init__` - Methoden der Klasse 
+:py:class:`Fahrzeug` aufgerufen wird, sondern die der Klasse 
+:py:class:`Personnenwagen`.
+
+Um aber Code Dublizität zu vermeiden,
+können wir in der Unterklasse die :py:func:`__init__` - Methode der 
+Oberklasse aufrufen. 
+Dies geschieht mit dem Keyword :py:func:`super`.
+
+Ebenfalls *überschreiben* wir die Methode :py:func:`get_info` 
+und passen sie auf die entsprechende Unterklasse an.
+
+	.. literalinclude:: code/oop/vererbung2.py
+	   :linenos:
+	   :emphasize-lines: 13, 17, 21, 25
+	   
+
+Das Programm liefert folgenden Output: 
+
+>>> 
+Marke: Opel, Hubraum: 222, Leistung: 100, Anzahl Plaetze: 5
+Marke: Mercedes, Hubraum: 5000, Leistung: 300, Lastgewicht: 2000
+
+In Python besteht auch die Möglichkeit einer **Mehrfachvererbung**, 
+d.h. dass eine Unterklassse mehr als nur eine Basisklasse besitzen kann. 
+Wir gehen hier aber nicht näher darauf ein. 
 
 Aufgaben
 ========
@@ -528,4 +613,8 @@ Aufgaben
        beim Aufruf eine Referenz auf das Objekt für welches sie aufgerufen wird.
        Es ist aber in Python üblich, dass der Name ``self`` verwendet wird.
 .. [#] Beispiel aus http://www.python-kurs.eu/python3_klassen.php
+   
+   
+   
         
+.. |erben| image:: images/erben.png
