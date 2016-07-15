@@ -581,10 +581,9 @@ Aufgaben
       Erweitere mit ihr die Methoden :py:func:`add` 
       und :py:func:`multiply`.
       
-   f) Definiere noch eine letzte Methode :py:func:`equal`. 
-	  Die Methode soll wahr zurückliefern, 
-	  sofern der übergebene Bruch dem gleichen Wert 
-	  wie dem aufgerufenen Bruch entspricht.
+   f) Definiere noch eine letzte Methode :py:func:`equal`.
+      Die Methode soll wahr zurückliefern, sofern der übergebene 
+      Bruch dem gleichen Wert wie dem aufgerufenen Bruch entspricht.
 	  
 4. Mache dich z.B. im Internet über das Thema **Operatorüberladung** schlau.
    Benutze das Wissen um für die Klasse :py:class:`Brueche` von oben
