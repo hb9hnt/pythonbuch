@@ -187,8 +187,8 @@ sind garantiert belegt.
           zu welcher Instanzvariable gehört.
 
 
-Klassenmethoden
-================
+Methoden
+========
 Menschen sind nicht nur Träger von Merkmalen (Name, Vorname etc.), sondern 
 besitzen auch ein Verhalten (z.B. "sich Vorstellen" oder "Gewicht abnehmen").
 Solche Verhaltensweisen können in Methoden/Funktionen innerhalb der Klasse 
@@ -265,7 +265,7 @@ nach dem Aufruf der Funktion :py:func:`abnehmen`, verändert wurde.
 
 .. note:: Die Instanzvariablen der Klasse :py:class:`Person` 
           (``name``, ``vorname``, ``geb_datum`` und ``gewicht``) 
-          sowie die Klassenmethoden 
+          sowie die Methoden 
 	  (:py:func:`vorstellen` und  :py:func:`abnehmen`) sind nur Objekten
 	  derselben Klasse vorbehalten.
 	  Eine Eingabe wie
