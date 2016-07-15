@@ -591,6 +591,40 @@ Aufgaben
    die Addition mittels des "+"-Operators zu definieren.
    Mache das gleiche auch für den "*"-Operator und den "=="-Operator.
 
+5. **Vererbung**
+
+   Gegeben sei das folgende Klassendiagramm:
+
+		|erben_personen|
+
+   Hinweise zum Diagramm:
+
+   - Der Pfeil bedeutet: *"Erbt von"*
+   - Im obersten Teilkästchen wird jeweils der Klassenname notiert. 
+     Anschliessend folgen die Instanzvariablen und zum Schluss die Methoden.
+   - Instanzvariablen werden gemäss der folgenden Notation illustriert:
+  
+     `<+/-> <name> : <type>`
+  
+     wobei ein + für *public* und ein - für *private* steht.
+   - Analog bei Methoden: 
+
+     `<+/-> <name>(<parameter>) : <return-type>`
+
+   Implementiere alle Klassen gemäss dem Klassendiagramm.
+   Die Methode :py:func:`print_beschreibung` 
+   soll eine kurze Beschreibung ausgeben:
+
+   *"Ich heisse Hans Muster, bin männlich, 70 Jahre alt und Pensionär(in)."*
+
+   Achte darauf, dass das Alter eines Erwachsenen zwischen 18 und 61 Jahre 
+   beträgt. Kinder sind jünger als 18 Jahre und die Pensionierten älter als 
+   61 Jahren.
+   
+   Die Funktion :py:func:`print_kinder` in der Klasse :py:class:`Erwachsener`
+   gibt die Namen der Kinder auf der Konsole aus, falls sie überhaupt 
+   Kinder besitzt.
+   
 
 .. rubric:: Footnotes
 	  
@@ -618,3 +652,4 @@ Aufgaben
    
         
 .. |erben| image:: images/erben.png
+.. |erben_personen| image:: images/erben_personen.png
