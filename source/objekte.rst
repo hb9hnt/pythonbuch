@@ -425,7 +425,7 @@ In einem Programm könnte das folgendermassen aussehen:
 	   :lines: 1-15
 	   :emphasize-lines: 11, 14
 	   
-Testen wir die Klasse in der Konsole, so sieht das so aus:
+Testen wir die Klasse in der Konsole, dann könnte das so aussehen:
 
 >>> pw = Personenwagen("Opel", 222, 100)
 >>> lkw = Lastwagen("Mercedes", 5000, 300)
@@ -623,6 +623,8 @@ Aufgaben
    Die Funktion :py:func:`print_kinder` in der Klasse :py:class:`Erwachsener`
    gibt die Namen der Kinder auf der Konsole aus, falls sie überhaupt 
    Kinder besitzt.
+   
+   Vermeide Code Dublizität.
    
 
 .. rubric:: Footnotes
