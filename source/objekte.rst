@@ -75,12 +75,11 @@ im weiteren Programmverlauf nur
 zur Verwirrung führt.
 
 .. note:: Die Instanzvariablen, welche wir hier erstellt haben
-          ( ``name``, ``vorname``, ``geb_datum`` und ``gewicht``)
-	  charakterisieren die Instanz ``p1`` der Klasse :py:class:`Person`.
-	  Diese helfen verschiedene Instanzen der gleichen Klasse zu
-	  unterscheiden.
-	  Später werden wir auch noch **Klassenvariablen** sehen, 
-          welche nicht ein Objekt, sondern die Klasse selbst beschreibt.
+   (``name``, ``vorname``, ``geb_datum`` und ``gewicht``)
+   charakterisieren die Instanz ``p1`` der Klasse :py:class:`Person`.
+   Diese helfen verschiedene Instanzen der gleichen Klasse zu unterscheiden.
+   Später werden wir auch noch **Klassenvariablen** sehen,
+   welche nicht ein Objekt, sondern die Klasse selbst beschreibt.
 
 
 Aufgaben
@@ -474,9 +473,18 @@ Das Programm liefert folgenden Output:
 Marke: Opel, Hubraum: 222, Leistung: 100, Anzahl Plaetze: 5
 Marke: Mercedes, Hubraum: 5000, Leistung: 300, Lastgewicht: 2000
 
-In Python besteht auch die Möglichkeit einer **Mehrfachvererbung**, 
-d.h. dass eine Unterklassse mehr als nur eine Basisklasse besitzen kann. 
-Wir gehen hier aber nicht näher darauf ein. 
+.. note:: Alternativ kann man auch über den Klassennamen anstelle 
+   von :py:func:`super` auf die Methoden der Oberklasse zugreifen.
+   Zeile 13 von oben könnte dann folgendermassen aussehen:
+          
+				.. literalinclude:: code/oop/super.py
+				   :linenos:
+				   			 
+   Dies ist aus folgendem Grund wichtig: 
+   In Python besteht auch die Möglichkeit einer **Mehrfachvererbung**,
+   d.h. dass eine Unterklassse mehr 
+   als nur eine Basisklasse besitzen kann. 
+   Wir gehen hier aber nicht näher darauf ein. 
 
 Aufgaben
 ========
