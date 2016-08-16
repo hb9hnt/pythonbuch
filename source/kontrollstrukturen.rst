@@ -108,7 +108,7 @@ Aufgaben
    .. math:: n! := n \cdot (n-1) \cdot(n-2) \cdots 3 \cdot 2 \cdot 1
 
   So wird zum Beispiel :math:`5!` durch :math:`5\cdot 4\cdot3\cdot2\cdot1 = 120`
-  berechnet. Dies wird in der Mathematik als *Fakult�t von 5* bezeichnet.
+  berechnet. Dies wird in der Mathematik als *Fakultät von 5* bezeichnet.
 
   Schreibe ein Programm welches :math:`n!` für ein vom Benutzer vorgegebenes
   :math:`n` berechnet. Benutze dafür eine :py:keyword:`for` Schleife.
@@ -242,7 +242,7 @@ Aufgaben
    einliest und den grössten gemeinsamen Teiler der beiden Zahlen mit
    :py:func:`print` ausgibt.
 
-   Dazu kannst du den Euklidschen Algorithmus benutzen, welchen du entweder aus
+   Dazu kannst du den Euklidischen Algorithmus benutzen, welchen du entweder aus
    dem Mathematikunterricht kennst oder sonst sicher im Internet findest.
 
 .. rubric:: Footnotes
@@ -254,3 +254,90 @@ Aufgaben
 .. [#] Dies ist einer der Nachteile von Python. Andere Sprachen benutzen
        geschweifte Klammern { und } um zusammengehörende Blöcke zu
        kennzeichnen. 
+
+Kombinieren von Kontrollstrukturen
+==================================
+
+Wie du sicherlich schon festgestellt hast, kommt man nie mit einer einzelnen
+Kontrollstruktur aus, die meisten Problemstellungen benötigen ein geschicktes
+Kombinieren von :py:keyword:`if`, :py:keyword:`for` und
+:py:keyword:`while`. Dazu kommt meistens auch noch die Wahl einer Datenstruktur:
+Macht es Sinn, einzelne Variablen zu benutzen oder ist etwa eine Liste
+geeigneter? Halte dich beim Programmieren an folgende Grundsätze:
+
+* Nummeriere keine Variablen. Wenn du in deinem Programm etwa Variablen-Namen
+  ``x_wert_1``, ``x_wert_2`` und ``x_wert_3`` hast, ist dies ein Hinweis darauf, dass
+  du vermutlich besser eine Liste verwenden würdest.
+
+* Benutze wenn immer möglich ein :py:keyword:`elif`, wenn du mehrere
+  :py:keyword:`if`-Abfragen hintereinander ausführst.
+ 
+* Natürlich gilt weiterhin: Schreibe am besten zuerst die Kommentare für dein
+  Programm und dann den Programmcode. Falls du dies lieber nicht machst, achte
+  auf jeden Fall darauf, dass du jeden logisch zusammenhängenden Programmblock
+  mit einem oder mehreren `#`-Kommentarzeilen erklärst.
+
+Löse die folgenden Aufgaben unter Beachtung der genannten Grundsätze.
+
+Aufgaben
+~~~~~~~~
+
+
+#. Schreibe ein Programm, welches den Benutzer nach einer Zahl fragt und
+   anschliessend prüft, ob diese Zahl eine Primzahl ist. 
+
+#. Schreibe ein Programm, welches alle Primzahlen zwischen 1 und einer vom
+   Benutzer gewählten oberen Grenze ausgibt.
+
+   *Zusatzaufgabe*: Versuche im Internet herauszufinden, wie man dieses Problem
+   möglichst effizient (d.h. so, dass es wenig Zeit braucht) löst und schreibe
+   dein Programm um, damit es schneller wird.  
+
+#. Das Collatz-Problem gehört zu den ungelösten Problemen der Mathematik. _[#]
+   Es besagt, dass jede Abfolge von Zahlen, welche nach der folgenden Regel
+   gebildet wird, irgendwann bei der Zahl 1 landet:
+
+   * Die Folge beginnt bei einer beliebigen Zahl.
+   
+   * Ist die momentane Zahl :math:`n` gerade, so ist die nächste Zahl die Hälfte von
+     dieser, also :math:`\frac{n}{2}`.
+
+   * Ist die momentane Zahl :math:`n` gerade, so ist die nächste Zahl um eins grösser
+     als das dreifache der Zahl, also :math:`3n+1`.
+
+   Bilden wir beispielsweise für die Zahl :math:`23` diese Folge, so lautet sie:
+
+   .. math:: 23, 70, 35, 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2, 1
+
+   Schreibe ein Programm, welches diese Folge für eine vom Benutzer gewählte
+   Zahl ausgibt und mit der Berechnung stoppt, sobald 1 erreicht wurde.
+
+#. Schreibe ein Programm, welches eine Liste von Zahlen sortiert und gib das
+   Ergebnis in der Konsole aus. Für die Liste ``[1,4,3,3,5,7,2]`` sollte das
+   Ergebnis die Liste ``[1,2,3,3,4,5,7]`` sein.
+
+   a) Speichere die Liste in der ersten Zeile als Variable ab und sortiere sie
+      anschliessend.
+
+   b) Frage den Benutzer nach der Liste von Zahlen. Überlege dir, wie du es am
+      besten lösen kannst, dass der Benutzer eine vorher nicht bekannte Anzahl
+      Zahlen eingeben kann.
+   
+#. |star| Schreibe ein Programm, welches eine Liste von vom Benutzer
+   eingegebenen Worten alphabetisch sortiert. Der Benutzer gibt etwa die Liste
+   Worte *Zweck*, *scheiden*, *Granit*, *Gewinn*, *Schubkarre* und *entflammen*
+   ein und dein Programm gibt folgendes aus::
+
+     entflammen
+     Gewinn
+     Granit
+     schneiden
+     Schubkarre
+     Zweck
+
+.. |star| unicode:: 0x2605
+
+
+.. rubric:: Footnotes
+
+.. [#] https://de.wikipedia.org/wiki/Collatz-Problem
