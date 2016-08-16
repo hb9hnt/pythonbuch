@@ -30,46 +30,71 @@ Zeilennummer angegeben, wo der Fehler passiert ist. Die hilft dir dann, den
 Fehler in deinem Programm zu finden.
 
 
-IDLE - Ein Python IDE
-=====================
+Editoren und IDEs
+=================
 
-Zum Programmieren reicht ein einfacher Texteditor. Oft werden aber sogenannte
-*IDEs (Integrated Development Environment)* benutzt. Diese besitzen viele
-hilfreiche Funktionen, welche ein Texteditor nicht hat. Sie unterstützen einen
-beim Programmieren. Die folgenden Funktionen werden wir auch benutzen:
+Zum Programmieren reicht ein einfacher Texteditor. Im Gegensatz zu
+Textverarbeitungsprogrammen unterstützt das benutzte Textformat keine
+Formatierungen wie Schriftgrössen oder Schriftarten. Alle Farben, welche du im
+Texteditor siehst, werden vom Editor erstellt und sind nicht in der Datei selbst
+gespeichert. Texteditoren wurden schon in den Anfängen der
+Computerprogrammierung benutzt, gewisse aus dieser Zeit werden heute noch
+benutzt, unter ihnen zum Beispiel Emacs_ und `Vi(m)`_. Wer einen moderneren Editor
+benutzen möchte, schaut sich Atom_ an
+
+Jedoch werden oft sogenannte *IDEs (Integrated Development Environment)* benutzt. 
+Diese besitzen viele hilfreiche Funktionen, welche ein Texteditor nicht hat,
+welche einem beim Programmieren unterstützen. Die folgenden Funktionen werden 
+wir auch benutzen:
 
 * Die Syntax der Programmiersprache wird durch Farben hervorgehoben, um den Code
   leserlicher zu machen.
 * Das Programm kann direkt im IDE ausgeführt werden und muss nicht separat
   aufgerufen werden.
 * Die Befehle werden automatisch vervollständigt, so dass man nicht die ganzen
-  Befehle tippen oder erinnern muss. 
+  Befehle tippen oder erinnern muss.
+* Gewisse Fehler im Programm werden schon während dem programmieren erkannt und
+  als solche gekennzeichnet.
 
-Wir werden ein sehr einfaches IDE namens IDLE [#]_ benutzen.
+Wir werden ein für Python entwickeltes IDE namens PyCharm_ benutzen. Dieses
+kannst du auf der Webseite herunterladen und zu Hause installieren.
 
-Falls du Python auf deinem eigenen Computer zu Hause installieren möchtest,
-findest du die nötigen Dateien hier:
+Da es sich nur um ein IDE handelt, welches Python noch nicht dabei hat, musst du
+auch Python selbst noch herunterladen und installieren. Die nötigen Downloads
+findest du hier:
 
 https://www.python.org/downloads/
 
-Die Dokumentation von Python findest du entweder in IDLE im Menu unter
-*Help* - *Python Docs* oder online unter
+Die Dokumentation von Python findest du auch online unter:
 
 https://docs.python.org/py3k/
 
-Wenn du IDLE startest, siehst du zuerst nur den sogenannten
-Befehlsprompt. Dieser sieht ungefähr so aus::
-  
-   Python 3.4.3 (default, Mar 14 2015, 16:02:22) 
+PyCharm_ lässt dich nicht nur Python-Programme editieren, sondern auch mehrere 
+Dateien zu einem *Projekt* zusammenfassen. Erstelle aus diesem Grund beim ersten 
+Starten von PyCharm_ ein Projekt. Achte darauf, dass du einen Speicherort
+innerhalt deinen eigenen Dateien wählst, etwa in einem Ordner mit dem Namen
+"Informatik". Bennenne das Projekt jeweils nach dem Kapitel, an welchem du
+gerade arbeitest. Innerhalb des Projekts kannst du für jede weitere Aufgabe eine
+neue Python-Datei anlegen, in dem du im Menu `File` -> `New...` anklickst und
+anschliessens `New Python-File` wählst.
+
+Die erste Aufgabe, in welcher du eine Datei benötigst ist die Aufgabe 2. Nenne
+also deine erste Datei "Aufgabe 2".
+
+Im unteren Bereich des PyCharm_-Fensters siehst du einen Reiter mit dem Namen
+"Konsole". Wenn du ihn öffnest, siehst du etwas den folgenden Text::
+
+   Python 3.5.3 (default, Mar 14 2016, 16:02:22) 
    [GCC 4.8.2] on linux
    Type "help", "copyright", "credits" or "license" for more information.
    >>> 
 
-Die Befehle im Befehlsprompt kannst du nicht als Programm speichern, du kannst
-sie nur einzeln hintereinander ausprobieren. In diesem Skript werden wir oft
-Beispiele benutzen, welche dafür gedacht sind, dass du sie direkt am
-Befehlspromt ausprobierst. Sie sind immer duch ``>>>`` markiert und haben keine
-Zeilennummern wie andere Programme. Du könntest also zum Beispiel
+Dies ist der Python Befehlspromt, hier kannst du Befehle nicht als Programm 
+speichern, du kannst sie nur einzeln hintereinander ausprobieren. In diesem 
+Skript werden wir in Aufgaben oft
+kurze Beispiele im Befehlspromt ausprobieren. Sie sind immer duch ``>>>`` 
+markiert und haben keine Zeilennummern wie andere Programme. Du könntest 
+also zum Beispiel
 
 >>> print("Hallo Welt!")
 
@@ -77,41 +102,24 @@ oder
 
 >>> 2 + 3
 
-ausprobieren. IDLE hat immer nur einen Befehlsprompt. Du kannst also kein neues
-Befehlsprompt-Fenster öffnen.
+eingeben. PyCharm_ hat immer nur einen Befehlsprompt. Du kannst also keine zweite
+Konsole öffnen.
 
 Es macht aber oft keinen Sinn, die Befehle für ein Programm jedes mal am
-Befehlsprompt von neuem einzutippen. Wollen wir ein Programm mehrmals benutzen,
-macht es Sinn, es in einer Datei abzuspeichern. So kannst du es später auch
-wieder öffnen, verändern oder erneut ausführen.
+Befehlsprompt von neuem einzutippen. Für diesen Fall benutzen wir die oben
+erstellte, neue Python-Datei. Dort kannst du mehrere Befehle hintereinander
+aufschreiben um sie dann der Reihe nach ausführen zu lassen. So kannst du das Programm
+später auch wieder öffnen, verändern oder erneut ausführen.
 
-Im Menu von IDLE kannst du unter *File* - *New Window* ein neues Fenster
-öffnen. In dieses Fenster kannst du dein Programm schreiben, in dem du die
-Befehle untereinander auf einzelne Zeilen schreibst.
-
-Sobald du die Datei unter *File* - *Save* abgespeichert hast, kannst du mit der
-Taste ``F5`` das Programm starten. 
-
-.. note:: Du musst die Endung ``.py`` selbst anhängen, IDLE macht dies nicht für
-	  dich. Wenn du es vergisst, erkennt IDLE deine Datei nicht als Programm
-	  und wird dir den Code nicht farbig darstellen.
-
-Beachte, dass du ein solches neues Fenster erst in Aufgabe 2 benötigsts. Die
-ersten Befehle kannst du am Befehlsprompt ausprobieren. 
-
-.. seealso:: Es gibt noch weiter IDEs für Python. IDLE ist im Funktionsumfang
-             sehr eingeschränkt und bietet dir wenig Unterstützung beim
-             Programmieren von grösseren Projekten. Eine mögliche proprietäre
-             Alternative, welche auch gratis zur Verfügung steht, ist PyCharm:
-
-	     http://www.jetbrains.com/pycharm/
+Um die Befehle auszuführen, kannst du auf das grüne Dreieck neben der ersten
+Zeile des Programms klicken oder die `Shift` und `F10` Tasten zusammen drücken.
 
    
 Aufgaben
 ========
 
-1. Probiere die folgenden Befehle aus und notiere dir, was sie tun. Überlege dir,
-   ob sie wirklich tun, was du vermutest.
+1. Probiere die folgenden Befehle in der Python-Konsole aus und notiere dir,
+   wozu sie benutzt werden.
 
    >>> 1 + 2 * 4
 
@@ -126,23 +134,24 @@ Aufgaben
    >>> (4 + 3) // 5
 
 
-2. a) Erstelle wie oben erklärt ein neues Fenster. Erstelle nun in diesem
-      Fenster ein Hello-Wolrld-Programm. Falls du nicht weiter weisst, kannst du
-      noch einmal den Anfang dieses Kapitels lesen.
-   b) Das Programm kannst du mit der F5-Taste ausführen und testen. Wo wird der
+2. a) Erstelle, falls nicht schon erledigt, wie oben erklärt, eine neue Python-Datei. 
+      Schreibe in dieser Datei die nötigen Befehle für ein "Hello
+      World"-Programm. Falls du nicht weiter weisst, kannst du noch einmal den Anfang
+      dieses Kapitels lesen.
+   b) Das Programm kannst du mit den `Shift` und `F10` Tasten ausführen und testen. Wo wird der
       Text "Hello World" ausgegeben?
 
       
-3. a) Speichere das folgende Programm in einer Datei namens ``gui-beispiel.py``
+3. a) Speichere das folgende Programm in einer Python-Datei namens ``gui-beispiel.py``
       und führe es aus. Was macht das Programm?
-   b) Musst du wirklich alle Zeilen kopieren, damit es funktioniert?
+   b) Welche Zeilen kannst du aus dem Programm löschen, ohne dass sich seine
+      Funktionsweise ändert oder es nicht mehr funktioniert? 
 
    .. literalinclude:: code/CanvasExample.py
       :linenos:
 
 
-.. rubric:: Footnotes
-	  
-.. [#] Oft erfinden Informatiker zweideutige Namen für ihre Programme. Schau
-       nach was "idle" auf englisch bedeutet.
-    
+.. _Emacs: https://www.gnu.org/software/emacs/
+.. _Vi(m): http://www.vim.org/
+.. _Atom: https://atom.io
+.. _PyCharm: http://www.jetbrains.com/pycharm/

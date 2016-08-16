@@ -2,7 +2,7 @@
 Programmablauf-Steuerung
 ************************
 
-Wir wir im vorangehenden Kapitel gelernt haben, wird ein Programm zweilenweise
+Wie wir im vorangehenden Kapitel gelernt haben, wird ein Programm zweilenweise
 von oben nach unten abgearbeitet. Nun gibt es Fälle, wo wir einen Programmblock
 nur unter einer Bedingung ausführen oder einige Anweisung mehrmals
 wiederholen wollen.
@@ -108,7 +108,7 @@ Aufgaben
    .. math:: n! := n \cdot (n-1) \cdot(n-2) \cdots 3 \cdot 2 \cdot 1
 
   So wird zum Beispiel :math:`5!` durch :math:`5\cdot 4\cdot3\cdot2\cdot1 = 120`
-  berechnet.
+  berechnet. Dies wird in der Mathematik als *Fakult�t von 5* bezeichnet.
 
   Schreibe ein Programm welches :math:`n!` für ein vom Benutzer vorgegebenes
   :math:`n` berechnet. Benutze dafür eine :py:keyword:`for` Schleife.
