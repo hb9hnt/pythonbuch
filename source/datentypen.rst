@@ -138,7 +138,7 @@ abgespeichert werden::
   "Hallo Welt" 
 
 Dies dient dazu, dass auch ein String, welcher ``'`` oder ``"`` enthält,
-ausgedrück werden kann::
+ausgedrückt werden kann::
 
   'Eine Zeichenkette, welche "Anführungszeichen" enthält'
 
