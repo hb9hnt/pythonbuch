@@ -261,7 +261,7 @@ Kombinieren von Kontrollstrukturen
 Wie du sicherlich schon festgestellt hast, kommt man nie mit einer einzelnen
 Kontrollstruktur aus, die meisten Problemstellungen benötigen ein geschicktes
 Kombinieren von :py:keyword:`if`, :py:keyword:`for` und
-:py:keyword:`while`. Dazu kommt meistens auch noch die Wahl einer Datenstruktur:
+:py:keyword:`while`. Dazu kommt meistens noch die Wahl einer Datenstruktur:
 Macht es Sinn, einzelne Variablen zu benutzen oder ist etwa eine Liste
 geeigneter? Halte dich beim Programmieren an folgende Grundsätze:
 
@@ -282,6 +282,15 @@ Löse die folgenden Aufgaben unter Beachtung der genannten Grundsätze.
 Aufgaben
 ~~~~~~~~
 
+#. Schreibe ein Programm, welches den Benutzer mit Hilfe von :py:func:`input`
+   nach einem Satz fragt. 
+
+
+   a) Das Programm soll anschliessend die Anzahl Worte im Satz sowie die Anzahl
+      Buchstaben ausgeben.
+
+   b) Erweitere das Programm so, dass es auch angibt, wie viele Buchstaben davon
+      Grossbuchstaben sind.
 
 #. Schreibe ein Programm, welches den Benutzer nach einer Zahl fragt und
    anschliessend prüft, ob diese Zahl eine Primzahl ist. 
@@ -302,7 +311,7 @@ Aufgaben
    * Ist die momentane Zahl :math:`n` gerade, so ist die nächste Zahl die Hälfte von
      dieser, also :math:`\frac{n}{2}`.
 
-   * Ist die momentane Zahl :math:`n` gerade, so ist die nächste Zahl um eins grösser
+   * Ist die momentane Zahl :math:`n` ungerade, so ist die nächste Zahl um eins grösser
      als das dreifache der Zahl, also :math:`3n+1`.
 
    Bilden wir beispielsweise für die Zahl :math:`23` diese Folge, so lautet sie:
@@ -324,8 +333,8 @@ Aufgaben
       Zahlen eingeben kann.
    
 #. |star| Schreibe ein Programm, welches eine Liste von vom Benutzer
-   eingegebenen Worten alphabetisch sortiert. Der Benutzer gibt etwa die Liste
-   Worte *Zweck*, *scheiden*, *Granit*, *Gewinn*, *Schubkarre* und *entflammen*
+   eingegebenen Worten alphabetisch sortiert. Der Benutzer gibt etwa die
+   Worte *Zweck*, *schneiden*, *Granit*, *Gewinn*, *Schubkarre* und *entflammen*
    ein und dein Programm gibt folgendes aus::
 
      entflammen
@@ -334,6 +343,15 @@ Aufgaben
      schneiden
      Schubkarre
      Zweck
+
+#. |star| Schreibe ein Programm, welches den Benutzer nach einem oder mehreren
+   deutschen Sätzen fragt. Anschliessend verändert das Programm den Text so, dass
+   bei jedem Wort der erste und der letzte Buchstabe stehen gelassen werden und
+   alle Buchstaben dazwischen jeweils wie Jasskarten gemischt werden. Das
+   heisst, dass keine Buchstaben dazu kommen und auch keine entfernt werden,
+   jedoch die Reihenfolge verändert wird. Gib anschliessend den so entstandenen
+   Text aus. Was stellst du fest?
+
 
 .. |star| unicode:: 0x2605
 
