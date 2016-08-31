@@ -49,11 +49,11 @@ wird, nämlich die Berechnung der Variable ``summe`` sowie die Ausgabe mit
 :py:func:`print()`. Diese Anweisung wurde nach innen gerückt, um Python
 mitzuteilen, dass sie zu der Schleife gehört.
 
-Wenn du in IDLE den Doppelpunkt am Ende der Zeile nach der Liste nicht vergisst,
-rückt IDLE die nächste Zeile automatisch ein. Andernfalls kannst du dies mit der
-<TAB>-Taste selbst machen. Achte darauf, dass wirklich alle Zeilen, welche zum
-gleichen Block gehören, gleich stark eingerückt sind. Schon nur ein Leerzeichen
-unterschied wird zu einer Fehlermeldung führen. [#]_
+Wenn du in PyCharm den Doppelpunkt am Ende der Zeile nach der Liste nicht
+vergisst, rückt PyCharm die nächste Zeile automatisch ein. Andernfalls kannst du
+dies mit der <TAB>-Taste selbst machen. Achte darauf, dass wirklich alle Zeilen,
+welche zum gleichen Block gehören, gleich stark eingerückt sind. Schon nur ein
+Leerzeichen unterschied wird zu einer Fehlermeldung führen. [#]_
 
 Möchte man nun zum Beispiel etwas für die Zahlen von 1 bis 100 ausführen, wird
 es mühsam, die Liste von Hand wie oben einzutippen. Dafür gibt es in Python den

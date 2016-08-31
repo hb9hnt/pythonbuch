@@ -83,7 +83,7 @@ Aufgaben
    >>> x // y
    
 2. Was ist der Rückgabewert des unten stehenden Programms? Gehe es zuerst im Kopf
-   durch und probiere es anschliessend aus, in dem du das Programm mit IDLE in
+   durch und probiere es anschliessend aus, in dem du das Programm mit PyCharm in
    einer neuen Datei abspeicherst.
 
    .. code-block:: python
@@ -98,7 +98,7 @@ Aufgaben
       print(y)
       print(z)
 
-3. Probiere die folgenden Rechnungen am Python-Prompt aus. Welches Ergebis
+3. Probiere die folgenden Rechnungen in der Python-Konsole aus. Welches Ergebis
    erwartest du? Woran liegt es, dass du nicht das erwartete Ergebnis erhältst?
 
    >>> 0.1 + 0.1 + 0.1 - 0.3
