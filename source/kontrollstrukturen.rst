@@ -26,7 +26,7 @@ ist. Dies nennen wir eine *bedingte Iteration*.
 Die :py:keyword:`for` Schleife
 ==============================
 
-Wie schon erwähnt, ist die :py:keyword:`for` Schleife ein Sezialfall der
+Wie schon erwähnt, ist die :py:keyword:`for` Schleife ein Spezialfall der
 Iteration, nämlich eine Iteration über einer Liste. Man kann alle Probleme,
 welche mit :py:keyword:`for` gelöst werden können, auch mit der später
 besprochenen, allgemeineren :py:keyword:`while` Schleife lösen. Das Iterieren
