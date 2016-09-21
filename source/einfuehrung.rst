@@ -82,7 +82,7 @@ Die erste Aufgabe, in welcher du eine Datei benötigst ist die Aufgabe 2. Nenne
 also deine erste Datei "Aufgabe 2".
 
 Im unteren Bereich des PyCharm_-Fensters siehst du einen Reiter mit dem Namen
-"Konsole". Wenn du ihn öffnest, siehst du etwas den folgenden Text::
+"Konsole". Wenn du ihn öffnest, siehst du etwa den folgenden Text::
 
    Python 3.5.3 (default, Mar 14 2016, 16:02:22) 
    [GCC 4.8.2] on linux
