@@ -118,7 +118,7 @@ auszuführen. Es wird nämlich einfach der Wert der Variable um eins erhöht.
 
 
 Aufgaben
-========
+~~~~~~~~
 
 1. Im Folgenden werden einige Zeilen Programmcode ausprobiert. Überlege dir, was
    nach dem Ausführen der Zeilen in den Variabeln ``erste_zahl``,
@@ -149,3 +149,64 @@ Aufgaben
    b) Finde an Hand der obigen Beispiele und der Python-Dokumentation heraus,
       wie die Regeln für zulässige Variablennamen lauten.
 
+
+
+Verwenden von Modulen
+=====================
+
+Gewisse Funktionalitäten wurden in Python in sogenannte Module
+ausgegliedert. Auf diese Art kann die Grundinstallation von Python schlank
+gehalten werden und Module nach bedarf nachgeladen weden. Wir schauen und das
+ganze am Beispiel des :py:mod:`math` Moduls anschauen. In diesem werden
+verschiedne mathematische Funktionen wie zum Beispiel :py:func:`sqrt` zur
+Berechnung der Quadratwurzel zur verfügung gestellt. Führst du die folgende
+Zeile in der Python-Konsole aus, wird dir Python einen Fehler ausgeben:
+
+    >>> sqrt(49)
+
+Du musst zuerst die :py:func:`sqrt` Funktion aus dem :py:mod:`math` Modul
+laden. Dies geschieht über den Befehl :py:keyword:`import`.
+
+    >>> from math import sqrt
+    >>> sqrt(49)
+
+berechnet nun erfolgreich die Wurzel aus 49. Falls man alle Befehle von einem
+Modul importieren möchte, kann man das Modul als ganzes importieren. Dann muss
+man aber bei jedem Befehl festlegen, dass er aus dem besagten Modul kommt.
+
+
+    >>> import math
+    >>> math.sqrt(49)
+
+
+Teilweise findet man in Beispielen auch die Form ``from math import *``, welche
+alle Befehle aus dem :py:mod:`math` importiert. Dies gilt aber vor allem in
+grösseren Programmen als schlechter Programmierstil, da man nicht genau weiss,
+welche Befehle damit alles importiert werden.
+
+Oft auch nützlich ist das :py:mod:`random` Paket, welches verschiedene
+Funktionen enthält, um Zufallszahlen zu generieren, Listen zu mischen oder
+zufällige Elemente auszuwählen. Wir können zum beispiel mit den folgenden Zeilen
+einen Würfel simulieren:
+
+     >>> from random import randint
+     >>> randint(1, 6)
+
+.. seealso:: Einen Überblick über alle verfügbaren Pakete in der Python Standard
+   Bibliothek findest du in der Python-Dokumentation unter:
+
+   https://docs.python.org/3/library/
+
+.. rubric:: Footnotes
+
+.. [1] Der Computer kann keine wirklichen Zufallszahlen generieren. Man spricht
+       darum von Pseudozufallszahlen.
+	    
+Aufgaben
+~~~~~~~
+1. Wenn man die drei Seitenlängen eines Quaders hat, dann kann man die drei
+   Flächendiagonalen (Längen der Diagonalen in einer Seitenfläche des Quaders)
+   sowie die Raumdiagonale berechnen. Schreibe dazu ein Programm.
+
+2. Drei Würfel werden miteinander geworfen. Schreibe ein Programm, welches drei
+   Würfe simuliert und die Summe der geworfenen Zahlen ausgibt.

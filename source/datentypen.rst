@@ -117,6 +117,24 @@ Aufgaben
    den Wunsch-Durchschnitt zu erreichen. Diese kannst du mit dem
    :py:func:`print()` Befehl ausgeben.
 
+5. Schreibe ein Programm, welches eine Zeitangabe in Stunden, Minuten und
+   Sekunden in die Anzahl Sekunden insgesamt umrechnet
+
+6. Eine Werkstatt verlangt für die Benützung einer Maschine eine Grundgebühr von
+   60 Franken sowie 35 Fanken pro Stunde. Man überlege sich, welche Daten
+   einzugeben und wel che Daten zu berechnen sind und erstelle ein passendes
+   Programm.
+
+7.  Ein Kleinunternehmen stellt seinen Kunden für Tran sporte einen Lieferwagen
+    und einen Lastwagen zur Verfügung. Für Transporte mit dem Lieferwagen werden
+    Fr. 1.60 pro Kilometer verrechnet, für den Lastwagen beträgt der Tarif
+    Fr. 2.80 pro Kilometer. Welche Gebühr hat ein Kunde zu bezahlen, wenn der
+    Lieferwagen 85 km und der Lastwagen 120 km zurückgelegt hat?
+
+8. Ein Weinhändler verkauft Rotwein zu 18 Franken pro Flasche, Roséwein zu 13
+   und Weisswein zu 12 Franken pro Flasche. Ein Kunde bestellt (beispielsweise)
+   12 Flaschen Rotwein, 6 Flaschen Rosé und 24 Flaschen Weisswein. Schreibe ein
+   Programm, welches den Gesamtpreis berechnet.
 
 Zeichenketten
 =============
