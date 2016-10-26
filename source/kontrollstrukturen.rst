@@ -2,7 +2,7 @@
 Programmablauf-Steuerung
 ************************
 
-Wie wir im vorangehenden Kapitel gelernt haben, wird ein Programm zweilenweise
+Wie wir im vorangehenden Kapitel gelernt haben, wird ein Programm zeilenweise
 von oben nach unten abgearbeitet. Nun gibt es Fälle, wo wir einen Programmblock
 nur unter einer Bedingung ausführen oder einige Anweisung mehrmals
 wiederholen wollen.
