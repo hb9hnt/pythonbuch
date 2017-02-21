@@ -22,33 +22,34 @@ sehr einfach umzusetzen. Es besteht nur aus einer Zeie:
 .. literalinclude:: code/HelloWorld.py
    :linenos:
 
-Beachte: Die Zahl ``1`` vor dem Programm gehört nicht zum Programm. Dies ist die
-Zeilennummer. In diesem Skript sind alle Programme mit Zeilennummern versehen.
-Zeilennummern sind im Programmieren wichtig, um über Programme zu sprechen und
-Fehler zu finden. So wird zum Beispiel bei einer Fehlermeldung oft die
-Zeilennummer angegeben, wo der Fehler passiert ist. Die hilft dir dann, den
-Fehler in deinem Programm zu finden.
+.. NOTE::
+   Die Zahl ``1`` vor dem Programm gehört nicht zum
+   Programm. Dies ist die Zeilennummer. In diesem Skript sind alle Programme mit
+   Zeilennummern versehen.  Zeilennummern sind im Programmieren wichtig, um über
+   Programme zu sprechen und Fehler zu finden. So wird zum Beispiel bei einer
+   Fehlermeldung oft die Zeilennummer angegeben, wo der Fehler passiert ist. Die
+   hilft dir dann, den Fehler in deinem Programm zu finden.
 
 
 Editoren und IDEs
 =================
 
-Zum Programmieren reicht ein einfacher Texteditor. Im Gegensatz zu
-Textverarbeitungsprogrammen unterstützt das benutzte Textformat keine
-Formatierungen wie Schriftgrössen oder Schriftarten. Alle Farben, welche du im
-Texteditor siehst, werden vom Editor erstellt und sind nicht in der Datei selbst
-gespeichert. Texteditoren wurden schon in den Anfängen der
-Computerprogrammierung benutzt, gewisse aus dieser Zeit werden heute noch
-benutzt, unter ihnen zum Beispiel Emacs_ und `Vi(m)`_. Wer einen moderneren Editor
-benutzen möchte, schaut sich Atom_ an
+Wie oben erwähnt reicht zum Programmieren ein einfacher Texteditor. Im Gegensatz
+zu Textverarbeitungsprogrammen unterstützt reiner Text keine Formatierungen wie
+Schriftgrössen oder Schriftarten. Alle Farben, welche du im Texteditor siehst,
+werden vom Editor erstellt und sind nicht in der Datei selbst gespeichert. Sie
+dienen nur der Lesbarkeit vom Programmcode und werden vom Edito abhägig von der
+Programmiersprache festgelegt.
+
+Texteditoren wurden schon in den Anfängen der Computerprogrammierung benutzt,
+gewisse aus dieser Zeit werden heute noch in weiterentwickelter Form benutzt,
+unter ihnen zum Beispiel Emacs_ und `Vim`_. Wer einen moderneren Editor benutzen
+möchte, könnte zum Beispiel Atom_ installieren.
 
 Jedoch werden oft sogenannte *IDEs (Integrated Development Environment)* benutzt. 
 Diese besitzen viele hilfreiche Funktionen, welche ein Texteditor nicht hat,
-welche einem beim Programmieren unterstützen. Die folgenden Funktionen werden 
-wir auch benutzen:
+welche einem beim Programmieren unterstützen:
 
-* Die Syntax der Programmiersprache wird durch Farben hervorgehoben, um den Code
-  leserlicher zu machen.
 * Das Programm kann direkt im IDE ausgeführt werden und muss nicht separat
   aufgerufen werden.
 * Die Befehle werden automatisch vervollständigt, so dass man nicht die ganzen
@@ -56,18 +57,10 @@ wir auch benutzen:
 * Gewisse Fehler im Programm werden schon während dem programmieren erkannt und
   als solche gekennzeichnet.
 
-Wir werden ein für Python entwickeltes IDE namens PyCharm_ benutzen. Dieses
-kannst du auf der Webseite herunterladen und zu Hause installieren.
-
-Da es sich nur um ein IDE handelt, welches Python noch nicht dabei hat, musst du
-auch Python selbst noch herunterladen und installieren. Die nötigen Downloads
-findest du hier:
-
-https://www.python.org/downloads/
-
-Die Dokumentation von Python findest du auch online unter:
-
-https://docs.python.org/py3k/
+Zum einen ist IDLE_ ein sehr einfaches Python-IDE, welches schon bei einer
+normalen Python-Installation dabei ist. Etwas besser unterstützt wirst du vom
+speziell für Python entwickelten IDE PyCharm_. Dieses kannst du auf der Webseite
+herunterladen und zu Hause installieren.
 
 PyCharm_ lässt dich nicht nur Python-Programme editieren, sondern auch mehrere 
 Dateien zu einem *Projekt* zusammenfassen. Erstelle aus diesem Grund beim ersten 
@@ -78,11 +71,24 @@ gerade arbeitest. Innerhalb des Projekts kannst du für jede weitere Aufgabe ein
 neue Python-Datei anlegen, in dem du im Menu `File` -> `New...` anklickst und
 anschliessens `New Python-File` wählst.
 
-Die erste Aufgabe, in welcher du eine Datei benötigst ist die Aufgabe 2. Nenne
-also deine erste Datei "Aufgabe 2".
+Unabhängig davon, was du zum Programmieren benutzen möchtest, musst du Python
+herunterladen und installieren. Die nötigen Downloads findest du hier:
 
-Im unteren Bereich des PyCharm_-Fensters siehst du einen Reiter mit dem Namen
-"Konsole". Wenn du ihn öffnest, siehst du etwa den folgenden Text::
+https://www.python.org/downloads/
+
+Oftmals wird dir dieses Skript nicht jedes Detail erklären. Du musst zum Lösen
+der Aufgaben die Python-Dokumentation zu Hilfe nehmen. Diese Dokumentation
+findest du unter:
+
+https://docs.python.org/py3k/
+
+Die erste Aufgabe, in welcher du eine Programmdatei benötigst ist die
+Aufgabe 2. Nenne also deine erste Datei "Aufgabe 2".
+
+Bei PyCharm_ findest du im unteren Bereich des Fensters einen Reiter mit dem
+Namen "Konsole". In ILDE_ wird die Konsole als erstes Fenster sofort geöffnet.
+
+In der Konsole siehst du etwa den folgenden Text::
 
    Python 3.5.3 (default, Mar 14 2016, 16:02:22) 
    [GCC 4.8.2] on linux
@@ -92,7 +98,7 @@ Im unteren Bereich des PyCharm_-Fensters siehst du einen Reiter mit dem Namen
 Dies ist der Python Befehlspromt, hier kannst du Befehle nicht als Programm 
 speichern, du kannst sie nur einzeln hintereinander ausprobieren. In diesem 
 Skript werden wir in Aufgaben oft
-kurze Beispiele im Befehlspromt ausprobieren. Sie sind immer duch ``>>>`` 
+kurze Beispiele im Befehlspromt ausprobieren. Sie sind immer durch ``>>>`` 
 markiert und haben keine Zeilennummern wie andere Programme. Du könntest 
 also zum Beispiel
 
@@ -102,19 +108,45 @@ oder
 
 >>> 2 + 3
 
-eingeben. PyCharm_ hat immer nur einen Befehlsprompt. Du kannst also keine zweite
-Konsole öffnen.
+eingeben. Sowohl PyCharm_ als auch IDLE_ haben immer nur einen Befehlsprompt. Du
+kannst also keine zweite Konsole öffnen.
 
 Es macht aber oft keinen Sinn, die Befehle für ein Programm jedes mal am
 Befehlsprompt von neuem einzutippen. Für diesen Fall benutzen wir die oben
 erstellte, neue Python-Datei. Dort kannst du mehrere Befehle hintereinander
-aufschreiben um sie dann der Reihe nach ausführen zu lassen. So kannst du das Programm
-später auch wieder öffnen, verändern oder erneut ausführen.
+aufschreiben um sie dann der Reihe nach ausführen zu lassen. So kannst du das
+Programm später auch wieder öffnen, verändern oder erneut ausführen.
 
-Um die Befehle auszuführen, kannst du auf das grüne Dreieck neben der ersten
-Zeile des Programms klicken oder die `Shift` und `F10` Tasten zusammen drücken.
+Um die Befehle auszuführen, kannst du in PyCharm_ auf das grüne Dreieck neben
+der ersten Zeile des Programms klicken oder die `Shift` und `F10` Tasten
+zusammen drücken. In IDLE_ kann das Programm mit der `F5` Taste ausgeführt
+werden.
 
-   
+Eingabe und Ausgabe
+===================
+
+Computer arbeiten grundsätzlich nach einem Prinzip, welches man *EVA*-Prinzip
+nennt. Dies steht für *Eingabe*, *Verarbeitung* und *Ausgabe*. Damit ist
+gemeint, dass wir dem Computer zu Beginn über eine Tastatur, eine Maus, einen
+Touchbildschirm oder über andere Eingabegeräte Daten zur Verarbeitung liefern.
+
+Anschliessend verarbeitet der Computer unsere Daten gemäss Vorgabe und gibt uns
+die berechnete Antwort über ein Ausgabegerät zurück. Dies kann ein Bildschirm,
+ein Drucker oder ein anderes, spezialisiertes Gerät zur Darstellung von Daten
+sein.
+
+Wir werden uns in den folgenden Kapiteln mit der einfachsten Art der Ein- und
+Ausgabe begnügen, in dem wir den Programmen vorerst nur Text übergeben und sie
+uns auch wieder Text zurückgeben. Wir haben schon gesehen, dass wir mit
+
+>>> print("Hallo Welt")
+
+Text ausgeben können. Umgekehrt können wir mit der Funktion :py:func:`input`
+Text einlesen. Dabei kannst du in der Klammer eine Frage an den Benutzer eingeben. Die folgende Zeile führt dazu, dass d utext eingeben kannst:
+
+>>> input("Gib bitte etwas Text ein: ")
+
+
 Aufgaben
 ========
 
@@ -151,7 +183,10 @@ Aufgaben
       :linenos:
 
 
+
+
 .. _Emacs: https://www.gnu.org/software/emacs/
-.. _Vi(m): http://www.vim.org/
+.. _Vim: http://www.vim.org/
 .. _Atom: https://atom.io
+.. _IDLE: https://docs.python.org/3/library/idle.html
 .. _PyCharm: http://www.jetbrains.com/pycharm/

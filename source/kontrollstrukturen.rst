@@ -197,6 +197,21 @@ Es gibt Fälle, wo eine :py:keyword:`for` Schleife nicht ausreicht, weil wir
 keine Liste von Elementen haben und auch nicht zu Beginn wissen, wie oft etwas
 ausgeführt werden soll.
 
+Die :py:keyword:`while` Schleife wird solange ausfeführt wie eine Bedinung wahr
+ist. Sie hat die folgende Struktur::
+
+  while Bedingung:
+      Befehl 1
+      Befehl 2 
+
+   Befehl 3
+
+Dabei werden die Befehle 1 und 2 solange ausgeführt, wie die Bedingung wahr
+(also :py:keyword:`true`) ist. Sobald die Bedinung falsche (:py:keyword:`false`)
+wird, springt Python zur nächsten nicht eingerückten Zeile, also Befehl 3. Zur
+Formulierung der Bedingung können dieselben Formen wie bei der :py:keyword:`if`
+Abfrage benutzt werden.
+  
 Man könnte sich zum Beispiel vorstellen, dass wir in einem Programm dem Benutzer
 eine Frage gestellt haben, welche mit "Ja" oder "Nein" zu beantworten ist. Wenn
 der Benutzer nicht entweder ``J`` für Ja oder ``N`` für Nein eingibt, ist die
@@ -238,12 +253,59 @@ Aufgaben
    Schreibe ein Programm, welches die Fibonacci-Zahlen bis zu einer vom Benutzer
    gewählten Zahl ausgibt.
 
-4. Schreibe ein Programm, welches mit :py:func:`input` zwei Zahlen vom Benutzer
-   einliest und den grössten gemeinsamen Teiler der beiden Zahlen mit
-   :py:func:`print` ausgibt.
+4. Der Wert einer Immobilie steigt jedes Jahr um :math:`p` Prozent an. Schreibe
+   ein Programm, welche den Zeitwert dieser Immobilie so lange berechnet, bis
+   der Zeitwert (mehr als) doppelt so gross ist wie der heutige
+   Anfangswert. Frag den Benutzer nach dem Prozentsatz.
 
-   Dazu kannst du den Euklidischen Algorithmus benutzen, welchen du entweder aus
-   dem Mathematikunterricht kennst oder sonst sicher im Internet findest.
+5. Eine Firma kauft eine Maschine (der Einkaufspreis ist einzugeben), welche
+   innert einiger Jahre (die Anzahl Jahre ist einzugeben) linear abgeschrieben
+   wird.
+
+   *Beispieleingabe*::
+     20000 (Fr. Einkaufspreis), 5 (Jahre)
+
+   *Beispielausgabe*::
+     Jahr 1: 16000.00
+     Jahr 2: 12000.00
+     Jahr 3: 8000.00
+     Jahr 4: 4000.00
+     Jahr 5: 0.00
+
+6. Herr Spar legt sich jedes Jahr einen festen Betrag (z.B. 800.00 Fr.) auf sein
+   Konto, welches beispielsweise :math:`2.5%` Zins trägt. Er tut dies so lange,
+   bis er einen bestimmten Betrag überschreitet. Dieser Betrag ist auch
+   einzugeben, z.B. 5000.00. Schreibe dazu ein Programm.
+
+7. Ein Gegenstand hat den Wert :math:`k` (dieser Wert ist Ein gabe). Erstelle
+   ein Programm, welche für die nächsten Jahre (die Anzahl Jahre ist Eingab
+   ewert) den Zeitwert dieses Gegenstands berechnet, wenn jedes Jahr :math:`p`
+   Prozent des Wert s abgeschrieben werden.  (Der Abschreibungssatz :math:`p`
+   ist auch einzugeben.)  Diese Art Abschreibung heisst degressive Abschreibung.
+
+8. Wie lange muss man einen Würfel werfen, bis (zum ersten Mal) eine 6
+   erscheint? Schreibe ein Programm, welches so lange würfelt, :math:`b` is eine 6
+   erschienen ist.
+
+   *Eingabe*: keine
+
+   *Ausgabe*: alle geworfenen Zahlen und die Anzahl Würfe.
+ 
+9. Ein Würfel wird so lange geworfen, bis die Summe der erhaltenen Zahlen 100
+   erreicht oder überschreitet. Bestimme mit einem Programm, wie viele Würfe dazu
+   nötig sind.
+
+10. Der Computer "würfelt" eine Zufallszahl zwischen 1 und 6 (Grenzen inklusive).
+    Der Spieler versucht nun, die gewürfelte Zahl zu erraten. Bestimme mit einem
+    Programm, wie viele Versuche dazu nötig sind.
+   
+  
+11. Schreibe ein Programm, welches mit :py:func:`input` zwei Zahlen vom Benutzer
+    einliest und den grössten gemeinsamen Teiler der beiden Zahlen mit
+    :py:func:`print` ausgibt.
+
+    Dazu kannst du den Euklidischen Algorithmus benutzen, welchen du entweder aus
+    dem Mathematikunterricht kennst oder sonst sicher im Internet findest.
 
 .. rubric:: Footnotes
 
