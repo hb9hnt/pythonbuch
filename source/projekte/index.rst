@@ -70,13 +70,12 @@ bewertet:
 
 * *Arbeitsprozess*:
   
-  * Wurde in den Lektionen gearbeitet?
-  * Wurden in einem vernünftigen Ausmass Hausaufgaben gegeben? (ca. 10 - 15
-    Minuten pro Woche)
-  * Wurde das Arbeitsjournal konsequent und vollständig geführt?
+  * Hast du dich in den Lektionen mit dem Projekt befasst?
+  * Ist das Projekt von dir selbständig erstellt worden oder hast du
+    hauptsächlich Programmcode aus dem Internet und von Kollegen kopiert?
+  * Ist dein Arbeitsjournal konsequent und vollständig geführt?
     (Achtung: Bist du eine Informatiklektion krank, sollte dies im
     Arbeitsjournal aufgeführt sein.
-  * Wurde selbständig gearbeitet?
 
 * *Produkt*:
       
@@ -87,13 +86,9 @@ bewertet:
     * Ist der Programmcode sauber und ausführlich kommentiert?
     * Sind die Programme so einfach wie möglich programmiert, gibt es
       keine unnötigen Elemente oder zu komplizierte Lösungsansätze.
-  * Wurden übersichtlich gestaltete, verständliche Dokumente erstellt?
   * Sind alle im Projekt geforderten Punkte erfüllt?
-  * Ist die Dokumentation so aufgebaut, dass sie auch für eine(n) andere(n)
-    Schüler(in) nützlich ist?
-  * Wurde alles in korrekter deutscher Sprache und vollständigen Sätzen
-    erklärt?
-  * Ist das Arbeitsjournal vollständig und sauber geführt?
+  * Ist das Arbeitsjournal vollständig und sauber geführt und in korrekter
+    deutscher Sprache und in vollständigen Sätzen ausformuliert?
   * Wurden alle Dateien in einer sinnvollen Ordnerstruktur abgelegt.
 
 .. |*| image:: /images/star-full.png

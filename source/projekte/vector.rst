@@ -7,8 +7,6 @@ Vektorgeometrie mit Python
 
 :Python-Module: :py:mod:`math` ,  :py:mod:`Matplotlib`
 
-.. :py:mod:`numpy`, :py:mod:`scipy`,
-
 Im folgenden Projekt ist das Ziel, möglichst viele Funktionen des im Unterricht
 benutzten grossen Taschenrechners durch Python zu ersetzen. Dabei wirst du dich
 hauptsächlich (aber nicht ausschliesslich) mit Vektorgeometrie beschäftigen. Ziel
@@ -41,18 +39,13 @@ Aufträge
      sollte mit Hilfe deiner Funktionen ausführbar sein:
 
      >>> vnorm([3,-3,7])
-     TODO
-
+     8.18535277187245
      >>> vmultiplikation(-3, [1,2,-3])
      [-3, -6, 9]
-
      >>> vaddition( [1, -3, 2], [2, 3, -5] )
      [3, 0, -3]
-
-
      >>> vdotp( [1, -3, 2], [2, 3, -5])
      -17
-
      >>> vcrossp( [1, 5, 4], [2, -3, 0] )
      [12, 8, 7] 
 
@@ -61,35 +54,26 @@ Aufträge
      Vektoroperationen als Methoden besitzt. Der folgende Code sollte
      mit deiner Klassendefinition funktionieren:
 
-     >>> v1 = vektor( 3, -3, 7 )
-     >>> v2 = vektor( 2, -1, 3 )
+     >>> v1 = vektor(3, -3, 7)
+     >>> v2 = vektor(2, -1, 3)
      >>> v1.norm()
-     TODO
+     8.18535277187245
      >>> v1.add(v2)
-     TODO
+     (5, -4, 10)
      >>> v2.multiply(3)
-     ( 6, -3, 9 ) 
+     (6, -3, 9) 
      >>> v1.dotp(v2)
-     TODO
+     24
      >>> v1.crossp(v2)
-     TODO
+     (-2, 5, 3)
 
      Als Erweiterung könntest du deine Klasse so ausbauen, dass auch
      die folgenden Operationen unterstützt werden:
 
      >>> v1 + v1
-     TODO
+     (5, -4, 10)
      >>> 3 * v1
-     TODO
-
-
-.. 2. Erstelle eine Dokumentation, welche beschreibt, wie du die folgenden
-   Vektoroperationen mit Hilfe von :py:mod:`numpy` durchführst:
-
-   * Zusammenhängen von Vektoren: Addition
-   * Verlängern und verkürzen von Vektoren: Skalarmultiplikation
-   * Die Länge eines Vektors berechnen und Normieren eines Vektors
-   * Skalar- und Vektorprodukt
+     (6, -3, 9)
 
 3. Wähle aus den Vektorgeometrie-Aufgaben einige, möglichst unterschiedliche aus
    und löse sie mit Python.

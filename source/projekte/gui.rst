@@ -21,22 +21,33 @@ um Zeichnungen und Grafiken zu erstellen.
 Aufträge
 ========
 
-1. Suche im Internet ein Tutorial zu tkinter, welches dir verständlich
-   scheint. Arbeite das Tutorial durch und achte darauf, dass du die
-   Programmbeispiele auch selbst umsetzt und versuchst, sie zu verstehen.
+1. Bearbeite das Kapitel zu graphischen Benutzeroberflächen in diesem
+   Skript. Achte darauf, dass du die Programmbeispiele selbst umsetzt und
+   sie vollständig verstehst.
 
-2. Erstelle eine Dokumentation der wichtigsten Elemente und erstelle einfache
-   Beispiele für ihre Verwendung. Verweise auf die :py:mod:`tkinter`
-   Dokumentation für die Erklärung der genauen Benutzungsweise.
+3. Erstelle eine graphische Benutzeroberfläche für das Notenprogramm, welches
+   die folgenden Anforderungen erfüllt:
 
-3. Erstelle eine graphische Benutzeroberfläche für das Notenprogramm, so dass du
-   in einem Fenster die Noten eingeben kannst und auch die Ausgabe in diesem
-   Fenster erscheint. Du kannst frei wählen, wie du die Oberfläche gestaltest.
-     
-4. *Zusatz*: Erstelle in einem Fenster ein Canvas-Objekt und schreibe Programme,
-   welche Bilder in diesem Fenster erstellen. Hier kannst du frei wählen, ob du
-   das Programm um eine Maussteuerung erweitern willst oder einfach Bilder
-   generieren möchtest.
+   * Es kann eine beliebige Anzahl Noten sowie ein Wunschschnitt eingegeben
+     werden.
+
+   * Der Wunschschnitt kann auf Knopfdruck berechnet werden oder wir bei der
+     Eingabe automatisch berechnet.
+
+   * Die Anzahl Noten und die einzelnen Noten müssen abgeändert werden können
+     und die Berechnung erneut ausgeführt und das Programm sollte sich noch
+     immer erwartungsgemäss verhalten.
+
+   * Wenn der Benutzer sich nicht sinnvoll verhält - etwas durch eingeben einer
+     ungültigen Note, durch zu frühes Klicken des Berechnungsbuttons - sollte
+     das Programm den Benutzer auf seinen Fehler aufmerksam machen und ihm die
+     korrekte Benutzung des Programms erklären.
+
+   In der Gestaltung der Oberfläche bist du frei. Sie sollte für den Benutzer
+   möglichst intuitiv zu bedienen sein.
+
+4. Als Erweiterung deines Programmes ermöglichst du dem Benutzer, seine
+   Notendaten in eine Datei zu speichern und sie auch wieder von da zu laden.
 
 Dokumente
 =========
@@ -44,13 +55,7 @@ Dokumente
 Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 
 * Arbeitsjournal
-* Beispielprogramme aus dem Tutorial, mit welchen du dir das Benutzen
-  von :py:mod:`tkinter` beigebracht hast.
-* Dokumentation zur Benutzung von :py:mod:`tkinter` mit Beispielen. 
-* Programm mit graphischer Benutzeroberfläche für die Berechnung der letzten
-  Note im Semester für einen vorgegebenen Notenschnitt.
-* Programme zur Erstellung von Grafiken auf einem Canvas-Element
-  (Freiwillig für Bonuspunkte.)
+* Programm, welches gemäss den oben notierten Vorgaben funktioniert.
 
 Dokumentations-Links
 ====================

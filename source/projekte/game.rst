@@ -41,7 +41,8 @@ Aufträge
 
 3. Nutze dein erlangtes Wissen, um selbst ein Spiel zu entwickeln. Dies darf
    auch eine Erweiterung eines Spiels aus einem Tutorial sein. Es sollte aber
-   eigenständige Ideen enthalten.
+   eigenständige Ideen enthalten. Achte beim Programmieren darauf, dass du den
+   Code mit Hilfe von Funktionen oder Klassen sauber strukturierst.
 
 Dokumente
 =========
@@ -50,11 +51,8 @@ Die folgenden Dokumente sollten am Ende der Arbeit am Projekt abgegeben werden:
 
 * Arbeitsjournal
 * Beispielprogramme aus einem Tutorial.
-* Dokumentation der wichtigsten Funktionen von :py:mod:`pygame`.
 * Selbständig programmiertes Spiel, welches eigene Spielideen
-  umsetzt. Die Spielidee und ihre Umsetzung fliesst auch in die
-  Bewertung ein.
-
+  umsetzt.
 
 Dokumentations-Links
 ====================
