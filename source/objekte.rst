@@ -37,10 +37,31 @@ Nun können Objekte (Instanzen) der Klasse :py:class:`Person` erstellt werden.
 >>> p1
 <__main__.Person object at 0x33c9210>
 
-Man sieht das ``p1`` nun eine Instanz der Klasse :py:func:`Person` ist. 
+Man sieht das ``p1`` nun eine Instanz der Klasse :py:class:`Person` ist. 
 Es könnten theoretisch noch viele weitere Instanzen unserer Klasse
-:py:func:`Person` erstellt werden.
+:py:class:`Person` erstellt werden.
 
+>>> e1 = Person(); e2 = Person(); e3 = Person()
+>>> e1;e2;e3
+<__main__.Person object at 0x7f292a1f5dd8>
+<__main__.Person object at 0x7f292a1f5c50>
+<__main__.Person object at 0x7f292a1f5d30>
+
+Wie am obigen Beispiel ersichtlich ist, 
+wurden drei weitere Objekte von der Klasse :py:class:`Person` erstellt.
+
+Unterschied zwischen Klassen und Objekten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Zu Beginn sind die Unterschiede
+zwischen Klassen und Objekten vielleicht nicht ganz klar.
+Die folgenden Merkpunkte können einem beim Weiterlesen 
+in diesem Kapitel helfen,
+die beiden Begriffe Klasse und Objekt voneinander zu unterscheiden.
+
+	* Eine **Klasse** ist eine Konstruktionsvorlage für Objekte,
+	  d.h. es ist wie eine Art **Bauplan**.
+	* Ein **Objekt** hingegen ist eine **konkrete Umsetzung** 
+	  eines solchen Bauplans.
 
 Instanzvariablen
 ================
@@ -53,7 +74,7 @@ wollen, können wir auf folgende Art erstellen:
 >>> p1.name = "Müller"
 >>> p1.vorname = "Kurt"
 >>> p1.geb_datum = "03.02.01"
->>> p1.gewicht = "73.5 kg"
+>>> p1.gewicht = 73.5
 
 Variblen welche zu einem Objekt gehören, werden **Instanzvariablen** genannt.
 Möchte man nun z.B. den ``namen`` und den ``vornamen`` der Person ``p1`` wissen,
@@ -164,12 +185,18 @@ man kann sicherstellen, dass die geforderten Instanzvariablen (hier
 ``name``, ``vorname``, ``geb_datum`` und ``gewicht``) auch sicher existieren.
 Erstellen wir nun eine neue Person: 
 
->>> p2 = Person("Smith", "John", "04.04.04", "83 kg")
+>>> p2 = Person("Smith", "John", "04.04.04", 83)
 >>> print(p2.name, p2.vorname, p2.geb_datum, p2.gewicht)
-Smith John 04.04.04 83 kg
+Smith John 04.04.04 83
 
 Die Person ``p2`` wurde instanziert und die geforderten Instanzvariablen 
 sind garantiert belegt.
+
+Mit der :py:func:`__init__()` Methode kommen wir der Idee des Bauplans
+aus Kapitel 
+`Unterschied zwischen Klassen und Objekten <./objekte.html#unterschied-zwischen-klassen-und-objekten>`_ 
+zum ersten Mal etwas näher, indem nun in der Klasse vorgeschrieben wird,
+wie ein Objekt der Klasse :py:class:`Person` auszusehen hat.
 
 .. note:: Das erste Argument ``self`` bei :py:func:`__init__()`
           ist eine Referenz auf das Objekt.
@@ -195,7 +222,7 @@ definiert werden. Von oben haben wir gesehen, dass wir mit
 
 
 >>> print(p2.name, p2.vorname, p2.geb_datum, p2.gewicht)
-Smith John 04.04.04 83 kg
+Smith John 04.04.04 83
 
 
 auf die Instanzvariablen des Objekts zugreifen können. Jetzt möchte man aber 
@@ -208,10 +235,14 @@ realisiert werden:
 	.. literalinclude:: code/oop/einf_klasse_init.py
    	   :linenos:
 	   :lines: 1-18
+	   :emphasize-lines: 11-18
 
 Wir haben also innerhalb der Klasse eine Funktion definiert. Das Argument 
-``self`` in der Klammer ist, wie schon bei der Funktion :py:func:`__init__()`,
+``self`` in der Klammer ist, wie schon bei der Funktion :py:func:`__init__`,
 eine Referenz auf das Objekt, auf welche diese Funktion angewendet wird. [#]_ 
+
+Jedes einzelne Objekt der Klasse :py:class:`Person` hat nun die Möglichkeit
+auf die Funktion :py:func:`vorstellen` zu zugreifen.
 
 Auf diese Weise bekommen wir, ohne viel Tipparbeit, gleich die Informationen
 der jeweiligen Personen, indem sie sich selber vorstellt.
@@ -242,6 +273,7 @@ Ein solches Verhalten können wir ebenfalls in der Klasse mit einer Funktion
 
 	.. literalinclude:: code/oop/einf_klasse_init.py
    	   :linenos:
+   	   :emphasize-lines: 20-27
 
 Anders als die Funktion :py:func:`vorstellen` (welche nur Informationen 
 auswirft) verändert die Funktion
@@ -251,12 +283,12 @@ Dessen muss man sich immer Bewusst sein.
 Ist die gewünschte Änderung des Objektes wirklich im Sinne meines Programms?
 
 >>> p1.gewicht
-'73.5 kg'
+73.5
 >>> p1.abnehmen(3)
 Altes Gewicht: 73.5 kg
 Neues Gewicht: 70.5 kg
 >>> p1.gewicht
-'70.5 kg'
+70.5
 
 Das obige Beispiel zeigt, dass das Objekt (hier die Person ``p1``),
 nach dem Aufruf der Funktion :py:func:`abnehmen`, verändert wurde.
@@ -283,20 +315,21 @@ Manchmal macht es Sinn, dass gewisse Instanzvariablen nicht ohne Überprüfung
 einfach geändert werden können oder sie erst gar nicht gegen Aussen sichtbar
 sein sollten. Nehmen wir als Beispiel folgende Eingabe:
 
->>> p1.gewicht = "-20 kg"
+>>> p1.gewicht = -20
 
 ``p1`` ist eine Instanz der Klasse :py:class:`Person`, wie wir es oben schon
 definiert haben. Hier wurde nun dem Gewicht der Person ``p1`` einen
 negativen Wert zugeordnet, was in der Realität gar nicht vorkommen kann.
 
 Möchte man verhindern, dass die Instanzvariablen einer Klasse von aussen
-ohne weiteres geändert oder gar gelesen werden, gibt es zwei Möglichkeiten, 
+ohne weiteres geändert oder gar gelesen werden kann, 
+gibt es zwei Möglichkeiten, 
 die Python einem zur Verfügung stellt. 
 
 	1) Jedes Attribut, welches mit genau einem Unterstrich beginnt, 
 	   ist **protected**. 
-	   In diesem Fall kann man zwar das Attribut immer noch lesen 
- 	   und verändern, aber durch den Unterstrich hat man klar gemacht, 
+	   In diesem Fall kann das Attribut zwar immer noch gelesen 
+ 	   und verändert werden, aber durch den Unterstrich wird kommuniziert, 
 	   dass dies *verboten* oder *nicht erwünscht* ist. 
 
 	2) Zwingend wird die Aufforderung erst, wenn der Name eines Attributes 
@@ -349,7 +382,8 @@ keinen Zugriff erhalten.
 
 *Setter-* und *Getter*-Methoden
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Nun kann man sich fragen, wozu solche **private** Instanzvariablen gut sind.
+Nun kann man sich fragen, wozu solche **private** Instanzvariablen gut sind,
+wenn sie  von Aussen sowieso nicht verändert werden können.
 Sehen wir uns dazu die folgende Klasse an:
 
 	.. literalinclude:: code/oop/setter_getter.py
@@ -358,7 +392,8 @@ Sehen wir uns dazu die folgende Klasse an:
 
 Wir wollen nicht, dass ein Benutzer ein Motorrad mit negativem Hubraum
 modelliert. Aus diesem Grund haben wir hier die Instanzvariable ``__hubraum``
-**private** gesetzt. Der Wert kann nun unter Beobachtung mit einer 
+**private** gesetzt. 
+Der Wert kann nun unter Beobachtung mit einer 
 sogenannten :py:func:`setter` Methode geändert werden:
 
 	.. literalinclude:: code/oop/setter_getter.py
@@ -368,9 +403,16 @@ sogenannten :py:func:`setter` Methode geändert werden:
 	   
 Auf diese Weise haben wir in Zeile 6 die Kontrolle, 
 dass ``__hubraum`` keine negativen
-Werte annehmen kann. Um nun noch den Wert denoch abfragen zu können, 
-erstellen wir zusätzlich noch eine :py:func:`getter` Methode. Dies kann dann 
-so aussehen:
+Werte annehmen kann. 
+Dies bedeutet, 
+dass die Veränderung der Instanzvariable ``__hubraum`` in eine Klassenmethode
+ausgelagert wurde, 
+in welcher die Manipulation am Objekt und somit der Instanzvariable
+kontrolliert und überwacht werden kann.
+
+Um nun auch noch den Wert abfragen zu können, 
+erstellen wir zusätzlich noch eine :py:func:`getter` Methode. 
+Dies kann dann so aussehen:
 
 	.. literalinclude:: code/oop/setter_getter.py
    	   :linenos:
