@@ -1,49 +1,89 @@
-*****************************
-Funktionen als Unterprogramme
-*****************************
+**********
+Funktionen
+**********
 
 In den vorherigen Kapiteln haben wir immer wieder auf Funktionen zurückgegriffen,
 welche uns von Python zur Verfügung gestellt wurden. Wenn du beispielsweise den 
 Befehl ``len("Haus")`` eingibst, bekommen wir von der Funktion 
-:py:func:`len()` den *Rückgabewert* ``4`` zurück. Dieser Wert ändert sich 
+:py:func:`len` den *Rückgabewert* ``4`` zurück. Dieser Wert ändert sich 
 natürlich, wenn ein anderes *Argument* als ``"Haus"`` der Funktion übergeben
 wird.
 
-In diesem Kapitel besprechen wir, wie man selber solche Funktionen definieren 
-kann. Dies ist vorallem dann hilfreich, wenn man den gleichen Codeblock mehr
-als einmal in einem Programm ausführen möchte. Schauen wir folgendes
-Beispiel an:
+In diesem Kapitel besprechen wir, 
+wie man selber solche Funktionen definieren kann. 
+Es gibt verschiedene Gründe, 
+warum es Sinn macht Funktionen zu definieren.
 
-.. literalinclude:: code/ohne-funktionen.py
-   :linenos:
-   :emphasize-lines: 3,4,8,9
+	1. Mehrer hintereinander ausgeführte Anweisungen können unter einem 
+	Namen zusammengefasst werden. 
+	Es kann also als **Strukturierungselement** angesehen werden,
+	das eine Menge von Anweisungen gruppiert. 
+	
+	2. Ein längeres Programm erhält durch Funktionen eine Struktur,
+	welche helfen kann, den Code besser lesen und verstehen zu können.
+	
+	3. Ein Funktionsname kann dabei helfen zu 
+	verstehen, was das Unterprogramm berechnet oder ausführt.
+	
+	4. Muss eine Codesequenz mehr als einmal ausgeführt werden,
+	so braucht man nur den Funktionsnamen aufzurufen 
+	(Vermeidung von Codeduplizität).
+	
+Betrachten wir das folgende Beispiel:
 
-Wir sehen, dass die zwei Codezeilen 
+.. literalinclude:: code/einf-funktionen.py
+	:linenos:
 
-.. literalinclude:: code/ohne-funktionen.py
-   :language: python
-   :lines: 3,4
+Es benötigt eine Weile um zu verstehen, was das Programm genau macht.
+Bei genauerem Hinsehen sieht man, 
+dass die paar Codezeilen aus zwei Hauptteilen besteht:
+Zuerst wird eine zufällig, ganzzahlige Liste erstellt 
+und danach deren arithmetischen Mittelwert berechnet. 
 
-zweimal im Programm auftauchen. Dem können wir Abhilfe schaffen, indem wir eine
-Funktion definieren, welche die Ausführung dieses Codeabschnitts übernimmt.
+Lagern wir diese zwei Hauptteile in Funktionen mit geeigneten Namen aus,
+so wird das Programm verständlicher zu lesen sein,
+ohne sich um programmtechnische Details kümmern zu müssen:
+
+.. literalinclude:: code/einf-funktionen2.py
+	:linenos:
+	:emphasize-lines: 19-21
+	
+Das Programm besteht nun wesentlich aus den Zeilen 19-21.
+Nur das Lesen dieser 3 Zeilen reicht aus,
+um zu verstehen, was das gesamte Programm macht.
+Die Anweisungen für das Erstellen einer Zufallsliste 
+und die Berechnung des arithmetischen Mittelwertes 
+wurden in Funktionen ausgelagert (siehe Zeile 1-17).
+
+Zusätzlich stehen die Möglichkeiten der beiden Funktionen zu jedem 
+beliebigen Zeitpunkt später im Programm wieder zur Verfügung.
+D.h. alleine durch den Funktionsaufruf 
+:py:func:`zufallsliste_erstellen` kann jederzeit im Programm wieder eine
+Zufallsliste erstellt werden, ohne die ganzen Anweisungen nochmals
+aufschreiben zu müssen.
+
+Betrachten wir nun im Detail, 
+wie Funktionen in Python erstellt werden können.
 
 
 Eine Funktion ohne Rückgabewert definieren
 ==========================================
 
-Mit dem Keyword :py:keyword:`def` führen wir nun eine neue Funktion ein. Nach 
+Mit dem Keyword :py:keyword:`def` führen wir eine neue Funktion ein. Nach 
 der Anweisung :py:keyword:`def` steht der Name der Funktion, gefolgt von 
 runden Klammern ``()``. In der Klammer ``()`` werden die *Argumente*, falls 
 welche verlangt, aufgelistet. Zum Schluss kommt noch der obligate Doppelpunkt 
 ``:``. Die darauffolgende Zeilen müssen wie üblich eingerückt sein, ansonsten
 gehören sie nicht mehr zur Funktion.
 
-Auf unser Beispiel von oben angewendet, sieht unser Programm nun folgendermassen 
-aus:
+Hier ein Beispiel einer Funktion,
+welche eine Zahl als Übergabeparameter erwartet.
+Die Funktion selber multipliziert die Eingabe mit 2 
+und gibt das Resultat auf der Konsole wieder aus.
 
 .. literalinclude:: code/mit-funktionen.py
    :linenos:
-   :emphasize-lines: 2,3,7,9
+   :emphasize-lines: 1-3
 
 Jedes Mal wenn im Programm die Funktion ``mit_zwei_multiplizieren()`` 
 aufgerufen wird, wird der Codeblock bei der Definition der Funktion 
@@ -54,6 +94,12 @@ Natürlich können der Funktion auch mehr als nur ein *Argument* übergeben werd
 .. literalinclude:: code/flaeche-rechteck.py
    :linenos:
 
+Eine mögliche Ausgabe könnte dann folgendermassen aussehen:
+
+>>> flaeche_rechteck(3,7)
+Die Fläche des Rechtecks ist 21.
+>>> flaeche_rechteck(2.3,5.1)
+Die Fläche des Rechtecks ist 11.729999999999999.
 
 Aufgaben
 ~~~~~~~~
@@ -99,8 +145,8 @@ Nehmen wir das gleiche Beispiel von oben:
 
 Diese Funktion gibt auf der Konsole die Fläche des Rechtecks mit Längen 
 ``a`` und ``b`` aus. Möchte man das Ergebnis nicht ausgeben, sondern z.B. für
-eine Weiterverarbeitung zurückgeben, so kann dies mit der Anweisung 
-:py:keyword:`return` gemacht werden:
+eine Weiterverarbeitung zurückgeben, so kann dies mit der :py:keyword:`return`
+Anweisung gemacht werden:
 
 .. literalinclude:: code/flaeche-rechteck-return.py
    :linenos:
