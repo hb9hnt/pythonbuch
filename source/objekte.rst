@@ -433,6 +433,56 @@ Hubraum wurde geändert.
 >>> toeff.get_hubraum()
 300
 
+Aufgaben
+~~~~~~~~
+
+#. Wir erstellen ein Objekt der Klasse :py:class:`Motorrad`:
+	
+	>>> motrad = Motorrad("KTM", 950)
+
+   Überlege dir, 
+   welche der folgenden Eingaben valide sind und welche nicht. Begründe.
+   Was wird jeweils auf der Konsole ausgegeben?
+   
+   >>> motrad.set_hubraum(600)
+   
+   >>> motrad.__hubraum += 400
+   
+   >>> motrad.marke += 2
+   
+   >>> motrad.__hubraum
+   
+   >>> motrad.marke
+   
+   >>> motrad.get_hubraum()
+      
+#. a. Erneut erstellen wir ein Objekt der Klasse :py:class:`Motorrad`.
+      Erkläre und begründe was auf der Konsole ausgegeben wird.
+      Worin besteht die Problematik?
+   
+      >>> das_rad = Motorrad("Buell", -1200)
+      >>> das_rad.get_hubraum()
+   
+   b. Wie müsste man die Klasse :py:class:`Motorrad` anpassen,
+      um den unerwünschten Effekt von oben zu vermeiden?
+      Vermeide dabei Codedublizität.
+
+#. Schreibe die Klasse :py:class:`Person` von oben folgendermasen um,
+   so dass das Gewicht einer Person garantiert nie negativ gesetzt werden 
+   kann. Benutze dazu :py:func:`setter` und :py:func:`getter` Methoden.
+   
+#. Die Klasse :py:class:`Motorrad` von oben wurde um die Zeile 17 erweitert.
+   
+   .. literalinclude:: code/oop/property.py
+   	   :linenos:
+	   :emphasize-lines: 17
+	   
+   Lasse das Programm laufen und erkläre was in den Zeilen 20 - 25 passiert.
+   
+   Informiere dich im Internet über das Thema *Properties*
+   (z.B. auf der Seite  http://www.python-kurs.eu/python3_properties.php).
+   
+
 Vererbung
 =========
 Das Konzept der Vererbung erlaubt es uns spezialisiertere Klassen 
@@ -491,7 +541,7 @@ und bei der Klasse :py:class:`Lastwagen` die Schwere der Fracht gemeint.
 Um diese Eigenschaften zu implementieren führen wir in den 
 Unterklassen eigene :py:func:`__init__` - Methoden ein.
 Dies hat zur Folge, 
-dass wenn wir ein Obejkt der Klasse :py:class:`Personnenwagen` erstellen,
+dass wenn wir ein Objekt der Klasse :py:class:`Personnenwagen` erstellen,
 nun nicht mehr die :py:func:`__init__` - Methoden der Klasse 
 :py:class:`Fahrzeug` aufgerufen wird, sondern die der Klasse 
 :py:class:`Personnenwagen`.
@@ -531,7 +581,7 @@ Marke: Mercedes, Hubraum: 5000, Leistung: 300, Lastgewicht: 2000
 Aufgaben
 ========
 
-1. Überlege dir, was die Python-Konsole ausgibt, wenn folgende Programme 
+#. Überlege dir, was die Python-Konsole ausgibt, wenn folgende Programme 
    ausgeführt werden. Erkläre weshalb.
    
    Klasse 1:
@@ -545,20 +595,21 @@ Aufgaben
       :linenos:
 
 
-2. In dieser Aufgabe wird eine Mitarbeiterdatenbank irgendeiner Firma 
+#. In dieser Aufgabe wird eine Mitarbeiterdatenbank irgendeiner Firma 
    simuliert.
 
    a) Schreibe eine Klasse :py:class:`Mitarbeiter` mit den drei Instanzvariablen 
       ``vorname``, ``nachname`` und ``lohn``. 
       Achte darauf, dass bei der Instanzierung eines Mitarbeiters, die
-      Instanzvariablen auch sicher belegt werden.
+      Instanzvariablen auch sicher belegt werden und der Lohn nicht kleiner
+      als 3800 sfr ist.
 
    b) Erstelle in der Klasse :py:class:`Mitarbeiter` Methoden mit folgenden 
       Funktionalitäten:
       
       i) :py:func:`get_mitarbeiter_id`
 
-         Diese Methode soll auf der Konsole folgendes rausgeben, wenn sie 
+         Diese Methode soll auf der Konsole folgendes ausgeben, wenn sie 
          auf einen Mitarbeiter angewandt wird:
 	
 	 *"Ich heisse Hans Mustermann. 
@@ -576,17 +627,17 @@ Aufgaben
            der Lohn gesenkt wird, kann wiederrum als Argument der Methode 
            übergeben werden. Zusätzlich gibt die Methode einen ``String`` 
            zurück, welcher mitteilt, ob die Senkung erfolgreich war, oder nicht.
-	   Denn falls der Lohn bei der Senkung unter 3500 sfr. fällt,
+	   Denn falls der Lohn bei der Senkung unter 3800 sfr. fällt,
 	   so wird das Unterfangen abgebrochen. Dies könnte dann 
            z.B. so aussehen:
 	   
 	   >>> info = arbeiter.lohn_senken(200)
            >>> print(info)
-           Erfolg: Der Lohn wurde um 200 sfr. gesenkt und beträgt nun 3600 sfr.
+           Erfolg: Der Lohn wurde um 200 sfr. gesenkt und beträgt nun 3900 sfr.
 	   >>> info = arbeiter.lohn_senken(150)
            >>> print(info)
            Error: Der Lohn kann wegen der Mindestlohninitative nicht gesenkt werden. 
-           Er bleibt bei 3600 sfr. 
+           Er bleibt bei 3900 sfr. 
            Bitte mit der Gewerkschaft reden.
 
       iv) :py:func:`get_initialen`
@@ -603,7 +654,7 @@ Aufgaben
    c) Test dein Programm.
 
 
-3. **Brüche**
+#. **Brüche**
 
    a) Definiere eine Klasse :py:class:`Brueche`, 
       welche eine Bruchzahl modelliert. Die Klasse soll die Instanzvariablen 
@@ -621,7 +672,7 @@ Aufgaben
       Objekt derselben Klasse :py:class:`Brueche` und addiert diesen mit dem
       Bruch-Objekt, auf welche die Methode angewandt wird.
       Speichere das Resultat in ein neues Objekt der Klasse :py:class:`Brueche`
-      und gib es als ``return`` zurück.
+      und gib es mit dem ``return`` Statement zurück.
 
    d) Das gleiche Prinzip wende nochmals für die Methode :py:func:`multiply`
       an.
@@ -635,12 +686,66 @@ Aufgaben
       Die Methode soll wahr zurückliefern, sofern der übergebene 
       Bruch dem gleichen Wert wie dem aufgerufenen Bruch entspricht.
 	  
-4. Mache dich z.B. im Internet über das Thema **Operatorüberladung** schlau.
+#. Mache dich z.B. im Internet über das Thema **Operatorüberladung** schlau.
    Benutze das Wissen um für die Klasse :py:class:`Brueche` von oben
    die Addition mittels des "+"-Operators zu definieren.
    Mache das gleiche auch für den "*"-Operator und den "=="-Operator.
 
-5. **Vererbung**
+#. Python bietet uns ja Listen als Datenstruktur an, 
+   zusammen mit einer ganzen Sammlung an Methoden 
+   (z.B. :py:func:`append`, :py:func:`pop`). 
+   Jetzt kann es vorkommen, dass man manchmal bei den Listen (oder auch
+   anderen Klassen) zusätzliche oder eingeschränkte Funktionalitäten
+   bereitstellen möchte. Um zusätzliche Funktionalität anzubieten
+   greifen wir einfach auf das Konzept der Vererbung zurück.
+   
+   In dieser Aufgabe wollen wir mit Hilfe von Listen,
+   eine eigene Datenstruktur implementieren,
+   welche uns die Funktionalität eines Stacks zur Verfügung stellt.
+   Ein Stack oder Stappelspeicher ist wie eine Liste ein Container,
+   der aber nur Zugriff auf das zuletzt hinzugefügte Element gewährt. 
+   Für mehr Informationen siehe z.B. unter
+   https://de.wikipedia.org/wiki/Stapelspeicher nach.
+   
+   Erweitere nun die Klasse :py:class:`Stappel`,
+   
+   .. literalinclude:: code/oop/stappel.py
+      :linenos:
+      
+   so dass sie folgende Funktionalitäten bereitstellt:
+   
+	   a) Auf die Instanzvariable inhalt (Liste deren Inhalt den
+	   Inhalt des Stacks widerspiegelt) nicht ausserhalb der Klasse 
+	   zugegriffen werden kann.
+		  
+	   b) Ergänze die Klasse :py:class:`Stappel`
+	   um die Funktion :py:class:`add(element)` 
+	   mit der man dem Stack ein neues Element hinzufügen kann.
+		  
+	   c) Ergänze die Klasse :py:class:`Stappel` um die Funktion 
+	   :py:func:`is_empty`
+	   welche `True` zurück gibt,
+	   wenn der Stack zur Zeit leer ist, sonst `False`.
+	   
+	   d) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   :py:func:`get_last` 
+	   welche das zuletzt hinzugefügte Element des Stacks zurückgibt.
+	   
+	   *Beachte:* Damit die Funktion funktioniert, 
+	   muss sich mindestens ein Element in der Liste befinden.
+	   
+	   e) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   :py:func:`pop_last` 
+	   welche das zuletzt hinzugefügte Element des Stacks zurückgibt 
+	   und es aus der Liste entfernt.
+	   
+	   f) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   :py:func:`clear_stack`
+	   welche den Stack leert 
+	   und die Elemente der Reihe nach (d.h. das älteste Element zuletzt)
+	   in der Konsole auf einer Zeile ausgibt. Vermeide Codeduplizität.
+
+#. **Vererbung**
 
    Gegeben sei das folgende Klassendiagramm:
 
@@ -698,9 +803,7 @@ Aufgaben
        beim Aufruf eine Referenz auf das Objekt für welches sie aufgerufen wird.
        Es ist aber in Python üblich, dass der Name ``self`` verwendet wird.
 .. [#] Beispiel aus http://www.python-kurs.eu/python3_klassen.php
-   
-   
-   
-        
+
+       
 .. |erben| image:: images/erben.png
 .. |erben_personen| image:: images/erben_personen.png
