@@ -19,9 +19,9 @@ Darum benutzen wir für graphische Oberflächen
 sogenanntes *ereignisbasiertes Programmieren*.  
 Dies bedeutet, dass das Programm nicht linear durchlaufen wird,
 sondern der Programmablauf durch bestimmte Ereignisse (bei uns werden
-das Klicks und Eingaben des Benutzer sein) beeinflusst wird.
+das Klicks und Eingaben des Benutzers sein) beeinflusst wird.
 
-Für unsere Programme heisst das, dass sie sich meistens in einer Endlosschleife 
+Für unsere Programme heißt das, dass sie sich meistens in einer Endlosschleife 
 befinden, welche nur dafür zuständig ist, darauf zu warten, 
 dass der Benutzer etwas anklickt. Sobald dies geschieht 
 (also ein Ereignis eintrifft) wird ein bestimmter Teil des Programms 
@@ -44,7 +44,7 @@ Um eine graphische Benutzeroberfläche zu gestalten,
 brauchen wir als allererstes ein Fenster. Um ein solches zu erstellen
 benutzen wir, wie bereits erwähnt, dass ``tkinter``-Modul von Python,
 welches uns das nötige Werkzeug zur Verfügung stellt. 
-Dies geschieht, wie gewohnt mit dem ``from-import`` Befehl:
+Dies geschieht wie gewohnt mit dem ``from-import`` Befehl:
 
 	.. code-block:: python
 		
@@ -80,14 +80,14 @@ Ein Label bietet uns die Möglichkeit einen Text auf dem Fenster anzeigen zu
 lassen, welcher dem Benutzer z.B. Informationen oder Anweisungen 
 mitteilen kann. Der erste Button soll beim Draufklicken den Infotext
 ändern und der zweite Button ist ein klassischer *Beenden*-Button, 
-der das Programm beendet. Solche Elemente werden folgendermassen erstellt:
+der das Programm beendet. Solche Elemente werden folgendermaßen erstellt:
 
 	.. code-block:: python
 
 		my_button = Button(fenster, option=value, ... )
 		my_label = Label(fenster, option=value, ... )
 
-Das erste Argument definiert welchem Fenster die jeweilige Komponente 
+Das erste Argument definiert, welchem Fenster die jeweilige Komponente 
 hinzugefügt wird. Mit den darauf folgenden Argumenten können wir 
 unsere Komponente wie gewünscht einstellen, z.B. Grösse, Text, Farbe, 
 Textfarbe. [#]_ 
@@ -112,7 +112,7 @@ gar nichts. Also definieren wir mit :py:keyword:`def` eine Funktion,
 welche dem Button mit der ``command``-Option als Funktion für das 
 Klick-Ereignis übergeben wird. Mit der Funktion :py:func:`pack`
 können wir die einzelnen Komponenten dem Fenster übergeben.
-Unser Programm sieht dann folgendermassen aus:
+Unser Programm sieht dann folgendermaßen aus:
 
 	.. literalinclude:: code/gui/label_button.py
    		:linenos:
@@ -129,7 +129,7 @@ Programm beendet.
 Geometrie-Manager
 =================
 
-Wir haben oben gesehen, das mit der Funktion :py:func:`pack` die 
+Wir haben oben gesehen, dass mit der Funktion :py:func:`pack` die 
 Komponenten dem Fenster hinzugefügt wurden.
 Doch wie sollen die einzelnen Komponenten auf dem Fenster
 angeordnet werden?
@@ -145,7 +145,7 @@ verschiedenen Komponenten auf dem Fenster an,
 jeder auf seine Weise. Sie sollten jedoch nie im gleichen 
 Fenster gemischt werden. 
 Wie sie genau funktionieren und was die Unterschiede zwischen diesen 
-drei Layout-Manager sind, sehen wir gleich.
+drei Layout-Managern sind, sehen wir gleich.
 
 pack
 ~~~~
@@ -155,7 +155,7 @@ Statt dass man präzise erklären muss, wo eine Komponente auf dem Bildschirm
 erscheinen soll, werden sie relativ zueinander positioniert. 
 Die Details werden von *pack* automatisch bestimmt.
 Man kann nur wenig selber bestimmen und ist deshalb in seinen 
-Möglichkeiten im Vergleich zu den anderen Geometrie-Manager eingeschränkt.
+Möglichkeiten im Vergleich zu den anderen Geometrie-Managern eingeschränkt.
 Hier eine Möglichkeit:
 
 	=======		=========================================
@@ -182,7 +182,7 @@ Die führt zu folgendem Layout:
 	|pack|
 
 Möchte man die Komponenten aber nur etwas anders platzieren, wird es 
-mit dem *pack* Manager schon recht mühsam. Da ist der *grid* Manager einiges 
+mit dem *pack*-Manager schon recht mühsam. Da ist der *grid*-Manager um einiges 
 angenehmer.
 
 grid
@@ -199,7 +199,7 @@ d.h. sie stehen nebeneinander, also rechts und links voneinander.
 Mit der *grid*-Methode übergibt man den row- und den column-Wert, 
 wo die Komponente platziert werden soll. 
 Die Größe braucht nicht definiert zu werden, 
-da der Grid-Manager automatisch eine Ausdehnungen
+da der Grid-Manager automatisch die Ausdehnungen
 für die benutzten Komponenten berechnet.
 
 	=======		=========================================
@@ -221,7 +221,7 @@ für die benutzten Komponenten berechnet.
 	=======		=========================================
 
 Mit dem Grid-Manager lässt sich nun einfach definieren, wo man die 
-einzelnen Komponenten plazieren möchte.
+einzelnen Komponenten platzieren möchte.
 
 	.. code-block:: python
 
@@ -261,7 +261,7 @@ anderen Komponenten.
 	width			Breite der Komponente bestimmen (in Pixel)
 	===========		==========================================
 
-Dieser Manager ist, im Verlgeich zu den anderen beiden, der aufwendigste.
+Dieser Manager ist im Verlgeich zu den anderen beiden der aufwendigste.
 Man sollte ihn nur dann benutzen, wenn es nicht anders geht.
 Hier ein Beispiel:
 
@@ -276,24 +276,24 @@ Hier ein Beispiel:
 		info_label.place(x = 100, y = 160, width=300, height=100)
 		exit_button.place(x = 100, y = 260, width=300, height=100)
 
-Ausgeführt sieht es dann folgendermassen aus:
+Ausgeführt sieht es dann folgendermaßen aus:
 
 	|place|
 
 Natürlich kann man noch viel mehr machen, doch das würde den Rahmen dieses
 Tutorials sprengen. Im Internet finden sich zu allen drei 
 Geometrie-Managern noch viele weitere interessante 
-Beispiele und weitere Einstellungsmöglichkeiten.
+Beispiele und Einstellungsmöglichkeiten.
 
 
 Eingabefeld
 ===========
 
-Bis jetzt hatte der Benutzer nur die Möglichkeit über Button-Klicks mit dem 
-Programm zu interagieren. Nun werden wir hier sehen, wie der Benutzer 
+Bis jetzt hatte der Benutzer nur die Möglichkeit, über Button-Klicks mit dem 
+Programm zu interagieren. Nun werden wir sehen, wie der Benutzer 
 über ein Feld eine Eingabe machen kann, welche das Programm danach 
-verarbeiten kann. Die Syntax um ein solches Eingabefeld zu erstellen sieht
-folgendermassen aus:
+verarbeiten kann. Die Syntax, um ein solches Eingabefeld zu erstellen, sieht
+folgendermaßen aus:
 
 	.. code-block:: python
 
@@ -306,13 +306,13 @@ des Benutzers wartet und danach eine entsprechende Ausgabe generiert:
    		:linenos:
 		:emphasize-lines: 23,24
 
-Wir das Programm ausgeführt, so bekommen wir folgendes Fenster:
+Wird das Programm ausgeführt, so bekommen wir folgendes Fenster:
 
 	|entry|
 
 In Zeile 7 im obigen Programm wird überprüft, 
-ob der Benutzer was ins Feld geschrieben hat
-oder nicht. Dementsprechend sieht dann die Ausgaben im Fenster 
+ob der Benutzer etwas in das Feld geschrieben hat
+oder nicht. Dementsprechend sieht dann die Ausgabe im Fenster 
 nach dem Klick auf den *Klick me*-Button jeweils anders aus:
 
 =============			============
@@ -323,20 +323,20 @@ Mit Eingabe:			|entry_name|
 Menü und Messagebox
 ===================
 
-Bei den meisten Programmen ist man sich gewöhnt, dass man am oberen Fensterrand
+Bei den meisten Programmen ist man es gewohnt, dass man am oberen Fensterrand
 ein Menü zur Verfügung hat. Wie man ein solches erstellt, sehen wir in diesem 
 Kapitel. Wir werden ein *Pull-down-Menü* mit ``tkinter`` erstellen. 
 D.h. dass z.B. ganz oben im Fenster, wenn auf die Fläche *Datei* geklickt wird, 
 ein *Pull-down-Menü* mit einigen Auswahlmöglichkeiten erscheint, wie z.B.
 *Speichern*, *Speichern unter* oder *Exit*. 
-Die Syntax dazu sieht folgendermassen aus:
+Die Syntax dazu sieht folgendermaßen aus:
 
 	.. code-block:: python
 
 		my_menu = Menu(fenster, option, ... )
 
 In unserem Beispiel erstellen wir eine Menüleiste mit den Einträgen 
-*Datei* und *Help*. Beim Klick auf *Datei* soll eine *Drop-Down*-Menü 
+*Datei* und *Help*. Beim Klick auf *Datei* soll ein *Drop-Down*-Menü 
 aufgehen mit den Einträgen *Anwenden* und *Exit*. 
 Wenn man auf *Anwenden* klickt, wird ein Text auf der Konsole ausgegeben und 
 bei *Exit* wird das Programm natürlich beendet. Bei *Help* soll ein Eintrag 
@@ -350,8 +350,8 @@ Eine ``Messagebox`` kann z.B. so aufgerufen werden:
 		from tkinter import messagebox
 		messagebox.showinfo(message="Infotext", title = "Box-Titel")
 
-Dies alles in einem einem Programm umgesetzt, 
-kann dann folgendermassen aussehen:
+Dies alles in einem Programm umgesetzt
+kann dann folgendermaßen aussehen:
 
 	.. literalinclude:: code/gui/menu.py
    		:linenos:
@@ -366,7 +366,7 @@ und bei Klick auf *Help -> Info!*
 	|box|
 
 Nun haben wir hier ein paar wichtige Komponenten kennengelernt, mit welchen
-man eine einfache graphischen Benutzeroberfläche erstellen kann. 
+man eine einfache graphische Benutzeroberfläche erstellen kann. 
 Natürlich gibt es noch viele weiere Komponenten, welche man gebrauchen kann.
 Jedoch sollte man nach diesem Kapitel in der Lage sein, 
 den Gebrauch der restlichen Kompenten selber herauszufinden,
