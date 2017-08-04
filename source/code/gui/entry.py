@@ -5,7 +5,7 @@ from tkinter import *
 def button_action():
     entry_text = eingabefeld.get()
     if (entry_text == ""):
-        welcome_label.config(text="Gib zuerste einen Namen ein.")
+        welcome_label.config(text="Gib zuerst einen Namen ein.")
     else:
         entry_text = "Welcome " + entry_text + "!" 
         welcome_label.config(text=entry_text)
