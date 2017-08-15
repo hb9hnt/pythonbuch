@@ -13,11 +13,11 @@ Textdatei Zeile für Zeile durcharbeitet, bis es am Ende der Datei angelangt
 ist.
 
 Das erste Beispielprogramm, welches üblicherweise in einer Programmiersprache
-verfasst wird, ist ein sogenanntes "Hello World"-Programm, welches nichts
+verfasst wird, ist ein so genanntes "Hello World"-Programm, welches nichts
 anderes macht, als den Text "Hello World" auf dem Bildschirm auszugeben.
 
-In Python ist ein solches Programm im Verlgeich zu anderen Programmiersprachen
-sehr einfach umzusetzen. Es besteht nur aus einer Zeie:
+In Python ist ein solches Programm im Vergleich zu anderen Programmiersprachen
+sehr einfach umzusetzen. Es besteht nur aus einer Zeile:
 
 .. literalinclude:: code/HelloWorld.py
    :linenos:
@@ -38,22 +38,22 @@ Wie oben erwähnt reicht zum Programmieren ein einfacher Texteditor. Im Gegensat
 zu Textverarbeitungsprogrammen unterstützt reiner Text keine Formatierungen wie
 Schriftgrössen oder Schriftarten. Alle Farben, welche du im Texteditor siehst,
 werden vom Editor erstellt und sind nicht in der Datei selbst gespeichert. Sie
-dienen nur der Lesbarkeit vom Programmcode und werden vom Edito abhägig von der
-Programmiersprache festgelegt.
+dienen nur der Lesbarkeit vom Programmcode und werden vom Editor abhängig von
+der benutzen Programmiersprache festgelegt.
 
 Texteditoren wurden schon in den Anfängen der Computerprogrammierung benutzt,
 gewisse aus dieser Zeit werden heute noch in weiterentwickelter Form benutzt,
 unter ihnen zum Beispiel Emacs_ und `Vim`_. Wer einen moderneren Editor benutzen
-möchte, könnte zum Beispiel Atom_ installieren.
+möchte, installiert zum Beispiel Atom_.
 
-Jedoch werden oft sogenannte *IDEs (Integrated Development Environment)* benutzt. 
-Diese besitzen viele hilfreiche Funktionen, welche ein Texteditor nicht hat,
-welche einem beim Programmieren unterstützen:
+Jedoch werden oft sogenannte *IDEs (Integrated Development Environment)* zum
+schreiben von Programmen benutzt.  Diese besitzen viele hilfreiche Funktionen,
+welche ein Texteditor nicht hat, welche einem beim Programmieren unterstützen:
 
 * Das Programm kann direkt im IDE ausgeführt werden und muss nicht separat
   aufgerufen werden.
 * Die Befehle werden automatisch vervollständigt, so dass man nicht die ganzen
-  Befehle tippen oder erinnern muss.
+  Befehle tippen musst.
 * Gewisse Fehler im Programm werden schon während dem programmieren erkannt und
   als solche gekennzeichnet.
 
@@ -65,11 +65,14 @@ herunterladen und zu Hause installieren.
 PyCharm_ lässt dich nicht nur Python-Programme editieren, sondern auch mehrere 
 Dateien zu einem *Projekt* zusammenfassen. Erstelle aus diesem Grund beim ersten 
 Starten von PyCharm_ ein Projekt. Achte darauf, dass du einen Speicherort
-innerhalt deinen eigenen Dateien wählst, etwa in einem Ordner mit dem Namen
-"Informatik". Bennenne das Projekt jeweils nach dem Kapitel, an welchem du
+innerhalb deinen eigenen Dateien wählst, etwa in einem Ordner mit dem Namen
+"Informatik". Benenne das Projekt jeweils nach dem Kapitel, an welchem du
 gerade arbeitest. Innerhalb des Projekts kannst du für jede weitere Aufgabe eine
 neue Python-Datei anlegen, in dem du im Menu `File` -> `New...` anklickst und
-anschliessens `New Python-File` wählst.
+anschliessend `New Python-File` wählst.
+
+Bei allen anderen der vorgestellten Editoren und IDEs bist du selbst
+verantwortlich dafür, deine Dateien sauber in einer Ordnerstruktur abzulegen.
 
 Unabhängig davon, was du zum Programmieren benutzen möchtest, musst du Python
 herunterladen und installieren. Die nötigen Downloads findest du hier:
@@ -90,15 +93,15 @@ Namen "Konsole". In ILDE_ wird die Konsole als erstes Fenster sofort geöffnet.
 
 In der Konsole siehst du etwa den folgenden Text::
 
-   Python 3.5.3 (default, Mar 14 2016, 16:02:22) 
-   [GCC 4.8.2] on linux
+   Python 3.6.1 (default, Jun 25 2017, 14:04:36) 
+   [GCC 7.1.0] on linux
    Type "help", "copyright", "credits" or "license" for more information.
-   >>> 
+   >>>
 
-Dies ist der Python Befehlspromt, hier kannst du Befehle nicht als Programm 
+Dies ist der Python Befehlsprompt, hier kannst du Befehle nicht als Programm 
 speichern, du kannst sie nur einzeln hintereinander ausprobieren. In diesem 
 Skript werden wir in Aufgaben oft
-kurze Beispiele im Befehlspromt ausprobieren. Sie sind immer durch ``>>>`` 
+kurze Beispiele im Befehlsprompt ausprobieren. Sie sind immer durch ``>>>`` 
 markiert und haben keine Zeilennummern wie andere Programme. Du könntest 
 also zum Beispiel
 
@@ -125,15 +128,15 @@ werden.
 Eingabe und Ausgabe
 ===================
 
-Computer arbeiten grundsätzlich nach einem Prinzip, welches man *EVA*-Prinzip
-nennt. Dies steht für *Eingabe*, *Verarbeitung* und *Ausgabe*. Damit ist
-gemeint, dass wir dem Computer zu Beginn über eine Tastatur, eine Maus, einen
-Touchbildschirm oder über andere Eingabegeräte Daten zur Verarbeitung liefern.
+Computer arbeiten grundsätzlich nach dem *EVA*-Prinzip. Die Abkürzung *EVA*
+steht für *Eingabe*, *Verarbeitung* und *Ausgabe*. Damit ist gemeint, dass wir
+dem Computer zu Beginn über eine Tastatur, eine Maus, einen Touchbildschirm oder
+über andere Eingabegeräte Daten oder Befehle zur Verarbeitung liefern.
 
-Anschliessend verarbeitet der Computer unsere Daten gemäss Vorgabe und gibt uns
-die berechnete Antwort über ein Ausgabegerät zurück. Dies kann ein Bildschirm,
-ein Drucker oder ein anderes, spezialisiertes Gerät zur Darstellung von Daten
-sein.
+Anschliessend verarbeitet der Computer unsere Daten gemäss den erteilten
+Befehlen und gibt uns die berechnete Antwort über ein Ausgabegerät zurück. Dies
+kann ein Bildschirm, ein Drucker oder ein anderes, spezialisiertes Gerät zur
+Darstellung von Daten sein.
 
 Wir werden uns in den folgenden Kapiteln mit der einfachsten Art der Ein- und
 Ausgabe begnügen, in dem wir den Programmen vorerst nur Text übergeben und sie
@@ -142,9 +145,15 @@ uns auch wieder Text zurückgeben. Wir haben schon gesehen, dass wir mit
 >>> print("Hallo Welt")
 
 Text ausgeben können. Umgekehrt können wir mit der Funktion :py:func:`input`
-Text einlesen. Dabei kannst du in der Klammer eine Frage an den Benutzer eingeben. Die folgende Zeile führt dazu, dass d utext eingeben kannst:
+Text einlesen. Dabei kannst du in der Klammer eine Frage an den Benutzer
+eingeben. Die folgende Zeile führt dazu, dass Text eingeben kannst. Der Computer
+fordert dabei den Benutzer zunächst auf "Gib bitte etwas Text ein: " und warten
+anschliessen auf die Eingabe, welche mit Drücken der Enter-Taste abgeschlossen
+wird.
 
 >>> input("Gib bitte etwas Text ein: ")
+
+Du kannst so gewissermassen einen eigenen Befehlsprompt programmieren.
 
 
 Aufgaben
@@ -172,7 +181,8 @@ Aufgaben
       dieses Kapitels lesen.
    b) Das Programm kannst du mit den `Shift` und `F10` Tasten ausführen und testen. Wo wird der
       Text "Hello World" ausgegeben?
-
+   c) Passe das Programm so an, dass es den Benutzer zuerst nach einer Eingabe
+      fragt und anschliessen mit "Hello World" antwortet.
       
 3. a) Speichere das folgende Programm in einer Python-Datei namens ``gui-beispiel.py``
       und führe es aus. Was macht das Programm?
@@ -181,8 +191,6 @@ Aufgaben
 
    .. literalinclude:: code/CanvasExample.py
       :linenos:
-
-
 
 
 .. _Emacs: https://www.gnu.org/software/emacs/
