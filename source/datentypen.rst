@@ -253,6 +253,12 @@ Aufgaben
    anschliessend die Summe der beiden Zahlen ausgibt.
 
 
+5. Eine Werkstatt verlangt für die Benützung einer Maschine eine Grundgebühr von
+   60 Fr. sowie 35 Fr. pro Stunde. Man überlege sich, welche Daten einzugeben
+   und welche Daten zu berechnen sind und erstelle ein passendes Programm.
+
+
+   
 Listen
 ======
 
@@ -362,7 +368,7 @@ Aufgaben
    Variablen nicht als Speicherplätze sondern als Namensschilder für Objekte
    vorstellen. Kannst du dies erklären?
 
-3. In einer früheren Aufgabe hast du ein Programm erstellt, welches eine
+4. In einer früheren Aufgabe hast du ein Programm erstellt, welches eine
    feste Anzahl Noten einliest und anschliessend die notwendige Berechnung
    macht. Wir möchten dieses Programm nun anpassen, so dass die Noten in
    einer Liste gespeichert werden.

@@ -180,7 +180,11 @@ Aufgaben
    iii) Mit dem Befehl :py:func:`print` wird entsprechend entweder "Die Zahl
 	ist grösser als 10" oder "Die Zahl ist kleiner als 10" ausgegeben.
 
-2. Ob ein Jahr im Gregorianischen Kalender ein Schaltjahr ist, kann nach den
+2. Schreibe ein Programm, welches vom Benutzer 10 Zahlen einliest und diese in
+   einer Liste speichert. Anschliessend soll das Minimum und das Maximum der
+   Zahlen aus der liste bestimmt und ausgegeben werden.
+
+3. Ob ein Jahr im Gregorianischen Kalender ein Schaltjahr ist, kann nach den
    folgenden Regeln entschieden werden:
 
    * Jahre sind Schaltjahre, falls ihre Jahrzahl durch 400 teilbar ist.
@@ -291,9 +295,19 @@ Aufgaben
 
    *Ausgabe*: alle geworfenen Zahlen und die Anzahl Würfe.
  
-9. Ein Würfel wird so lange geworfen, bis die Summe der erhaltenen Zahlen 100
-   erreicht oder überschreitet. Bestimme mit einem Programm, wie viele Würfe dazu
-   nötig sind.
+9. Ein Würfel wird so lange geworfen, bis die Summe aller Würfe 100 oder mehr
+   beträgt. Zum simulieren eines Würfels kannst du die Funktion
+   :py:func:`randrange` aus dem Modul :py:module:`random` benutzen.
+
+   a) Bestimme mit einem Programm, wie viele Würfe dazu nötig sind.
+
+   b) Schreibe ein Programm, welches mit Hilfe einer Liste zählt, wie oft welche
+      Augenzahl geworfen wurde. Am Ende soll die Liste mit :py:func:`print`
+      ausgegeben werden.
+
+   c) Ändere das Programm so ab, dass so lange gewürfelt wird, bis zum ersten
+      Mal eine Zahl 50 Mal geworfen wurde. Gib an, wie oft die anderen Zahlen
+      geworfen wurden.
 
 10. Der Computer "würfelt" eine Zufallszahl zwischen 1 und 6 (Grenzen inklusive).
     Der Spieler versucht nun, die gewürfelte Zahl zu erraten. Bestimme mit einem
@@ -363,6 +377,18 @@ Aufgaben
    *Zusatzaufgabe*: Versuche im Internet herauszufinden, wie man dieses Problem
    möglichst effizient (d.h. so, dass es wenig Zeit braucht) löst und schreibe
    dein Programm um, damit es schneller wird.  
+
+#. Im Zahlenlotto werden sechs Zahlen aus 49 zufällig ausgewählt, wobei keine
+   doppelt vorkommen darf. Schreibe ein Programm, welches 6 Zahlen aus 49
+   zufällig wählt. Verwende dafür wiederum Funktionen aus dem
+   :py:module:`random` Modul.
+
+   a) Benutze ausschliesslich die :py:func:`randrange` Funktion, um dies zu
+      erreichen.
+
+   b) Lies die Dokumentation des :py:module:`random` Moduls und versuche jene
+      Funktion zu finden, mit welcher du die Aufgabe am einfachsten lösten
+      kannst. (Das heisst mit möglichst wenig Programmcode)
 
 #. Das Collatz-Problem gehört zu den ungelösten Problemen der Mathematik. _[#]
    Es besagt, dass jede Abfolge von Zahlen, welche nach der folgenden Regel

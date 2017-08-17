@@ -116,6 +116,23 @@ In Python macht es aber durchaus Sinn, die Befehlsabfolge
 
 auszuführen. Es wird nämlich einfach der Wert der Variable um eins erhöht.
 
+Im letzten Kapitel hast du die Funktion :py:func:`input` kennen gelernt. Diese
+kannst du nun benutzen, um eine Eingabe von Benutzer einzulesen und
+anschliessend in einer Variable abzuspeichern. Du musst dir immer auch
+überlegen, was du den Benutzer fragen möchtest, damit das Programm möglichst
+bedienerfreundlich wird.
+
+So fragen dir den Benutzer zum Beispiel mit dem folgenden Befehl nach seinem
+Namen und speichern ihn in einer Variable mit der Bezeichnung ``name`` ab.
+
+>>> name = input("Wie heisst du?")
+Wie heisst du? Paula
+>>> name
+'Paula'
+
+Wie du siehst, ist nun unter ``name`` der Wert ``'Paula'`` gespeichert. Warum
+die Zeichen ``'`` vorkommen, lernst du im nächsten Kapitel. Python kennzeichnet
+damit die Tatsache, dass es sich um Text handelt.
 
 Aufgaben
 ~~~~~~~~
@@ -149,7 +166,9 @@ Aufgaben
    b) Finde an Hand der obigen Beispiele und der Python-Dokumentation heraus,
       wie die Regeln für zulässige Variablennamen lauten.
 
-
+3. Schreibe in einer neuen Datei mit dem Namen ``papagei.py`` ein Programm,
+   welches vom Benutzer mit :py:func:`input` eine Eingabe verlangt, diese in
+   einer Variable speichert und anschliessend mit :py:func:`print` wieder ausgibt.
 
 Verwenden von Modulen
 =====================
@@ -204,9 +223,12 @@ einen Würfel simulieren:
 	    
 Aufgaben
 ~~~~~~~
-1. Wenn man die drei Seitenlängen eines Quaders hat, dann kann man die drei
+1. Schreibe ein Programm, welches die Länge der Diagonale eines Rechtecks mit
+   den Seitenlängen ``a`` und ``b`` berechnet.
+
+2. Wenn man die drei Seitenlängen eines Quaders hat, dann kann man die drei
    Flächendiagonalen (Längen der Diagonalen in einer Seitenfläche des Quaders)
    sowie die Raumdiagonale berechnen. Schreibe dazu ein Programm.
 
-2. Drei Würfel werden miteinander geworfen. Schreibe ein Programm, welches drei
+3. Drei Würfel werden miteinander geworfen. Schreibe ein Programm, welches drei
    Würfe simuliert und die Summe der geworfenen Zahlen ausgibt.
