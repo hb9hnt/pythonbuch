@@ -297,7 +297,7 @@ Aufgaben
  
 9. Ein Würfel wird so lange geworfen, bis die Summe aller Würfe 100 oder mehr
    beträgt. Zum simulieren eines Würfels kannst du die Funktion
-   :py:func:`randrange` aus dem Modul :py:module:`random` benutzen.
+   :py:func:`randrange` aus dem Modul :py:mod:`random` benutzen.
 
    a) Bestimme mit einem Programm, wie viele Würfe dazu nötig sind.
 
@@ -381,12 +381,12 @@ Aufgaben
 #. Im Zahlenlotto werden sechs Zahlen aus 49 zufällig ausgewählt, wobei keine
    doppelt vorkommen darf. Schreibe ein Programm, welches 6 Zahlen aus 49
    zufällig wählt. Verwende dafür wiederum Funktionen aus dem
-   :py:module:`random` Modul.
+   :py:mod:`random` Modul.
 
    a) Benutze ausschliesslich die :py:func:`randrange` Funktion, um dies zu
       erreichen.
 
-   b) Lies die Dokumentation des :py:module:`random` Moduls und versuche jene
+   b) Lies die Dokumentation des :py:mod:`random` Moduls und versuche jene
       Funktion zu finden, mit welcher du die Aufgabe am einfachsten lösten
       kannst. (Das heisst mit möglichst wenig Programmcode)
 

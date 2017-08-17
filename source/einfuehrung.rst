@@ -89,7 +89,7 @@ Die erste Aufgabe, in welcher du eine Programmdatei benötigst ist die
 Aufgabe 2. Nenne also deine erste Datei "Aufgabe 2".
 
 Bei PyCharm_ findest du im unteren Bereich des Fensters einen Reiter mit dem
-Namen "Konsole". In ILDE_ wird die Konsole als erstes Fenster sofort geöffnet.
+Namen "Konsole". In IDLE_ wird die Konsole als erstes Fenster sofort geöffnet.
 
 In der Konsole siehst du etwa den folgenden Text::
 
