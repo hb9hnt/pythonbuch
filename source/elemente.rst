@@ -116,9 +116,26 @@ In Python macht es aber durchaus Sinn, die Befehlsabfolge
 
 auszuführen. Es wird nämlich einfach der Wert der Variable um eins erhöht.
 
+Im letzten Kapitel hast du die Funktion :py:func:`input` kennen gelernt. Diese
+kannst du nun benutzen, um eine Eingabe von Benutzer einzulesen und
+anschliessend in einer Variable abzuspeichern. Du musst dir immer auch
+überlegen, was du den Benutzer fragen möchtest, damit das Programm möglichst
+bedienerfreundlich wird.
+
+So fragen dir den Benutzer zum Beispiel mit dem folgenden Befehl nach seinem
+Namen und speichern ihn in einer Variable mit der Bezeichnung ``name`` ab.
+
+>>> name = input("Wie heisst du?")
+Wie heisst du? Paula
+>>> name
+'Paula'
+
+Wie du siehst, ist nun unter ``name`` der Wert ``'Paula'`` gespeichert. Warum
+die Zeichen ``'`` vorkommen, lernst du im nächsten Kapitel. Python kennzeichnet
+damit die Tatsache, dass es sich um Text handelt.
 
 Aufgaben
-========
+~~~~~~~~
 
 1. Im Folgenden werden einige Zeilen Programmcode ausprobiert. Überlege dir, was
    nach dem Ausführen der Zeilen in den Variabeln ``erste_zahl``,
@@ -149,3 +166,69 @@ Aufgaben
    b) Finde an Hand der obigen Beispiele und der Python-Dokumentation heraus,
       wie die Regeln für zulässige Variablennamen lauten.
 
+3. Schreibe in einer neuen Datei mit dem Namen ``papagei.py`` ein Programm,
+   welches vom Benutzer mit :py:func:`input` eine Eingabe verlangt, diese in
+   einer Variable speichert und anschliessend mit :py:func:`print` wieder ausgibt.
+
+Verwenden von Modulen
+=====================
+
+Gewisse Funktionalitäten wurden in Python in sogenannte Module
+ausgegliedert. Auf diese Art kann die Grundinstallation von Python schlank
+gehalten werden und Module nach bedarf nachgeladen weden. Wir schauen und das
+ganze am Beispiel des :py:mod:`math` Moduls anschauen. In diesem werden
+verschiedne mathematische Funktionen wie zum Beispiel :py:func:`sqrt` zur
+Berechnung der Quadratwurzel zur verfügung gestellt. Führst du die folgende
+Zeile in der Python-Konsole aus, wird dir Python einen Fehler ausgeben:
+
+    >>> sqrt(49)
+
+Du musst zuerst die :py:func:`sqrt` Funktion aus dem :py:mod:`math` Modul
+laden. Dies geschieht über den Befehl :py:keyword:`import`.
+
+    >>> from math import sqrt
+    >>> sqrt(49)
+
+berechnet nun erfolgreich die Wurzel aus 49. Falls man alle Befehle von einem
+Modul importieren möchte, kann man das Modul als ganzes importieren. Dann muss
+man aber bei jedem Befehl festlegen, dass er aus dem besagten Modul kommt.
+
+
+    >>> import math
+    >>> math.sqrt(49)
+
+
+Teilweise findet man in Beispielen auch die Form ``from math import *``, welche
+alle Befehle aus dem :py:mod:`math` importiert. Dies gilt aber vor allem in
+grösseren Programmen als schlechter Programmierstil, da man nicht genau weiss,
+welche Befehle damit alles importiert werden.
+
+Oft auch nützlich ist das :py:mod:`random` Paket, welches verschiedene
+Funktionen enthält, um Zufallszahlen zu generieren, Listen zu mischen oder
+zufällige Elemente auszuwählen. Wir können zum beispiel mit den folgenden Zeilen
+einen Würfel simulieren:
+
+     >>> from random import randint
+     >>> randint(1, 6)
+
+.. seealso:: Einen Überblick über alle verfügbaren Pakete in der Python Standard
+   Bibliothek findest du in der Python-Dokumentation unter:
+
+   https://docs.python.org/3/library/
+
+.. rubric:: Footnotes
+
+.. [1] Der Computer kann keine wirklichen Zufallszahlen generieren. Man spricht
+       darum von Pseudozufallszahlen.
+	    
+Aufgaben
+~~~~~~~
+1. Schreibe ein Programm, welches die Länge der Diagonale eines Rechtecks mit
+   den Seitenlängen ``a`` und ``b`` berechnet.
+
+2. Wenn man die drei Seitenlängen eines Quaders hat, dann kann man die drei
+   Flächendiagonalen (Längen der Diagonalen in einer Seitenfläche des Quaders)
+   sowie die Raumdiagonale berechnen. Schreibe dazu ein Programm.
+
+3. Drei Würfel werden miteinander geworfen. Schreibe ein Programm, welches drei
+   Würfe simuliert und die Summe der geworfenen Zahlen ausgibt.

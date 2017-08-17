@@ -28,9 +28,14 @@ Autoren
 
 Dieses Skript wurde bisher hauptsächlich von den folgenden Autoren verfasst:
 
-* Marco Schmid
+* `Marco Schmid <https://github.com/chunyboy>`
 * `Beni Keller <http://puremath.ch>`_
 
+Ergänzendes Material und Korrekturen wurde von den folgenden Personen
+beigesteuert:
+
+* `Oliver Riesen <http://oriesen.ch>`_
+* `Christoph Jüngling <https://github.com/juengling>`_
 
 Fehler und Erweiterungen
 ========================

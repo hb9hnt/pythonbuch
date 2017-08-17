@@ -12,22 +12,16 @@ class Person:
         text = "Hallo.\nIch heisse " \
                + self.vorname + " " \
                + self.name + ", wiege " \
-               + self.gewicht + " und habe am " \
+               + str(self.gewicht) + " kg und habe am " \
                + self.geb_datum + " Geburtstag.\n"\
                + "Nice to meet you."
         print(text)
 
     def abnehmen(self, wie_viel):
-        print("Altes Gewicht:",self.gewicht)
-        
-        # Das aktuelle Gewicht in einen Float umwandeln
-        # um subtrahieren zu können
-        pos = self.gewicht.find(" ")
-        neues_gew = float(self.gewicht[0:pos]) - wie_viel
+        print("Altes Gewicht:",self.gewicht,"kg")
 
-        # Das neue Gewicht wieder in einen String konvertieren
-        # und in die Instanzvariable speichern
-        self.gewicht = str(neues_gew) + " kg"
-        print("Neues Gewicht:",self.gewicht)
+        # Das neue Gewicht in der Instanzvariable
+        # des Objektes speichern
+        self.gewicht = self.gewicht - wie_viel
 
-        return ("Neues Gewicht: " + self.gewicht)
+        print("Neues Gewicht:",self.gewicht,"kg")
