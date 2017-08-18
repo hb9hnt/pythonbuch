@@ -204,8 +204,8 @@ grösseren Programmen als schlechter Programmierstil, da man nicht genau weiss,
 welche Befehle damit alles importiert werden.
 
 Oft auch nützlich ist das :py:mod:`random` Paket, welches verschiedene
-Funktionen enthält, um Zufallszahlen zu generieren, Listen zu mischen oder
-zufällige Elemente auszuwählen. Wir können zum beispiel mit den folgenden Zeilen
+Funktionen enthält, um Zufallszahlen [1]_ zu generieren, Listen zu mischen oder
+zufällige Elemente auszuwählen. Wir können zum Beispiel mit den folgenden Zeilen
 einen Würfel simulieren:
 
      >>> from random import randint
@@ -222,7 +222,8 @@ einen Würfel simulieren:
        darum von Pseudozufallszahlen.
 	    
 Aufgaben
-~~~~~~~
+~~~~~~~~
+
 1. Schreibe ein Programm, welches die Länge der Diagonale eines Rechtecks mit
    den Seitenlängen ``a`` und ``b`` berechnet.
 

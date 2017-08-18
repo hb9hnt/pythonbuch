@@ -211,7 +211,7 @@ ist. Sie hat die folgende Struktur::
    Befehl 3
 
 Dabei werden die Befehle 1 und 2 solange ausgeführt, wie die Bedingung wahr
-(also :py:keyword:`true`) ist. Sobald die Bedinung falsche (:py:keyword:`false`)
+(also :py:keyword:`True`) ist. Sobald die Bedinung falsche (:py:keyword:`False`)
 wird, springt Python zur nächsten nicht eingerückten Zeile, also Befehl 3. Zur
 Formulierung der Bedingung können dieselben Formen wie bei der :py:keyword:`if`
 Abfrage benutzt werden.
