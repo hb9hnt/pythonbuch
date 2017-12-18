@@ -558,7 +558,7 @@ Aufgaben
 	  *"Ich heisse Hans Mustermann (alias H.M.). 
           Mein Lohn bei dieser Firma beträgt 100 sfr."*
 
-   c) Test dein Programm.
+   c) Teste dein Programm.
 
 
 3. **Brüche**
