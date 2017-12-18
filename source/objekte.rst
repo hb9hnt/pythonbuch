@@ -613,7 +613,7 @@ Aufgaben
          auf einen Mitarbeiter angewandt wird:
 	
 	 *"Ich heisse Hans Mustermann. 
-         Mein Lohn bei dieser Firma beträgt 100 sfr."*
+         Mein Lohn bei dieser Firma beträgt 4000 sfr."*
 
       ii) :py:func:`lohn_erhoehen`
 
