@@ -702,12 +702,12 @@ Aufgaben
    In dieser Aufgabe wollen wir mit Hilfe von Listen,
    eine eigene Datenstruktur implementieren,
    welche uns die Funktionalität eines Stacks zur Verfügung stellt.
-   Ein Stack oder Stappelspeicher ist wie eine Liste ein Container,
+   Ein Stack oder Stapelspeicher ist wie eine Liste ein Container,
    der aber nur Zugriff auf das zuletzt hinzugefügte Element gewährt. 
    Für mehr Informationen siehe z.B. unter
    https://de.wikipedia.org/wiki/Stapelspeicher nach.
    
-   Erweitere nun die Klasse :py:class:`Stappel`,
+   Erweitere nun die Klasse :py:class:`Stapel`,
    
    .. literalinclude:: code/oop/stappel.py
       :linenos:
@@ -718,28 +718,28 @@ Aufgaben
 	   Inhalt des Stacks widerspiegelt) nicht ausserhalb der Klasse 
 	   zugegriffen werden kann.
 		  
-	   b) Ergänze die Klasse :py:class:`Stappel`
+	   b) Ergänze die Klasse :py:class:`Stapel`
 	   um die Funktion :py:class:`add(element)` 
 	   mit der man dem Stack ein neues Element hinzufügen kann.
 		  
-	   c) Ergänze die Klasse :py:class:`Stappel` um die Funktion 
+	   c) Ergänze die Klasse :py:class:`Stapel` um die Funktion 
 	   :py:func:`is_empty`
 	   welche `True` zurück gibt,
 	   wenn der Stack zur Zeit leer ist, sonst `False`.
 	   
-	   d) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   d) Ergänze die Klasse :py:class:`Stapel` um die Funktion
 	   :py:func:`get_last` 
 	   welche das zuletzt hinzugefügte Element des Stacks zurückgibt.
 	   
 	   *Beachte:* Damit die Funktion funktioniert, 
 	   muss sich mindestens ein Element in der Liste befinden.
 	   
-	   e) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   e) Ergänze die Klasse :py:class:`Stapel` um die Funktion
 	   :py:func:`pop_last` 
 	   welche das zuletzt hinzugefügte Element des Stacks zurückgibt 
 	   und es aus der Liste entfernt.
 	   
-	   f) Ergänze die Klasse :py:class:`Stappel` um die Funktion
+	   f) Ergänze die Klasse :py:class:`Stapel` um die Funktion
 	   :py:func:`clear_stack`
 	   welche den Stack leert 
 	   und die Elemente der Reihe nach (d.h. das älteste Element zuletzt)
