@@ -709,7 +709,7 @@ Aufgaben
    
    Erweitere nun die Klasse :py:class:`Stapel`,
    
-   .. literalinclude:: code/oop/stappel.py
+   .. literalinclude:: code/oop/stapel.py
       :linenos:
       
    so dass sie folgende Funktionalitäten bereitstellt:
